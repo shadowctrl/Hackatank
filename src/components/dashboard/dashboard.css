@@ -1,0 +1,17 @@
+.time_parent {
+  display: grid;
+  grid-auto-flow: column;
+  /* gap: 1vw; */
+  text-align: center;
+}
+
+.time_parent .values {
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+  background-color: slategrey;
+  border-radius: 1vw;
+}
+.values span {
+  font-size: 3rem;
+}

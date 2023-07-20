@@ -1,0 +1,69 @@
+.signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* padding-right: 5vw; */
+  background-image: url("/images/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* animation: animateBg 5s linear infinite; */
+}
+@keyframes animateBg {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.card {
+  position: relative;
+  /* background: rgb(255, 255, 255, 0.2); */
+  background: transparent;
+  border: 1.5px solid rgb(255, 255, 255);
+  border-radius: 1vw;
+  width: 20vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  backdrop-filter: blur(0.5vw);
+  box-shadow: -1vw 2vh 1vw black;
+  overflow: hidden;
+}
+.signin .title {
+  font-size: 2vw;
+  color: white;
+  margin-top: 12vh;
+  font-weight: 600;
+  color: white;
+}
+.welcome {
+  position: absolute;
+  top: 1vh;
+  width: 25vw;
+}
+.content {
+  position: relative;
+  margin-top: 10vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 0.2vw;
+  font-size: 1.3vw;
+  background-color: rgb(255, 255, 255);
+  padding: 0.5vh 0.5vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+.socials {
+  position: absolute;
+  z-index: -1;
+  top: 30%;
+  /* left: 65%; */
+}
+.socials ul {
+  list-style-type: none;
+}
+.socials ul li {
+}

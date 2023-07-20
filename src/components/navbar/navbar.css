@@ -1,0 +1,57 @@
+.parent {
+  font-family: "oswald";
+  color: white;
+  padding: 3vw;
+}
+.parent .title {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  font-weight: 600;
+  font-size: 1.5vw;
+}
+.logo {
+  width: 3vw;
+}
+.parent .components {
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.components ul {
+  position: relative;
+  list-style-type: none;
+  display: flex;
+  gap: 2vw;
+  padding: 0.5vh 1vw;
+  background-color: rgb(255, 255, 255, 0.2);
+  border-radius: 1vw;
+  backdrop-filter: blur(5px);
+}
+.components ul li {
+  font-family: fira sans condensed;
+  letter-spacing: 2px;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+.components ul li a {
+  text-decoration: none;
+  color: white;
+}
+.register {
+  position: relative;
+  font-family: poppins;
+  font-size: 1.2vw;
+  padding: 1vh 1vw;
+  background-color: rgb(193, 54, 137, 0.5);
+  border-radius: 2vw;
+  color: white;
+  letter-spacing: normal;
+  backdrop-filter: blur(5px);
+}
+
+.register a {
+  text-decoration: none;
+  color: white;
+}
