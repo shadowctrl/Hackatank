@@ -46,7 +46,7 @@ const signin = () => {
       </div>
     );
   return (
-    <div className="signin">
+    <div className="signin ">
       <div className="card">
         <div className="welcome">
           <Lottie animationData={welcomeAnimation} loop={1} />

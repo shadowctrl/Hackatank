@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import Hero from "./components/hero/hero";
 import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Error from "./error.jsx";
@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           path="/"
           element={
             <div className="bg">
-              <Navbar /> <App />
+              <Navbar /> <Hero />
             </div>
           }
         />
