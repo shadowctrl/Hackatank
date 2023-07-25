@@ -1,5 +1,5 @@
 import "./hero.css";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import KeyboardDoubleArrowRightSharpIcon from "@mui/icons-material/KeyboardDoubleArrowRightSharp";
 import InfoIcon from "@mui/icons-material/Info";
 import EventAvailableIcon from "@mui/icons-material/EventAvailable";
@@ -9,6 +9,44 @@ import SchoolSharpIcon from "@mui/icons-material/SchoolSharp";
 import BookmarkAddedSharpIcon from "@mui/icons-material/BookmarkAddedSharp";
 
 const hero = () => {
+  const [countdown, setCountdown] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  const handleCountdown = () => {
+    const countDate = new Date("September 8, 2023 12:00:00").getTime();
+    const now = new Date().getTime();
+    const diff = countDate - now;
+    {
+      if (now > countDate) return;
+    }
+    const second = 1000;
+    const minute = second * 60;
+    const hour = minute * 60;
+    const day = hour * 24;
+
+    const textDay = Math.floor(diff / day);
+    const textHour = Math.floor((diff % day) / hour);
+    const textMinute = Math.floor((diff % hour) / minute);
+    const textSecond = Math.floor((diff % minute) / second);
+
+    setCountdown({
+      days: textDay,
+      hours: textHour,
+      minutes: textMinute,
+      seconds: textSecond,
+    });
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => handleCountdown(), 1000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
   return (
     <div className="parent_hero">
       <div className="progress_bar"></div>
@@ -177,19 +215,19 @@ const hero = () => {
       {/* -------------------------- Page 2 -------------------------- */}
       <section className="countdown">
         <div className="day-card">
-          <h3 className="day">1</h3>
+          <h3 className="day">{countdown.days}</h3>
           <h3>Day</h3>
         </div>
         <div className="hours-card">
-          <h3 className="hours">12</h3>
+          <h3 className="hours">{countdown.hours}</h3>
           <h3>Hours</h3>
         </div>
         <div className="min-card">
-          <h3 className="minutes">20</h3>
+          <h3 className="minutes">{countdown.minutes}</h3>
           <h3>Minutes</h3>
         </div>
         <div className="sec-card">
-          <h3 className="seconds">10</h3>
+          <h3 className="seconds">{countdown.seconds}</h3>
           <h3>Seconds</h3>
         </div>
       </section>
