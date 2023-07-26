@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap&family=Fira Sans Condensed&family=Fira Code");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap&family=Fira Sans Condensed&family=Fira Code&family=Roboto");
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -18,6 +18,10 @@
 @font-face {
   font-family: technology;
   src: url(/fonts/technology/Technology.ttf);
+}
+@font-face {
+  font-family: ErbosDraco;
+  src: local("Erbos Draco"), url(/fonts/ErbosDraco.ttf);
 }
 html,
 body {
