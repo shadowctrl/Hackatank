@@ -6,9 +6,21 @@ import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import PeopleOutlineSharpIcon from "@mui/icons-material/PeopleOutlineSharp";
 import SchoolSharpIcon from "@mui/icons-material/SchoolSharp";
-import BookmarkAddedSharpIcon from "@mui/icons-material/BookmarkAddedSharp";
+import Lottie from "lottie-react";
+import animationData from "../../assets/mobile.json";
+import VanillaTilt from "vanilla-tilt";
 
 const hero = () => {
+  useEffect(() => {
+    VanillaTilt.init(
+      document.querySelectorAll(".anim"),
+      {
+        max: 10,
+        speed: 400,
+      },
+      []
+    );
+  });
   const [countdown, setCountdown] = useState({
     days: 0,
     hours: 0,
@@ -213,24 +225,51 @@ const hero = () => {
         </div>
       </section>
       {/* -------------------------- Page 2 -------------------------- */}
-      <section className="countdown">
-        <div className="day-card">
-          <h3 className="day">{countdown.days}</h3>
-          <h3>Day</h3>
+      <div className="section2">
+        {/* <div className="tag2">
+          Not just an event; it's a collision of creativity, collaboration, and
+          coding prowess, where innovation finds its wings and dreams are turned
+          into reality
+        </div> */}
+        <div className="section2-sub">
+          <h2 className="countdown-text">
+            Join us for the ultimate coding extravaganza!
+          </h2>
+          <div className="countdown anim">
+            <div className="day-card anim">
+              <h3 className="day">{countdown.days}</h3>
+              <h3>Days</h3>
+            </div>
+            <div className="sep">:</div>
+            <div className="hour-card anim">
+              <h3 className="hours">{countdown.hours}</h3>
+              <h3>Hours</h3>
+            </div>
+            <div className="sep">:</div>
+            <div className="min-card anim">
+              <h3 className="minutes">{countdown.minutes}</h3>
+              <h3>Minutes</h3>
+            </div>
+            <div className="sep">:</div>
+            <div className="sec-card anim">
+              <h3 className="seconds">{countdown.seconds}</h3>
+              <h3>Seconds</h3>
+            </div>
+          </div>
+          <img src="/images/logo4.png" alt="" />
+          {/* <div className="animation-countdown_section">
+            <Lottie
+              animationData={animationData}
+              loop={2}
+              style={{
+                height: "80vh",
+                // backgroundColor: "red",
+                width: "fit-content",
+              }}
+            />
+          </div> */}
         </div>
-        <div className="hours-card">
-          <h3 className="hours">{countdown.hours}</h3>
-          <h3>Hours</h3>
-        </div>
-        <div className="min-card">
-          <h3 className="minutes">{countdown.minutes}</h3>
-          <h3>Minutes</h3>
-        </div>
-        <div className="sec-card">
-          <h3 className="seconds">{countdown.seconds}</h3>
-          <h3>Seconds</h3>
-        </div>
-      </section>
+      </div>
     </div>
   );
 };
