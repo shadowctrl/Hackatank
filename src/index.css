@@ -1,10 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap&family=Fira Sans Condensed&family=Fira Code&family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap&family=Fira Sans Condensed:wght@100;200;300;400;500;600;700;800;900&family=Fira Code:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;200;300;400;500;600;700;800;900&family=Handjet:wght@100;200;300;400;500;600;700;800;900&family=Open Sans:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=IBM Plex Mono:wght@100;200;300;400;500;600;700;800;900&family=Exo:wght@100;200;300;400;500;600;700;800;900&family=Audiowide:wght@100;200;300;400;500;600;700;800;900");
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @font-face {
   font-family: mars;
   src: url(/fonts/mars/Mars.ttf);
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: mars;
+  src: url("/fonts/mars/Mars Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: mars;
+  src: url("/fonts/mars/Mars Thin.ttf");
+  font-weight: lighter;
+  font-style: normal;
 }
 @font-face {
   font-family: "Lorem Ipsum";
@@ -41,8 +55,8 @@ body {
   isolation: isolate;
   height: 100vh;
   /* background-image: url("/images/development.png"); */
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
 }
 .bg::after {
   content: "";
@@ -50,4 +64,30 @@ body {
   z-index: -1;
   inset: 0;
   /* background: black; */
+}
+
+.bg-sep {
+  position: relative;
+  height: 0.2vh;
+}
+.bg-sep::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #f1f1f2,
+    #e5e2e4,
+    #d9d4d7,
+    #cdc6c8,
+    #cdc6c8,
+    #cdc6c8,
+    #cdc6c8,
+    #d9d4d7,
+    #e5e2e4,
+    #f1f1f2,
+    #ffffff
+  ); */
+  box-shadow: 0vw 1vw 3vw 1vw #6a5acd;
 }

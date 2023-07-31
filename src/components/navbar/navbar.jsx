@@ -18,8 +18,8 @@ const Navbar = () => {
               <SocialIcon
                 url="https://www.instagram.com/srmveccsisb"
                 style={{
-                  height: "40px",
-                  width: "40px",
+                  height: "50px",
+                  width: "50px",
                 }}
               />
             </div>
@@ -27,8 +27,8 @@ const Navbar = () => {
               <SocialIcon
                 url="https://www.facebook.com"
                 style={{
-                  height: "40px",
-                  width: "40px",
+                  height: "50px",
+                  width: "50px",
                 }}
               />
             </div>
@@ -37,8 +37,8 @@ const Navbar = () => {
               <SocialIcon
                 url="https://www.youtube.com/"
                 style={{
-                  height: "40px",
-                  width: "40px",
+                  height: "50px",
+                  width: "50px",
                 }}
               />
             </div>

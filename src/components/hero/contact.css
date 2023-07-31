@@ -1,0 +1,74 @@
+.parent-contact {
+  position: relative;
+  isolation: isolate;
+  padding: 3vw;
+}
+.parent-contact::after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 0.3;
+  background-size: contain;
+  background-color: #dfdbe5;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-card::before {
+  content: " ";
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  opacity: 0.4;
+  background-image: url("/images/topography2.svg");
+}
+.contact-card {
+  display: flex;
+  height: 60vh;
+  width: 20vw;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  border: 2px solid black;
+  border-radius: 1vw;
+  overflow: hidden;
+  position: relative;
+  backdrop-filter: blur(1vw);
+}
+.contact-card::after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 0.2;
+  background-size: cover;
+  background-color: #7cffcb;
+  background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+}
+
+.contact-name {
+  font-size: 2.5vw;
+  font-family: exo;
+  font-weight: 900;
+  color: black;
+}
+.contact-position {
+  /* padding */
+  font-size: 1.5vw;
+  font-family: exo;
+  font-weight: 700;
+  color: black;
+}
+
+.contact-options {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

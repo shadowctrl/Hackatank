@@ -19,15 +19,15 @@
   position: absolute;
   border-left: 4px solid rgb(0, 116, 251);
   height: 0vh;
-  top: 8vh;
-  left: 2.3vw;
+  top: 6vh;
+  left: 2.2vw;
 }
 @keyframes socialsAnim {
   0% {
     height: 0vh;
   }
   100% {
-    height: 5vh;
+    height: 6.5vh;
   }
 }
 .parent .title::after {
@@ -37,24 +37,24 @@
   position: absolute;
   color: black;
   top: 0vh;
-  left: -0.2vw;
+  left: -0.5vw;
   opacity: 0;
   animation: instagram 0.5s 0.3s linear forwards;
 }
 .parent .title .socials .fb {
   position: absolute;
   color: black;
-  top: 0vh;
+  top: 1.5vh;
   transform: translateY(9.5vh);
-  left: -0.2vw;
+  left: -0.5vw;
   opacity: 0;
   animation: facebook 0.3s 0.8s linear forwards;
 }
 .parent .title .socials .yt {
   position: absolute;
   color: black;
-  top: 0vh;
-  left: -0.2vw;
+  top: 3vh;
+  left: -0.5vw;
   transform: translateY(15.5vh);
   opacity: 0;
   animation: youtube 0.3s 1.3s linear forwards;
