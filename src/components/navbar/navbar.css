@@ -3,8 +3,8 @@
   color: white;
   padding: 1vh 1vw 1vh 1vw;
   position: sticky;
-  /* width: 100%;
-  z-index: 99; */
+
+  z-index: 99;
 }
 .parent .title {
   display: flex;
@@ -13,6 +13,7 @@
   font-weight: 600;
   font-size: 1.8vw;
   font-family: mars;
+  cursor: pointer;
 }
 .parent .title::after {
   content: "";
@@ -35,6 +36,7 @@
 }
 .parent .title .socials .insta {
   position: absolute;
+  z-index: 99;
   color: black;
   top: 0vh;
   left: -0.5vw;
@@ -43,6 +45,7 @@
 }
 .parent .title .socials .fb {
   position: absolute;
+  z-index: 99;
   color: black;
   top: 1.5vh;
   transform: translateY(9.5vh);
@@ -53,6 +56,7 @@
 .parent .title .socials .yt {
   position: absolute;
   color: black;
+  z-index: 99;
   top: 3vh;
   left: -0.5vw;
   transform: translateY(15.5vh);
@@ -104,14 +108,15 @@
   font-size: 1vw;
   font-weight: 500;
 }
-.components ul li a {
+.components ul li p {
   display: block;
   position: relative;
   text-decoration: none;
   color: white;
   padding: 0.2vw;
+  cursor: pointer;
 }
-.components ul li a::after {
+.components ul li p::after {
   content: "";
   position: absolute;
   height: 3px;
@@ -120,11 +125,11 @@
   bottom: 0;
   background-color: rgb(190, 52, 176);
 }
-.components ul li a:hover {
+.components ul li p:hover {
   scale: 1.1;
   transition: all 0.3s ease-in-out;
 }
-.components ul li a:hover::after {
+.components ul li p:hover::after {
   animation: line 1s ease-in-out forwards;
 }
 
