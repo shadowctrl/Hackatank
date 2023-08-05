@@ -1,74 +1,283 @@
 .parent-contact {
+  padding: 7vh 10vw;
+  width: 100%;
   position: relative;
-  isolation: isolate;
-  padding: 3vw;
 }
-.parent-contact::after {
-  content: " ";
-  position: absolute;
+.contact-title {
+  font-size: 3.5vw;
+  font-family: "russo one";
+  letter-spacing: 2px;
+  font-weight: 900;
+  padding-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+.contact-title::after {
+  content: "";
   z-index: -1;
-  inset: 0;
-  opacity: 0.3;
-  background-size: contain;
-  background-color: #dfdbe5;
-  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+  border-bottom: 4px solid #d500ed;
+  border-image: linear-gradient(
+    to right top,
+    #ffda00,
+    #ffaa17,
+    #ff7545,
+    #ff3c6f,
+    #ff0099,
+    #ed00ae,
+    #d100c4,
+    #aa0ada,
+    #9700e1,
+    #7f00e7,
+    #5e00ef,
+    #1b0cf6
+  );
+  border-image-slice: 1;
+  width: 25vw;
+}
+.contact-title img {
+  position: absolute;
+  top: 0vh;
+  left: 1vw;
+  z-index: -1;
+  width: 11vw;
 }
 
-.contact-container {
+.parent-container {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.contact-container {
+  height: 65vh;
+  width: 20vw;
+  perspective: 45vw;
+}
+.contact-card,
+.contact-card1 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: all 1s linear; /* ----------------------- Flip Transition */
+  transform-style: preserve-3d;
+}
+.contact-card-flip {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+.contact-card-front,
+.contact-card-back,
+.contact-card-back1 {
+  height: 100%;
+  width: 100%;
+  border-radius: 1vw;
+  box-shadow: 0 0 5px 2px black;
+  position: absolute;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.contact-card-front img {
+  /* background-image: url("/images/raghav.jpg"); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* overflow: hidden; */
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in-out; /* ----------------------- Rocket Transition */
+}
+
+.contact-card-front:hover img {
+  transform: rotate(-2deg);
+  scale: 1.1;
+}
+.contact-card-front .contact-card-details {
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 1vw;
+  backdrop-filter: blur(0.5vw);
+  width: 100%;
+  bottom: -17vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.contact-card::before {
-  content: " ";
-  position: absolute;
-  z-index: -2;
-  inset: 0;
-  opacity: 0.4;
-  background-image: url("/images/topography2.svg");
-}
-.contact-card {
-  display: flex;
-  height: 60vh;
-  width: 20vw;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  gap: 2vh;
-  border: 2px solid black;
-  border-radius: 1vw;
-  overflow: hidden;
-  position: relative;
-  backdrop-filter: blur(1vw);
-}
-.contact-card::after {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  opacity: 0.2;
-  background-size: cover;
-  background-color: #7cffcb;
-  background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+  padding: 3vh 1vw;
+  transition: all 0.3s linear;
 }
 
-.contact-name {
-  font-size: 2.5vw;
-  font-family: exo;
-  font-weight: 900;
-  color: black;
+.contact-card-front:hover .contact-card-details {
+  bottom: 0vh;
 }
-.contact-position {
-  /* padding */
-  font-size: 1.5vw;
-  font-family: exo;
+.contact-card-front .contact-card-name {
+  font-size: 2vw;
+  color: white;
   font-weight: 700;
-  color: black;
+}
+.contact-card-front .contact-card-description {
+  font-size: 1vw;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-bottom: 2vh;
+}
+.contact-card-options {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 0.8vw;
+  bottom: 1vh;
+  right: 1vw;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+.contact-card-options:hover {
+  scale: 1.1;
+  color: rgb(255, 0, 119);
+}
+.contact-card-back::before {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url("/images/shree.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-card-back {
+  position: relative;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  cursor: pointer;
+}
+.contact-card-back::after {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  backdrop-filter: blur(1vw);
+  background-color: rgb(0, 0, 0, 0.4);
 }
 
-.contact-options {
-  width: 100%;
+.contact-card-back1::before {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url("/images/raghav.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-card-back1 {
+  position: relative;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  cursor: pointer;
+}
+.contact-card-back1::after {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  backdrop-filter: blur(1vw);
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+.contact-card-back .contact-card-details,
+.contact-card-back1 .contact-card-details {
+  height: 100%;
+  padding-top: 2vh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.contact-card-back .contact-card-name,
+.contact-card-back1 .contact-card-name {
+  font-size: 2vw;
+  color: white;
+  font-weight: 700;
+}
+.contact-card-back .contact-card-description,
+.contact-card-back1 .contact-card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 100%;
+  height: 100%;
+}
+.contact-card-back .contact-card-phone,
+.contact-card-back1 .contact-card-phone,
+.contact-card-back .contact-card-email,
+.contact-card-back1 .contact-card-email,
+.contact-card-back .contact-card-instagram,
+.contact-card-back1 .contact-card-instagram,
+.contact-card-back .contact-card-discord,
+.contact-card-back1 .contact-card-discord {
+  font-size: 1vw;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 0.5vw;
+}
+
+.contact-card-back .contact-card-phone:hover,
+.contact-card-back1 .contact-card-phone:hover,
+.contact-card-back .contact-card-email:hover,
+.contact-card-back1 .contact-card-email:hover,
+.contact-card-back .contact-card-instagram:hover,
+.contact-card-back1 .contact-card-instagram:hover,
+.contact-card-back .contact-card-discord:hover,
+.contact-card-back1 .contact-card-discord:hover {
+  /* color: rgb(255, 0, 119); */
+  color: #c34ea8;
+}
+.phone,
+.email,
+.instagram,
+.discord {
+  color: white;
+  border: 1px solid white;
+  padding: 1vh 0.5vw;
+  border-radius: 50%;
+}
+.contact-card-launch {
+  animation: launch 3s ease-in-out;
+}
+@keyframes launch {
+  0% {
+    transform: rotate(-10deg);
+  }
+  5% {
+    transform: rotate(10deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: translateX(100px) translateY(-100px) rotate(5deg);
+  }
+  100% {
+    transform: translateX(500px) translateY(-400px) rotate(-5deg);
+    opacity: 0;
+  }
 }
