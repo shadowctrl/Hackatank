@@ -4,68 +4,72 @@ import React from "react";
 const schedule = () => {
   return (
     <React.Fragment>
-      <div className="parent-schedule">
-        <div className="schedule-title">schedule</div>
+      <div id="schedule" className="parent-schedule">
+        <div className="schedule-title">
+          <img src="/images/logo3.png" alt="" />
+          Schedule
+        </div>
         <div className="timeline">
           <div className="container ">
-            <h2 className="date">july 1</h2>
-            <h2 className="container-title">Event Approved</h2>
+            <h2 className="date">Aug 5</h2>
+            <h2 className="container-title">Registration opens</h2>
             <p className="container-description">
-              Event Approved Hackathon" is an exciting and dynamic
-              technology-focused gathering that brings together innovative
-              minds, programmers, developers, and enthusiasts from various
-              fields
+              Registration is open for tech enthusiasts, developers, and problem
+              solvers from all backgrounds. Join us for an exhilarating 24 hours
+              of coding, collaboration, and competition as we tackle real-world
+              challenges and develop cutting-edge solutions
             </p>
             <span className="circle"></span>
           </div>
           <div className="container ">
-            <h2 className="container-title">Registrations Started</h2>
-            <h1 className="date"> Aug 3 - sep 1</h1>
+            <h2 className="container-title">Abstract Submission</h2>
+            <h1 className="date"> Aug 5 - Aug 23</h1>
             <p className="container-description">
-              Embark on an exciting journey of innovation and join our hackathon
-              as registrations are now open! For all the details and to secure
-              your spot, be sure to check out our website. Let's create
-              something extraordinary together! 🚀👩‍💻👨‍💻
+              Submit your abstracts and be a part of the forefront of
+              innovation! We invite you to share your groundbreaking ideas and
+              research at our esteemed hackathon event. This is your opportunity
+              to present your unique insights and solutions 🚀👩‍💻
             </p>
             <span className="circle"></span>
           </div>
           <div className="container ">
-            <h1 className="date"> sep 1 - sep 5</h1>
-            <h2 className="container-title">Team Formation</h2>
+            <h2 className="container-title">Finalists Annoncements</h2>
+            <h1 className="date"> Aug 23 - Aug 28</h1>
             <p className="container-description">
-              During this period, early bird registrations may offer exclusive
-              benefits to those who sign up promptly. Participants can also
-              start forming teams, finding like-minded individuals with
-              complementary skills to collaborate on innovative project ideas.
+              Step into the limelight – the moment we've all been waiting for is
+              here! We're thrilled to announce the finalists of our highly
+              competitive hackathon event. After meticulous evaluation and
+              deliberation, we've handpicked the most promising and innovative
+              teams to move forward to the final round
             </p>
             <span className="circle"></span>
           </div>
           <div className="container ">
-            <h2 className="container-title">Preparation 💡</h2>
-            <h1 className="date"></h1>
+            <h2 className="container-title">Registration Closes</h2>
+            <h1 className="date">Aug 28 - Sep 3</h1>
             <p className="container-description">
-              With teams in place, participants can now delve into brainstorming
-              sessions, discussing potential project ideas, and conducting
-              research to refine their concepts. Mentors and resources may be
-              available to support participants during this phase.
+              Last call for registration! Time is running out to be a part of
+              our extraordinary hackathon event. Don't miss this incredible
+              opportunity to join a community of tech enthusiasts, developers,
+              and innovators from around the world. Registration will close
+              soon, so act fast and secure your spot
             </p>
             <span className="circle"></span>
           </div>
           <div className="container ">
-            <h2 className="container-title">Intensive Hackathon Event 🚀</h2>
-            <h1 className="date"> sep 8 - 12.00 clock</h1>
+            <h2 className="container-title">Hackathon Finale</h2> <br />
+            <h1 className="date">Sep 8 - Sep 9</h1>
             <p className="container-description">
-              The main event kicks off, and participants immerse themselves in
-              the hackathon experience. The 24-hour (or more) coding marathon
-              takes place, where teams work passionately to develop their
-              projects, fueled by creativity, determination, and the spirit of
-              competition.
+              Get ready for the moment of triumph – the Hackathon Finale is just
+              around the corner! After an intense and exhilarating journey,
+              we've arrived at the grand finale, where the most ingenious minds
+              will showcase their remarkable solutions.
             </p>
             <span className="circle"></span>
           </div>
           <div className="container ">
-            <h2 className="container-title">Winner Announcements</h2>
-            <h1 className="date"> sep 9 - 4.00 clock</h1>
+            <h2 className="container-title">Award Ceremony</h2>
+            <h1 className="date">Sep 9</h1>
             <p className="container-description">
               The judges deliberate, and winners are announced in various
               categories, celebrating outstanding projects, creativity, and
