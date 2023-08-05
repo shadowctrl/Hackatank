@@ -1,13 +1,15 @@
 import React from "react";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import "./sponsors.css";
-
+import Contact from "./contact";
 const sponsors = () => {
   return (
     <React.Fragment>
       <div className="parent-sponsors">
-        <h1 className="sponsors-title">Sponsor</h1>
-
+        <h1 className="sponsors-title">
+          Sponsor
+          <img src="/images/logo3.png" alt="" />
+        </h1>
         <div className="sponsors-container">
           <div className="sponsors-border">
             <div>
@@ -29,6 +31,7 @@ const sponsors = () => {
             </div>
           </div>
         </div>
+        <Contact />
       </div>
     </React.Fragment>
   );
