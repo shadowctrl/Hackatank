@@ -12,10 +12,6 @@ const section2 = () => {
           <div className="title2">
             <img src="/images/logo3.png" alt="" />
             <h1 className="title-name">Agenda</h1>
-            <h1 className="quote">
-              We believe that within the intensity of a hackathon, collaboration
-              ignites the spark of extraordinary ideas.
-            </h1>
           </div>
           <div className="agenda-text">
             <div>

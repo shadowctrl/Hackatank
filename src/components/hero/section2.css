@@ -35,19 +35,6 @@
   display: flex;
   align-items: center;
 }
-.title2 .quote {
-  font-family: audiowide;
-  letter-spacing: 1px;
-  max-width: 37vw;
-  margin-left: 5vw;
-  border: 2px solid;
-  background-color: rgb(0, 0, 0, 0.2);
-  box-shadow: 0.5vw 1.5vh 2vw 0vw #0d3e7a;
-  backdrop-filter: blur(2px);
-  border-image-slice: 1;
-  border-radius: 1vw;
-  padding: 1vh 0.5vw;
-}
 
 .agenda .title2 .title-name {
   font-size: 3vw;
