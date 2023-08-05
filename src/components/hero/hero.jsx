@@ -1,19 +1,20 @@
 import "./hero.css";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import KeyboardDoubleArrowRightSharpIcon from "@mui/icons-material/KeyboardDoubleArrowRightSharp";
 import InfoIcon from "@mui/icons-material/Info";
 import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import VanillaTilt from "vanilla-tilt";
 import Section2 from "./section2";
 import About from "./about";
 import Schedule from "./schedule";
 import Sponsors from "./sponsors";
-import Contact from "./contact";
+import { Footer } from "../";
 
 const hero = () => {
   useEffect(() => {
-    VanillaTilt.init(
+    const tilt = VanillaTilt.init(
       document.querySelectorAll(".anim"),
       {
         max: 10,
@@ -28,9 +29,8 @@ const hero = () => {
     minutes: 0,
     seconds: 0,
   });
-
   const handleCountdown = () => {
-    const countDate = new Date("September 8, 2023 12:00:00").getTime();
+    const countDate = new Date("September 8, 2023 10:00:00").getTime();
     const now = new Date().getTime();
     const diff = countDate - now;
     {
@@ -41,10 +41,23 @@ const hero = () => {
     const hour = minute * 60;
     const day = hour * 24;
 
-    const textDay = Math.floor(diff / day);
-    const textHour = Math.floor((diff % day) / hour);
-    const textMinute = Math.floor((diff % hour) / minute);
-    const textSecond = Math.floor((diff % minute) / second);
+    var textDay = Math.floor(diff / day);
+    var textHour = Math.floor((diff % day) / hour);
+    var textMinute = Math.floor((diff % hour) / minute);
+    var textSecond = Math.floor((diff % minute) / second);
+
+    if (textDay.toString().length == 1) {
+      textDay = `0${textDay}`;
+    }
+    if (textHour.toString().length == 1) {
+      textHour = `0${textHour}`;
+    }
+    if (textMinute.toString().length == 1) {
+      textMinute = `0${textMinute}`;
+    }
+    if (textSecond.toString().length == 1) {
+      textSecond = `0${textSecond}`;
+    }
 
     setCountdown({
       days: textDay,
@@ -63,25 +76,32 @@ const hero = () => {
   return (
     <React.Fragment>
       <div className="parent_hero">
-        <div className="progress_bar"></div>
-        <div className="tag">Celebrating 25 Years of SRMVEC</div>
+        {/* <div className="progress_bar"></div> */}
+        <div className="flex items-end gap-2 relative z-[-1] pl-[0vw]">
+          <img src="/images/srm.png" alt="" width="40vw" />
+          <div className="tag">Celebrating 25 Years of SRMVEC</div>
+          <img src="/images/srmvec.png" alt="" width="60vw" />
+        </div>
 
         {/* ----------------------- Page 1 ------------------------- */}
         <section className="column">
           <div className="left_side">
-            <div className="title">
-              {"National Level"}
+            <div className="curve"></div>
+
+            <div className="title1">
+              {"Hack - A - Tank"}
               <br />
-              <span className="hackathon">Hackathon</span>
+              <p className="tag1"> A National Level 24 Hour Hackathon</p>
+              {/* <span className="hackathon">Hackathon</span> */}
               <p className="description">
-                Premier national <span> coding competition</span> showcasing
-                innovative solutions
+                National <span> coding competition</span> showcasing innovative
+                solutions
                 <br /> and tech talents from across the country
               </p>
             </div>
             <div
               className="register_now"
-              onClick={() => window.open("/signin")}
+              onClick={() => window.open("https://forms.gle/mqHSf1kpoTUiMURH6")}
             >
               <div>
                 <a>REGISTER NOW </a>
@@ -131,7 +151,10 @@ const hero = () => {
                   }}
                 />
               </h3>
-              <p className="text2">
+              <p
+                className="text2"
+                onClick={() => window.open("/guidelines", "_self")}
+              >
                 Guidelines{" "}
                 <KeyboardArrowRightIcon
                   style={{
@@ -139,7 +162,10 @@ const hero = () => {
                   }}
                 />
               </p>
-              <p className="text3">
+              <p
+                className="text3"
+                onClick={() => window.open("/events", "_self")}
+              >
                 Events{" "}
                 <KeyboardArrowRightIcon
                   style={{
@@ -180,7 +206,10 @@ const hero = () => {
               <div className="flex justify-items-start">
                 <h3 className="text7">Projects</h3>
               </div>
-              <p className="text8">
+              <p
+                className="text8"
+                onClick={() => window.open("/hardware", "_self")}
+              >
                 Hardware{" "}
                 <KeyboardArrowRightIcon
                   style={{
@@ -188,7 +217,10 @@ const hero = () => {
                   }}
                 />
               </p>
-              <p className="text9">
+              <p
+                className="text9"
+                onClick={() => window.open("/software", "_self")}
+              >
                 Software{" "}
                 <KeyboardArrowRightIcon
                   style={{
@@ -198,11 +230,23 @@ const hero = () => {
               </p>
             </div>
             {/* -------------------------- Column 4  ---------------------------------- */}
-            <div className="col4 animated-div">
-              <h3 className="text10">II Floor SEMINAR HALL</h3>
-              <div className="flex items-center justify-between">
-                <p className="text11">08.09.2023</p>
-                <p className="text12">12:00 PM</p>
+            <div
+              className="col4 animated-div"
+              onClick={() =>
+                window.open("https://goo.gl/maps/iaE4Kko8wqqHs4jx9")
+              }
+            >
+              <h3 className="text10">
+                Venue <LocationOnIcon />
+              </h3>
+              <div className="flex flex-col ">
+                <p className="text-white font-bold pt-[2vh] text-[0.85vw]">
+                  SRM Valliammai Engineering College,
+                </p>
+                <p className="text-white  text-[0.8vw] ">
+                  National Highway 45, Potheri, SRM Nagar, Kattankulathur, Tamil
+                  Nadu - 603203
+                </p>
                 <div className="round"></div>
               </div>
             </div>
@@ -210,10 +254,24 @@ const hero = () => {
             <div className="col5 "></div>
             {/* -------------------------- Column 6  ---------------------------------- */}
             <div className="col6 animated-div">
-              <h3 className="text13">Admin Block</h3>
-              <div className="flex items-center justify-between">
-                <p className="text14">09.09.2023</p>
-                <p className="text15">3:50 PM</p>
+              <h3 className="text13">
+                Organized By
+                <div className="flex justify-center items-center gap-1">
+                  <img
+                    src="/images/csi.jpeg"
+                    width="40vw"
+                    height="5vh"
+                    style={{
+                      borderRadius: "50%",
+                      marginBottom: "0.5vh",
+                    }}
+                  />
+                  <img src="/images/whitehatians.png" alt="" width="44vw" />
+                </div>
+              </h3>
+              <div className="flex items-start justify-between flex-col">
+                <p className="text14">SRMVEC CSI Student Branch </p>
+                <p className="text15">Whitehatians Cyber Club - VEC</p>
                 <div className="round2"></div>
               </div>
             </div>
@@ -228,7 +286,7 @@ const hero = () => {
       <Schedule />
       <div className="bg-sep"></div>
       <Sponsors />
-      <Contact />
+      <Footer />
     </React.Fragment>
   );
 };

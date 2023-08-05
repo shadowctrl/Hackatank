@@ -1,8 +1,10 @@
 .parent_hero {
-  padding: 3vw;
-  padding-left: 5vw;
-  padding-top: 5vh;
+  padding-right: 1vw;
+  padding-left: 6vw;
+  padding-top: 3vh;
   position: relative;
+  isolation: isolate;
+  /* background-color: #537895; */
 }
 .parent_hero::after {
   content: "";
@@ -10,7 +12,6 @@
   z-index: -1;
   inset: 0;
   opacity: 0.2;
-
   background-image: url("/images/topography.svg");
 }
 
@@ -19,39 +20,90 @@
   right: 1.5vw;
   top: 7.5vh;
   border-right: 0.5vw solid black;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .parent_hero .column {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  /* background-color: yellow; */
+  /* gap: 4vw; */
 }
 .parent_hero .column .left_side {
+  padding-top: 2vh;
+  /* background-color: red; */
 }
-.parent_hero .title {
+.parent_hero .title1 {
   position: relative;
-  font-size: 5vw;
+  font-size: 5.5vw;
+  /* margin-left: 2vw; */
+  margin-top: 2vh;
+  text-transform: uppercase;
   font-weight: 600;
   line-height: 110%;
+  /* letter-spacing: 3px; */
+  /* font-family: falzon; */
+  font-family: rowdies;
 }
-.parent_hero .tag {
-  display: flex;
-  color: slategrey;
-  border: 1px solid grey;
+
+.title1::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -24.5vw;
+  top: -28vh;
+  bottom: 0;
+  right: 0;
+  scale: 0.45;
+  background-size: contain;
+  transform: rotate(-23deg);
+  background-repeat: no-repeat;
+  background-image: url("/images/curve.png");
+}
+.curve {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: -30vh;
+  bottom: 0;
+  right: 0.5vw;
+  scale: 0.19;
+  background-size: contain;
+  transform: rotate(-40deg) scaleX(-1);
+  background-repeat: no-repeat;
+  background-image: url("/images/curve.png");
+}
+.tag1 {
+  position: absolute;
   font-size: 1vw;
+  top: 8.5vh;
+  left: 3.5vw;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: suggested;
+}
+
+.parent_hero .tag {
+  position: relative;
+  font-family: poppins;
+  font-weight: 500;
+  display: flex;
+  color: black;
+  border: 1px solid grey;
+  font-size: 1.1vw;
   padding: 0vh 0.4vw;
-  margin-left: 3vw;
   width: fit-content;
   border-radius: 1vw;
   margin-bottom: 2vh;
 }
+
 .br {
   display: block;
   margin-bottom: 0em;
 }
-.parent_hero .title .hackathon {
+.parent_hero .title1 .hackathon {
   position: relative;
 }
-.parent_hero .title .hackathon::after {
+.parent_hero .title1 .hackathon::after {
   content: "";
   z-index: -1;
   position: absolute;
@@ -68,15 +120,17 @@
   }
 }
 
-.parent_hero .title .description {
-  margin-top: 8vh;
+.parent_hero .title1 .description {
+  margin-top: 10vh;
   font-size: 1vw;
   font-weight: 100;
   font-family: "arial";
   line-height: normal;
+  text-transform: none;
+  letter-spacing: 0px;
 }
 
-.parent_hero .title .description span {
+.parent_hero .title1 .description span {
   font-weight: 700;
 }
 
@@ -145,9 +199,12 @@
 }
 
 .right_side {
+  /* background-color: blue; */
   display: grid;
+  flex-basis: 42%;
   grid-template-columns: 1fr 1fr;
   gap: 0.5vh 1vw;
+  margin-top: -5vh;
 }
 .animated-div {
   animation: slide 0.8s ease-in-out forwards;
@@ -242,7 +299,7 @@
 
 .right_side .col1 .text2 {
   color: white;
-  padding-top: 10vh;
+  margin-top: 10vh;
   font-size: 1.2vw;
   display: flex;
   align-items: center;
@@ -253,7 +310,7 @@
 
 .right_side .col1 .text3 {
   color: white;
-  padding-top: 3vh;
+  margin-top: 3vh;
   font-size: 1.2vw;
   display: flex;
   align-items: center;
@@ -304,7 +361,7 @@
 
 .right_side .col2 .text5 {
   color: white;
-  padding-top: 10vh;
+  margin-top: 10vh;
   font-size: 1.2vw;
   display: flex;
   align-items: center;
@@ -314,7 +371,7 @@
 }
 
 .right_side .col2 .text6 {
-  padding-top: 3vh;
+  margin-top: 3vh;
   font-size: 1.2vw;
   display: flex;
   align-items: center;
@@ -362,16 +419,16 @@
 }
 .right_side .col3 .text7 {
   color: purple;
-  font-family: poppins;
+  text-transform: uppercase;
+  font-family: exo;
   font-weight: 900;
   text-align: center;
   font-size: 1.6vw;
-  font-family: blanka;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 .right_side .col3 .text8 {
-  padding-top: 5vh;
+  margin-top: 5vh;
   border-bottom: 3px dotted black;
   color: black;
   font-size: 1.2vw;
@@ -383,7 +440,7 @@
 }
 .right_side .col3 .text9 {
   cursor: pointer;
-  padding-top: 3vh;
+  margin-top: 3vh;
   padding-bottom: 1vh;
   color: black;
   border-bottom: 3px dotted black;
@@ -407,6 +464,7 @@
   isolation: isolate;
   overflow: hidden;
   transition: all 0.1s linear;
+  cursor: pointer;
 }
 
 .right_side .col4::after {
@@ -421,19 +479,25 @@
 .text13 {
   color: white;
   font-weight: 600;
-  font-size: 1.3vw;
+  font-size: 1.1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px dotted white;
 }
+
 .right_side .col4 .text11,
 .text14 {
-  font-family: technology;
-  letter-spacing: 2px;
-  font-size: 1.2vw;
-  padding-top: 5vh;
+  font-family: zeniq;
+  font-size: 0.92vw;
+  padding-top: 2vh;
   color: white;
 }
 .right_side .col4 .text12,
 .text15 {
-  padding-top: 5vh;
+  padding-top: 0.7vh;
+  font-family: zeniq;
+  font-size: 0.9vw;
   color: white;
 }
 
@@ -449,60 +513,6 @@
   background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
   isolation: isolate;
   transition: all 0.1s linear;
-}
-
-.right_side .col6::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  border-left: 0.2vw dotted white;
-  left: 60%;
-  top: -8vh;
-  height: 0vh;
-  animation: vline 3s 0.5s ease-in-out forwards;
-}
-@keyframes vline {
-  100% {
-    height: 15vh;
-  }
-}
-.round {
-  position: absolute;
-  left: 57.35%;
-  top: 50%;
-  /* background-color: black; */
-  border: 2px solid white;
-  padding: 0.5vw;
-  border-radius: 100%;
-  opacity: 0;
-  animation: roundOpac 0.3s 0.3s ease-in forwards;
-}
-@keyframes roundOpac {
-  100% {
-    opacity: 1;
-  }
-}
-
-.round2 {
-  position: absolute;
-  left: 57.4%;
-  top: 40%;
-  /* background-color: black; */
-  border: 2px solid white;
-  padding: 0.5vw;
-  border-radius: 100%;
-  opacity: 0;
-  animation: roundOpac1 3s ease-in-out forwards;
-}
-
-@keyframes roundOpac1 {
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .countdown-main {
