@@ -20,7 +20,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="*" element={<Error />} />
+        <Route
+          path="*"
+          element={
+            <div className="bg-error">
+              <Navbar /> <Error />
+            </div>
+          }
+        />
         <Route
           path="/"
           element={
