@@ -50,8 +50,8 @@
   width: 100%;
 }
 .contact-container {
-  height: 65vh;
-  width: 20vw;
+  height: 60vh;
+  width: 19vw;
   perspective: 45vw;
 }
 .contact-card,
