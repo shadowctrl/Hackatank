@@ -2,6 +2,8 @@ import React from "react";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import "./sponsors.css";
 import Contact from "./contact";
+import Faqs from "../faqs";
+
 const sponsors = () => {
   return (
     <React.Fragment>
@@ -31,6 +33,7 @@ const sponsors = () => {
             </div>
           </div>
         </div>
+        <Faqs />
         <Contact />
       </div>
     </React.Fragment>
