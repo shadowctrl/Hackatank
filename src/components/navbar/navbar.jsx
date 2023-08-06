@@ -68,7 +68,10 @@ const Navbar = () => {
             <p onClick={() => handleScroll("#schedule")}>Schedule</p>
           </li>
           <li>
-            <p onClick={() => handleScroll("#contact")}>contact</p>
+            <p onClick={() => handleScroll("#faqs")}>FAQs</p>
+          </li>
+          <li>
+            <p onClick={() => handleScroll("#contact")}>Contact</p>
           </li>
         </ul>
         <div className="last">
