@@ -184,7 +184,10 @@ const hero = () => {
                   }}
                 />
               </h3>
-              <p className="text5">
+              <p
+                className="text5"
+                onClick={() => window.open("/about", "_self")}
+              >
                 About
                 <KeyboardArrowRightIcon
                   style={{
@@ -192,7 +195,10 @@ const hero = () => {
                   }}
                 />
               </p>
-              <p className="text6">
+              <p
+                className="text6"
+                onClick={() => window.open("/judges", "_self")}
+              >
                 Judge Panel
                 <KeyboardArrowRightIcon
                   style={{
