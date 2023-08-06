@@ -9,8 +9,8 @@ const schedule = () => {
           <img src="/images/logo3.png" alt="" />
           Schedule
         </div>
-        <div className="timeline">
-          <div className="container ">
+        <div className="timeline" id="timeline">
+          <div className="container" id="timeline-container">
             <h2 className="date">Aug 5</h2>
             <h2 className="container-title">Registration opens</h2>
             <p className="container-description">
