@@ -37,6 +37,7 @@
   background-color: rgb(0, 0, 0, 0.3);
   backdrop-filter: blur(1vw);
   font-family: lato;
+  font-weight: 400;
   box-shadow: 0vw 0vw 2vw 0vw white;
 }
 
