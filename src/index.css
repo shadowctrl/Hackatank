@@ -103,6 +103,14 @@
   font-family: suggested;
   src: url(/fonts/suggested.ttf);
 }
+@font-face {
+  font-family: liger;
+  src: url(/fonts/liger.ttf);
+}
+@font-face {
+  font-family: freedom45;
+  src: url(/fonts/freedom45.ttf);
+}
 html,
 body {
   overflow-x: hidden;
