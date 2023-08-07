@@ -256,7 +256,7 @@ const contact = () => {
                             height: "35px",
                           }}
                         />
-                        shadowctrl@shadowctrl.me
+                        admin@shadowctrl.me
                         <span id="contact-card-launch12">
                           <RocketLaunchIcon
                             className="rocketLaunch"
