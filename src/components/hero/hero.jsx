@@ -7,7 +7,6 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import VanillaTilt from "vanilla-tilt";
 import Section2 from "./section2";
-import About from "./about";
 import Schedule from "./schedule";
 import Sponsors from "./sponsors";
 import { Footer } from "../";
@@ -89,13 +88,13 @@ const hero = () => {
             <div className="curve"></div>
 
             <div className="title1">
-              {"Hack - A - Tank"}
+              <span className="hackathon"> {"Hack - A - Tank"}</span>
               <br />
-              <p className="tag1"> A National Level 24 Hour Hackathon</p>
+              {/* <p className="tag1"> A National Level 24 Hour Hackathon</p> */}
               {/* <span className="hackathon">Hackathon</span> */}
               <p className="description">
-                National <span> coding competition</span> showcasing innovative
-                solutions
+                National <span> Level competition</span> 24 hour Hackathon
+                showcasing innovative solutions
                 <br /> and tech talents from across the country
               </p>
             </div>
@@ -286,8 +285,6 @@ const hero = () => {
         {/* -------------------------- Page 2 -------------------------- */}
       </div>
       <Section2 />
-      <div className="bg-sep"></div>
-      <About />
       <div className="bg-sep"></div>
       <Schedule />
       <div className="bg-sep"></div>

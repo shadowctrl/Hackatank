@@ -34,18 +34,15 @@
 }
 .parent_hero .title1 {
   position: relative;
-  font-size: 5.5vw;
-  /* margin-left: 2vw; */
-  margin-top: 2vh;
+  font-size: 4.5vw;
   text-transform: uppercase;
   font-weight: 600;
   line-height: 110%;
-  /* letter-spacing: 3px; */
-  /* font-family: falzon; */
-  font-family: rowdies;
+  font-family: liger;
+  margin-top: 2vh;
 }
 
-.title1::after {
+/* .title1::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -71,12 +68,12 @@
   transform: rotate(-40deg) scaleX(-1);
   background-repeat: no-repeat;
   background-image: url("/images/curve.png");
-}
+} */
 .tag1 {
   position: absolute;
   font-size: 1vw;
-  top: 8.5vh;
-  left: 3.5vw;
+  top: 7vh;
+  left: 0vw;
   font-weight: 500;
   letter-spacing: 1px;
   font-family: suggested;
@@ -102,15 +99,16 @@
 }
 .parent_hero .title1 .hackathon {
   position: relative;
+  font-family: freedom45;
 }
 .parent_hero .title1 .hackathon::after {
   content: "";
   z-index: -1;
   position: absolute;
-  height: 4.5vh;
+  height: 5vh;
   width: 0;
   left: 0;
-  bottom: 2vh;
+  bottom: 1vh;
   background: rgb(243, 158, 172, 0.7);
   animation: line 1s ease-in-out forwards;
 }
@@ -121,7 +119,7 @@
 }
 
 .parent_hero .title1 .description {
-  margin-top: 10vh;
+  margin-top: 3vh;
   font-size: 1vw;
   font-weight: 100;
   font-family: "arial";
@@ -137,7 +135,7 @@
 .register_now {
   margin-top: 5vh;
   position: relative;
-  padding: 0.5vh 1vw;
+  padding: 0vh 0.5vw;
   background-color: black;
   border-radius: 2vw;
   cursor: pointer;
@@ -145,18 +143,17 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 22vw;
+  width: 18vw;
   height: fit-content;
   transition: all 0.3s ease-in-out;
 }
 .register_now:hover {
-  width: 23vw;
+  width: 19vw;
 }
 .register_now a {
   text-decoration: none;
-  font-size: 1.4vw;
+  font-size: 1.1vw;
   letter-spacing: -5px;
-  font-weight: 900;
   color: white;
   font-family: mars;
   font-weight: bold;
