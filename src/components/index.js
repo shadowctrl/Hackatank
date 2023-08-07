@@ -1,4 +1,3 @@
-export { default as Aboutus } from "./aboutus/aboutus.jsx";
 export { default as Events } from "./events/events.jsx";
 export { default as Footer } from "./footer/footer.jsx";
 export { default as Guildelines } from "./guidelines/guildelines.jsx";
@@ -7,3 +6,4 @@ export { default as Hardware } from "./projects/hardware.jsx";
 export { default as Software } from "./projects/software.jsx";
 export { default as Judges } from "./judges/judges.jsx";
 export { default as Navbar } from "./navbar/navbar.jsx";
+export { default as About } from "./about/about.jsx";
