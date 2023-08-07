@@ -1,0 +1,267 @@
+.bg-about {
+  position: absolute;
+  isolation: isolate;
+}
+.parent-about {
+  position: relative;
+  padding-top: 10vh;
+  padding-left: 3vw;
+  padding: 3vw;
+  position: 99;
+}
+.parent-about::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 0.1;
+  /* background-color: #6a5acd; */
+}
+.parent-about::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 0.1;
+  background-image: url("/images/jigsaw.svg");
+}
+
+.srmvec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5vh;
+  margin-right: -3vw;
+}
+.about-srmvec-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  font-family: russo one;
+  font-size: 3.5vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.about-srmvec-description {
+  width: 50%;
+  text-align: justify;
+  padding: 4vh 2vw;
+  border-top: 5px solid;
+  border-left: 5px solid;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(
+    to right top,
+    #bf00ff,
+    #d500ed,
+    #e400db,
+    #f000cb,
+    #f800bc,
+    #fb00b0,
+    #fc00a4,
+    #fd0099,
+    #fb008d,
+    #f80082,
+    #f40077,
+    #f0006d
+  );
+  border-image-slice: 1;
+  font-family: raleway;
+  font-size: 1.3vw;
+  font-weight: 600;
+  position: relative;
+  isolation: isolate;
+  background: rgb(0, 0, 0, 0.9);
+  color: white;
+  opacity: 0;
+}
+
+.about-srmvec-description::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url("/images/flurry.svg");
+  /* background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12'%3E%3Cpath d='M9.8 12 0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z' fill='%239C92AC' fill-opacity='.26' fill-rule='evenodd'/%3E%3C/svg%3E"); */
+}
+
+.csi {
+  margin-top: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-left: -3vw;
+  position: relative;
+  isolation: isolate;
+}
+.csi::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  /* background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12'%3E%3Cpath d='M9.8 12 0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z' fill='%239C92AC' fill-opacity='.26' fill-rule='evenodd'/%3E%3C/svg%3E"); */
+}
+.about-csi-title {
+  margin-right: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  font-family: russo one;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 3.5vw;
+  font-weight: 900;
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.about-csi-description {
+  width: 50%;
+  text-align: justify;
+  padding: 4vh 2vw;
+  border-top: 5px solid;
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(
+    to right top,
+    #bf00ff,
+    #d500ed,
+    #e400db,
+    #f000cb,
+    #f800bc,
+    #fb00b0,
+    #fc00a4,
+    #fd0099,
+    #fb008d,
+    #f80082,
+    #f40077,
+    #f0006d
+  );
+  border-image-slice: 1;
+  font-family: raleway;
+  font-size: 1.3vw;
+  font-weight: 600;
+  position: relative;
+  isolation: isolate;
+  background: rgb(0, 0, 0, 0.9);
+  color: white;
+  opacity: 0;
+}
+
+.about-csi-description::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url("/images/flurry.svg");
+}
+
+.whitehatians {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15vh;
+  margin-right: -3vw;
+}
+.about-whitehatians-title {
+  font-family: russo one;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 3.5vw;
+  font-weight: 900;
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.about-whitehatians-description {
+  width: 60%;
+  text-align: justify;
+  padding: 3vh 2vw;
+  border-top: 5px solid;
+  border-left: 5px solid;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(
+    to right top,
+    #bf00ff,
+    #d500ed,
+    #e400db,
+    #f000cb,
+    #f800bc,
+    #fb00b0,
+    #fc00a4,
+    #fd0099,
+    #fb008d,
+    #f80082,
+    #f40077,
+    #f0006d
+  );
+  border-image-slice: 1;
+  font-family: raleway;
+  font-size: 1.3vw;
+  font-weight: 600;
+  position: relative;
+  isolation: isolate;
+  background: rgb(0, 0, 0, 0.9);
+  color: white;
+  opacity: 0;
+}
+
+.about-whitehatians-description::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url("/images/flurry.svg");
+  /* background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12'%3E%3Cpath d='M9.8 12 0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z' fill='%239C92AC' fill-opacity='.26' fill-rule='evenodd'/%3E%3C/svg%3E"); */
+}
+
+.aboutScrollAnimateRight {
+  animation: aboutDes 0.3s linear forwards;
+}
+@keyframes aboutDes {
+  0% {
+    transform: translateX(50vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.aboutScrollAnimateLeft {
+  animation: aboutDes1 0.3s linear forwards;
+}
+@keyframes aboutDes1 {
+  0% {
+    transform: translateX(-50vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
