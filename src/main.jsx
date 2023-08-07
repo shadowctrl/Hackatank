@@ -13,7 +13,7 @@ import {
   Software,
   Hardware,
   Judges,
-  Aboutus,
+  About,
 } from "./components";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -80,7 +80,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           element={
             <div>
               <Navbar />
-              <Aboutus />
+              <About />
             </div>
           }
         />
