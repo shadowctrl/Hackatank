@@ -1,0 +1,91 @@
+.parent-error {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90%;
+}
+
+.title-error {
+  position: relative;
+  font-size: 10rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: sans-serif;
+
+  text-shadow: 0.05em 0 0 rgb(255, 0, 0.75),
+    -0.025em -0.05em 0 rgb(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgb(0, 0, 255, 0.75);
+  animation: glitch 0.7s infinite;
+}
+.title-error1 {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: sans-serif;
+
+  text-shadow: 0.05em 0 0 rgb(255, 0, 0.75),
+    -0.025em -0.05em 0 rgb(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgb(0, 0, 255, 0.75);
+  animation: glitch 0.7s infinite;
+}
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgb(255, 0, 0.75),
+      -0.025em -0.05em 0 rgb(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgb(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgb(255, 0, 0.75),
+      -0.025em -0.05em 0 rgb(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgb(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgb(255, 0, 0.75),
+      0.025em 0.025em 0 rgb(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgb(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgb(255, 0, 0.75),
+      0.025em 0.025em 0 rgb(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgb(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgb(255, 0, 0.75),
+      0.05em 0 0 rgb(0, 255, 0, 0.75), 0em -0.05em 0 rgb(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgb(255, 0, 0.75),
+      0.05em 0 0 rgb(0, 255, 0, 0.75), 0em -0.05em 0 rgb(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgb(255, 0, 0.75),
+      -0.025em -0.025em 0 rgb(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgb(0, 0, 255, 0.75);
+  }
+}
+
+.title-error span,
+.title-error1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: sans-serif;
+}
+
+.title-error span:first-child,
+.title-error1 span:first-child {
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  transform: translate(-0.05em, -0.0125em);
+  animation: glitch 0.4s infinite;
+}
+
+.title-error span:last-child,
+.title-error1 span:last-child {
+  animation: glitch 0.7s infinite;
+  clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+  transform: translate(0.055em, 0.0125em);
+}

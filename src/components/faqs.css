@@ -1,0 +1,94 @@
+.faqs-title {
+  font-size: 3.5vw;
+  font-family: "russo one";
+  letter-spacing: 2px;
+  font-weight: 900;
+  padding-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  position: relative;
+  padding-left: 10vw;
+  padding-top: 5.5vh;
+}
+
+.faqs-title::after {
+  content: "";
+  z-index: -1;
+  border-bottom: 4px solid #d500ed;
+  border-image: linear-gradient(
+    to right top,
+    #ffda00,
+    #ffaa17,
+    #ff7545,
+    #ff3c6f,
+    #ff0099,
+    #ed00ae,
+    #d100c4,
+    #aa0ada,
+    #9700e1,
+    #7f00e7,
+    #5e00ef,
+    #1b0cf6
+  );
+  border-image-slice: 1;
+  width: 35%;
+}
+.faqs-title img {
+  position: absolute;
+  top: 0vh;
+  left: 1vw;
+  z-index: -1;
+  width: 10vw;
+}
+
+.faqs-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10vw;
+  /* align-items: center; */
+  gap: 5vh;
+  width: 80%;
+  height: 100%;
+}
+
+.faqs-content {
+  border: 2px dotted black;
+  padding: 0.5vh 1vw;
+  border-radius: 0.5vw;
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2vh;
+  overflow-y: hidden;
+  position: relative;
+}
+.faqs-view {
+  height: 100%;
+}
+.faqs-content-title {
+  font-size: 1.6vw;
+  font-weight: 800;
+  font-family: Arial;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faqs-content-description {
+  padding: 0vh 0vw;
+  text-align: justify;
+  animation: faqsFade 0.3s ease-in forwards;
+}
+@keyframes faqsFade {
+  0% {
+    opacity: 0;
+    transform: translateY(5vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0vh);
+  }
+}

@@ -1,0 +1,96 @@
+.parent-events {
+  padding: 0vh 12vw;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  gap: 5vh;
+  color: white;
+}
+
+.events-progress-bar {
+  width: 100%;
+}
+#line {
+  position: relative;
+  margin-top: 2vh;
+  isolation: isolate;
+  height: 0.7vh;
+  border-radius: 1vw;
+  overflow: hidden;
+  left: 9vw;
+}
+#line-progress {
+  position: absolute;
+  z-index: 1;
+  width: 0.3%;
+  height: 0.7vh;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+#line::before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  background-color: slategrey;
+  opacity: 0.3;
+  width: 75%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.events-progress-bar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.events-progress-bar ul li {
+  cursor: pointer;
+  font-family: exo;
+  font-weight: 600;
+}
+.events-container {
+  display: flex;
+  justify-content: space-between;
+  border: 2px dotted purple;
+  padding: 1vh 1vw;
+  border-radius: 1vw;
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(0.8vw);
+}
+
+.section-content {
+  display: none;
+  color: white;
+}
+.section-format {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+}
+.section-format h1 {
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-family: audiowide;
+  letter-spacing: 2px;
+  color: yellow;
+}
+.active {
+  display: block;
+  animation: eventsFade 0.5s ease-in forwards;
+}
+@keyframes eventsFade {
+  0% {
+    opacity: 0;
+    transform: translateY(3vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
