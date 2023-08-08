@@ -17,7 +17,7 @@ const faqs = () => {
     <React.Fragment>
       <div id="faqs" className="parent-faqs">
         <h1 className="faqs-title">
-          <img src="/images/logo3.png" alt="" />
+          <img src="/images/logo3.webp" alt="" />
           FAQs
         </h1>
 
@@ -29,7 +29,7 @@ const faqs = () => {
                 id="a1"
                 onClick={() => handleArrow("f1", "a1")}
                 style={{
-                  fontSize: "2.8vw",
+                  fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
                 }}
@@ -47,7 +47,7 @@ const faqs = () => {
                 id="a2"
                 onClick={() => handleArrow("f2", "a2")}
                 style={{
-                  fontSize: "2.8vw",
+                  fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
                 }}
@@ -68,7 +68,7 @@ const faqs = () => {
                 id="a3"
                 onClick={() => handleArrow("f3", "a3")}
                 style={{
-                  fontSize: "2.8vw",
+                  fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
                 }}
@@ -90,7 +90,7 @@ const faqs = () => {
                 id="a4"
                 onClick={() => handleArrow("f4", "a4")}
                 style={{
-                  fontSize: "2.8vw",
+                  fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
                 }}
@@ -109,7 +109,7 @@ const faqs = () => {
                 id="a5"
                 onClick={() => handleArrow("f5", "a5")}
                 style={{
-                  fontSize: "2.8vw",
+                  fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
                 }}
@@ -135,7 +135,7 @@ const faqs = () => {
                 id="a6"
                 onClick={() => handleArrow("f6", "a6")}
                 style={{
-                  fontSize: "2.8vw",
+                  fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
                 }}
@@ -157,7 +157,7 @@ const faqs = () => {
                 id="a7"
                 onClick={() => handleArrow("f7", "a7")}
                 style={{
-                  fontSize: "2.8vw",
+                  fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
                 }}
@@ -176,7 +176,7 @@ const faqs = () => {
                 id="a8"
                 onClick={() => handleArrow("f8", "a8")}
                 style={{
-                  fontSize: "2.8vw",
+                  fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
                 }}
@@ -197,7 +197,7 @@ const faqs = () => {
                 id="a9"
                 onClick={() => handleArrow("f9", "a9")}
                 style={{
-                  fontSize: "2.8vw",
+                  fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
                 }}
@@ -217,7 +217,7 @@ const faqs = () => {
                 id="a10"
                 onClick={() => handleArrow("f10", "a10")}
                 style={{
-                  fontSize: "2.8vw",
+                  fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
                 }}
@@ -235,7 +235,7 @@ const faqs = () => {
                 id="a11"
                 onClick={() => handleArrow("f11", "a11")}
                 style={{
-                  fontSize: "2.8vw",
+                  fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
                 }}

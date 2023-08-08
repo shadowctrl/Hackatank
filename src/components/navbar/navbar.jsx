@@ -23,7 +23,7 @@ const Navbar = () => {
     <div className="parent">
       <div className="components">
         <div className="title" onClick={() => window.open("/", "_self")}>
-          <img src="/images/diamond.png" className="logo" />
+          <img src="/images/diamond.webp" className="logo" />
           Hackathon
           <div className="socials">
             <div className="insta">
@@ -62,7 +62,7 @@ const Navbar = () => {
             <p onClick={() => window.open("/", "_self")}>Home</p>
           </li>
           <li>
-            <p onClick={() => handleScroll("#about")}>About</p>
+            <p onClick={() => handleScroll("#agenda")}>Agenda</p>
           </li>
           <li>
             <p onClick={() => handleScroll("#schedule")}>Schedule</p>

@@ -141,7 +141,7 @@ body {
   position: relative;
   isolation: isolate;
   height: 100vh;
-  /* background-image: url("/images/development.png"); */
+  /* background-image: url("/images/development.webp"); */
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
 }
@@ -192,7 +192,7 @@ body {
   inset: 0;
   background-size: cover;
   opacity: 0.5;
-  background-image: url("/images/bg4.jpg");
+  background-image: url("/images/bg4.webp");
   animation: hue 5s linear infinite;
 }
 
@@ -220,7 +220,7 @@ body {
   background-size: cover;
   background-position: center;
   opacity: 0.7;
-  background-image: url("/images/bg6.jpg");
+  background-image: url("/images/bg6.webp");
 }
 .software-bg {
   position: relative;
@@ -236,7 +236,7 @@ body {
   background-size: 100%;
   /* background-position: center; */
   opacity: 0.7;
-  background-image: url("/images/bg9.png");
+  background-image: url("/images/bg9.webp");
 }
 
 .hardware-bg {
@@ -253,5 +253,5 @@ body {
   background-size: 100%;
   /* background-position: center; */
   opacity: 0.7;
-  background-image: url("/images/bg2.jpg");
+  background-image: url("/images/bg2.webp");
 }

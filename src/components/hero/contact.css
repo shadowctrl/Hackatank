@@ -50,7 +50,7 @@
   width: 100%;
 }
 .contact-container {
-  height: 60vh;
+  height: 53vh;
   width: 19vw;
   perspective: 45vw;
 }
@@ -59,7 +59,7 @@
   height: 100%;
   width: 100%;
   position: relative;
-  transition: all 1s linear; /* ----------------------- Flip Transition */
+  transition: all 0.5s linear; /* ----------------------- Flip Transition */
   transform-style: preserve-3d;
 }
 .contact-card-flip {
@@ -79,7 +79,7 @@
 }
 
 .contact-card-front img {
-  /* background-image: url("/images/raghav.jpg"); */
+  /* background-image: url("/images/raghav.webp"); */
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
   /* overflow: hidden; */
@@ -142,7 +142,7 @@
   position: absolute;
   inset: 0;
   z-index: -2;
-  background-image: url("/images/shree.jpg");
+  background-image: url("/images/shree.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -168,7 +168,7 @@
   position: absolute;
   inset: 0;
   z-index: -2;
-  background-image: url("/images/raghav.jpg");
+  background-image: url("/images/raghav.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }

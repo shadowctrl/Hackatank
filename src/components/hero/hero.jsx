@@ -77,9 +77,9 @@ const hero = () => {
       <div className="parent_hero">
         {/* <div className="progress_bar"></div> */}
         <div className="flex items-end gap-2 relative z-[-1] pl-[0vw]">
-          <img src="/images/srm.png" alt="" width="40vw" />
+          <img src="/images/srm.webp" alt="" width="40vw" />
           <div className="tag">Celebrating 25 Years of SRMVEC</div>
-          <img src="/images/srmvec.png" alt="" width="60vw" />
+          <img src="/images/srmvec.webp" alt="" width="60vw" />
         </div>
 
         {/* ----------------------- Page 1 ------------------------- */}
@@ -245,13 +245,13 @@ const hero = () => {
                 Venue <LocationOnIcon />
               </h3>
               <div className="flex flex-col ">
-                <p className="text-white font-bold pt-[2vh] text-[0.85vw]">
-                  SRM Valliammai Engineering College,
+                <p className="text-white  pt-[2vh] text-[1vw]">
+                  SRM Valliammai Engineering College
                 </p>
-                <p className="text-white  text-[0.8vw] ">
+                {/* <p className="text-white  text-[0.8vw] ">
                   National Highway 45, Potheri, SRM Nagar, Kattankulathur, Tamil
                   Nadu - 603203
-                </p>
+                </p> */}
                 <div className="round"></div>
               </div>
             </div>
@@ -262,16 +262,15 @@ const hero = () => {
               <h3 className="text13">
                 Organized By
                 <div className="flex justify-center items-center gap-1">
-                  <img
-                    src="/images/csi.jpeg"
-                    width="40vw"
-                    height="5vh"
+                  {/* <img
+                    src="/images/csi.webp"
+                    width="37.5vw"
                     style={{
                       borderRadius: "50%",
                       marginBottom: "0.5vh",
                     }}
                   />
-                  <img src="/images/whitehatians.png" alt="" width="44vw" />
+                  <img src="/images/whitehatians.webp" alt="" width="44vw" /> */}
                 </div>
               </h3>
               <div className="flex items-start justify-between flex-col">

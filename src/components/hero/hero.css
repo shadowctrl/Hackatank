@@ -39,7 +39,7 @@
   font-weight: 600;
   line-height: 110%;
   font-family: liger;
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 /* .title1::after {
@@ -54,7 +54,7 @@
   background-size: contain;
   transform: rotate(-23deg);
   background-repeat: no-repeat;
-  background-image: url("/images/curve.png");
+  background-image: url("/images/curve.webp");
 }
 .curve {
   position: absolute;
@@ -67,7 +67,7 @@
   background-size: contain;
   transform: rotate(-40deg) scaleX(-1);
   background-repeat: no-repeat;
-  background-image: url("/images/curve.png");
+  background-image: url("/images/curve.webp");
 } */
 .tag1 {
   position: absolute;
@@ -120,7 +120,7 @@
 }
 
 .parent_hero .title1 .description {
-  margin-top: 5vh;
+  margin-top: 8vh;
   font-size: 1vw;
   font-weight: 100;
   font-family: "arial";
@@ -202,7 +202,7 @@
   flex-basis: 42%;
   grid-template-columns: 1fr 1fr;
   gap: 0.5vh 1vw;
-  margin-top: -5vh;
+  margin-top: -2vh;
 }
 .animated-div {
   animation: slide 0.8s ease-in-out forwards;
@@ -242,7 +242,7 @@
   border-radius: 1vw;
   background-color: #4d4855;
   background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
-  background-image: url("/images/planet2.jpg");
+  background-image: url("/images/planet2.webp");
   isolation: isolate;
   transition: all 0.1s linear;
   /* overflow: hidden; */
@@ -327,7 +327,7 @@
   border-radius: 1vw;
   background-color: #4d4855;
   background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
-  background-image: url("/images/light.jpg");
+  background-image: url("/images/light.webp");
   isolation: isolate;
   overflow: hidden;
   transition: all 0.1s linear;
@@ -386,7 +386,7 @@
   background-repeat: no-repeat;
   border-radius: 1vw;
   background-color: #4d4855;
-  background-image: url("/images/motherboard.jpg");
+  background-image: url("/images/motherboard.webp");
   isolation: isolate;
   overflow: hidden;
   border: 0.2vw solid black;
@@ -477,7 +477,7 @@
 .text13 {
   color: white;
   font-weight: 600;
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -500,7 +500,7 @@
 }
 
 .right_side .col6 {
-  margin-top: -25vh;
+  margin-top: -26vh;
   position: relative;
   height: fit-content;
   padding: 1vw;
@@ -514,7 +514,7 @@
 }
 
 .countdown-main {
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 .countdown-text {
@@ -537,7 +537,7 @@
   /* background-color: rgb(128, 0, 128, 0.7); */
   /* background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%); */
   /* background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%); */
-  background-image: url("/images/purple4.avif");
+  background-image: url("/images/purple4.webp");
   /* background-image: black; */
   width: fit-content;
   background-repeat: no-repeat;

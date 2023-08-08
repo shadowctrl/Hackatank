@@ -76,6 +76,10 @@
   top: 1vh;
   left: 50%;
   border-left: 2px solid slateblue;
+  height: 0vh;
+}
+
+.timelineAnimation::after {
   animation: timelineLine 5s linear forwards;
 }
 @keyframes timelineLine {
@@ -102,8 +106,11 @@
   border-radius: 1vw;
   box-shadow: 1vw 1vw 1vw 0vw black;
   margin-bottom: 3vh;
-  animation: timelineFade 0.5s linear forwards;
   opacity: 0;
+}
+
+.timelineAnimationContainer {
+  animation: timelineFade 0.5s linear forwards;
 }
 @keyframes timelineFade {
   0% {

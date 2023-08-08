@@ -206,7 +206,7 @@
   z-index: -1;
   background-size: cover;
   background-position: center;
-  background-image: url("/images/bg11.jpg");
+  background-image: url("/images/bg11.webp");
   /* background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12'%3E%3Cpath d='M9.8 12 0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z' fill='%239C92AC' fill-opacity='.26' fill-rule='evenodd'/%3E%3C/svg%3E"); */
 }
 
@@ -286,7 +286,7 @@
   z-index: -1;
   background-size: cover;
   background-position: center;
-  background-image: url("/images/bg11.jpg");
+  background-image: url("/images/bg11.webp");
 }
 
 .agendaScrollAnimateRight {

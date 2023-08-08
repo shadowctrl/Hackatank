@@ -1,12 +1,33 @@
 import "./schedule.css";
-import React from "react";
+import React, { useEffect } from "react";
 
 const schedule = () => {
+  useEffect(() => {
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("timelineAnimation");
+          document
+            .querySelectorAll(".container")
+            .forEach((container) =>
+              container.classList.add("timelineAnimationContainer")
+            );
+        }
+      });
+    };
+
+    const options = {
+      threshold: 0,
+    };
+    const observer = new IntersectionObserver(callback, options);
+    const divs = document.querySelectorAll("#timeline");
+    divs.forEach((div) => observer.observe(div));
+  });
   return (
     <React.Fragment>
       <div id="schedule" className="parent-schedule">
         <div className="schedule-title">
-          <img src="/images/logo3.png" alt="" />
+          <img src="/images/logo3.webp" alt="" />
           Schedule
         </div>
         <div className="timeline" id="timeline">

@@ -27,7 +27,7 @@ const about = () => {
       <div id="about" className="parent-about">
         <div className="srmvec">
           <div className="about-srmvec-title " id="about-left">
-            <img src="/images/srmvec.png" alt="" width={"130vw"} />
+            <img src="/images/srmvec.webp" alt="" width={"130vw"} />
             About Srmvec
           </div>
           <div className="about-srmvec-description" id="about-right">
@@ -41,7 +41,7 @@ const about = () => {
         </div>
         <div className="csi">
           <div className="about-csi-title" id="about-right">
-            <img src="/images/csi.png" alt="" width={"130vw"} />
+            <img src="/images/csi1.webp" alt="" width={"130vw"} />
             About csi
           </div>
           <div className="about-csi-description" id="about-left">
@@ -56,7 +56,7 @@ const about = () => {
         </div>
         <div className="whitehatians">
           <div className="about-whitehatians-title" id="about-left">
-            <img src="/images/whitehatians.png" alt="" width={"130vw"} />
+            <img src="/images/whitehatians.webp" alt="" width={"130vw"} />
             About whitehatians
           </div>
           <div className="about-whitehatians-description" id="about-right">
