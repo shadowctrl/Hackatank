@@ -6,7 +6,7 @@ import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import VanillaTilt from "vanilla-tilt";
-import Section2 from "./section2";
+import Agenda from "./agenda";
 import Schedule from "./schedule";
 import Sponsors from "./sponsors";
 import { Footer } from "../";
@@ -294,7 +294,7 @@ const hero = () => {
         </section>
         {/* -------------------------- Page 2 -------------------------- */}
       </div>
-      <Section2 />
+      <Agenda />
       <div className="bg-sep"></div>
       <Schedule />
       <div className="bg-sep"></div>
