@@ -3,8 +3,10 @@
   color: white;
   padding: 1vh 1vw 1vh 1vw;
   position: sticky;
-
   z-index: 99;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: none;
+  }
 }
 .parent .title {
   display: flex;
@@ -93,6 +95,9 @@
   background-color: black;
   padding: 0.3vw;
   border-radius: 1vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: none;
+  }
 }
 .components ul {
   position: relative;
@@ -154,4 +159,91 @@
 .register a {
   text-decoration: none;
   color: white;
+}
+
+.parent-navbar-mobile {
+  margin: 0.5vh 1vw;
+  position: relative;
+  padding: 0.5vh 1vw;
+  font-family: Oswald;
+  color: white;
+  background-color: black;
+  border-radius: 3vw;
+  transition: all 0.3s linear;
+  height: 6vh;
+  @media all and (min-width: 1024px) {
+    display: none;
+  }
+}
+.components-mobile {
+  position: inherit;
+  padding: 0vh 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+  transition: all 0.3s linear;
+}
+.navbar-menu-mobile {
+  width: 5.5vw;
+}
+.title-mobile {
+  display: flex;
+  gap: 1vw;
+  align-items: flex-end;
+  font-family: mars;
+  font-weight: bold;
+  font-size: 4vw;
+}
+.navbar-open-mobile {
+  height: 10vh;
+}
+.navbar-open {
+  transition: all 0.3s linear;
+}
+.navbar-open ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5vh 0vw;
+}
+.navbar-open ul li p {
+  font-family: poppins;
+  font-weight: 500;
+  font-size: 3.5vw;
+  animation: fadeNav 0.5s ease-in-out forwards;
+}
+@keyframes fadeNav {
+  0% {
+    transform: translateY(-2vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.navbar-open ul li p::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(190, 52, 176);
+}
+.navbar-open ul li p:hover {
+  scale: 1.1;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-open ul li p:hover::after {
+  animation: line 0.3s ease-in-out forwards;
+}
+.register-mobile {
+  position: relative;
+  font-family: poppins;
+  font-size: 4vw;
+  padding: 0vh 1vw;
+  border: 2px solid slategray;
+  border-radius: 1vw;
 }
