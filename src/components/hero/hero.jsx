@@ -76,10 +76,20 @@ const hero = () => {
     <React.Fragment>
       <div className="parent_hero">
         {/* <div className="progress_bar"></div> */}
-        <div className="flex items-end gap-2 relative z-[-1] pl-[0vw]">
-          <img src="/images/srm.webp" alt="" width="40vw" />
+        <div className="flex items-end gap-2 relative z-[-1] pl-[0vw] tag-hero-mobile">
+          <img
+            src="/images/srm.webp"
+            alt=""
+            width="40vw"
+            className="hero-srm-logo"
+          />
           <div className="tag">Celebrating 25 Years of SRMVEC</div>
-          <img src="/images/srmvec.webp" alt="" width="60vw" />
+          <img
+            src="/images/srmvec.webp"
+            alt=""
+            width="60vw"
+            className="hero-srmvec-logo"
+          />
         </div>
 
         {/* ----------------------- Page 1 ------------------------- */}
@@ -98,6 +108,7 @@ const hero = () => {
                 <br /> and tech talents from across the country
               </p>
             </div>
+
             <div
               className="register_now"
               onClick={() => window.open("https://forms.gle/mqHSf1kpoTUiMURH6")}
@@ -245,7 +256,7 @@ const hero = () => {
                 Venue <LocationOnIcon />
               </h3>
               <div className="flex flex-col ">
-                <p className="text-white  pt-[2vh] text-[1vw]">
+                <p className="text-white pt-[2vh] text-[1vw] venue-text-mobile">
                   SRM Valliammai Engineering College
                 </p>
                 {/* <p className="text-white  text-[0.8vw] ">
