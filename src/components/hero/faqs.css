@@ -3,13 +3,19 @@
   font-family: "russo one";
   letter-spacing: 2px;
   font-weight: 900;
-  padding-bottom: 5vh;
   display: flex;
   align-items: center;
   gap: 2vw;
   position: relative;
   padding-left: 10vw;
   padding-top: 5.5vh;
+  padding-bottom: 5vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 10vw;
+    padding-left: 15vw;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+  }
 }
 
 .faqs-title::after {
@@ -32,7 +38,7 @@
     #1b0cf6
   );
   border-image-slice: 1;
-  width: 35%;
+  width: 50vw;
 }
 .faqs-title img {
   position: absolute;
@@ -40,16 +46,25 @@
   left: 1vw;
   z-index: -1;
   width: 10vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 25vw;
+    left: -5vw;
+    top: 0.5vh;
+  }
 }
 
 .faqs-section {
   display: flex;
   flex-direction: column;
   margin-left: 10vw;
-  /* align-items: center; */
   gap: 5vh;
   width: 80%;
   height: 100%;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 100%;
+    margin: 0;
+    gap: 3vh;
+  }
 }
 
 .faqs-content {
@@ -63,6 +78,9 @@
   gap: 2vh;
   overflow-y: hidden;
   position: relative;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    height: 5vh;
+  }
 }
 .faqs-view {
   height: 100%;
@@ -75,6 +93,9 @@
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+  }
 }
 
 .faqs-content-description {

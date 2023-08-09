@@ -79,10 +79,6 @@
 }
 
 .contact-card-front img {
-  /* background-image: url("/images/raghav.webp"); */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
-  /* overflow: hidden; */
   object-fit: cover;
   height: 100%;
   width: 100%;
