@@ -4,7 +4,7 @@
   padding: 1vh 1vw 1vh 1vw;
   position: sticky;
   z-index: 99;
-  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  @media all and (max-width: 767px) and (max-height: 1024px) and (orientation: portrait) {
     display: none;
   }
 }
@@ -95,9 +95,6 @@
   background-color: black;
   padding: 0.3vw;
   border-radius: 1vw;
-  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    display: none;
-  }
 }
 .components ul {
   position: relative;
@@ -171,7 +168,7 @@
   border-radius: 3vw;
   transition: all 0.3s linear;
   height: 6vh;
-  @media all and (min-width: 1024px) {
+  @media all and (min-width: 768px) {
     display: none;
   }
 }
