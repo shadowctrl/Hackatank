@@ -5,6 +5,9 @@
   flex-direction: column;
   overflow-y: hidden;
   /* align-items: center; */
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: none;
+  }
 }
 .parent-schedule::before {
   content: " ";
@@ -87,10 +90,10 @@
     height: 0vh;
   }
   100% {
-    height: 209vh;
+    height: 100%;
   }
 }
-.timeline .container {
+.container {
   background-color: white;
   position: relative;
   display: flex;
@@ -123,29 +126,29 @@
   }
 }
 
-.container:nth-child(1) {
+.container:nth-child(1),
+.container-mobile:nth-child(1) {
   animation-delay: 0s;
 }
-.container:nth-child(2) {
+.container:nth-child(2),
+.container-mobile:nth-child(2) {
   animation-delay: 1s;
 }
-.container:nth-child(3) {
+.container:nth-child(3),
+.container-mobile:nth-child(3) {
   animation-delay: 2s;
 }
-.container:nth-child(4) {
+.container:nth-child(4),
+.container-mobile:nth-child(4) {
   animation-delay: 3s;
 }
-.container:nth-child(5) {
+.container:nth-child(5),
+.container-mobile:nth-child(5) {
   animation-delay: 4s;
 }
-.container:nth-child(6) {
+.container:nth-child(6),
+.container-mobile:nth-child(6) {
   animation-delay: 5s;
-}
-.timeline div:nth-child(even) {
-  left: 43.2vw;
-}
-.timeline div:nth-child(odd) {
-  left: 0.2vw;
 }
 
 .container .date {
@@ -165,7 +168,7 @@
   );
 }
 
-.container .container-title {
+.container-title {
   text-align: center;
   position: relative;
   padding: 0.5vh 1vw;
@@ -193,7 +196,7 @@
   );
 }
 
-.timeline .container .container-description {
+.container-description {
   text-align: justify;
   font-size: 1.1vw;
 }
@@ -225,4 +228,143 @@
 .timeline div:nth-child(even) .circle {
   left: 0;
   transform: translateX(-4.7vw);
+}
+
+.parent-schedule-mobile {
+  position: relative;
+  padding: 5vh 0vw;
+  @media all and (min-width: 768px) {
+    display: none;
+  }
+}
+.schedule-title-mobile {
+  display: flex;
+  align-items: center;
+  font-size: 10vw;
+  font-family: "russo one";
+  font-weight: 800;
+  margin-left: 17vw;
+}
+
+.schedule-title-mobile::after {
+  content: "";
+  z-index: -1;
+  border-bottom: 4px solid #d500ed;
+  border-image: linear-gradient(
+    to right top,
+    #ffda00,
+    #ffaa17,
+    #ff7545,
+    #ff3c6f,
+    #ff0099,
+    #ed00ae,
+    #d100c4,
+    #aa0ada,
+    #9700e1,
+    #7f00e7,
+    #5e00ef,
+    #1b0cf6
+  );
+  border-image-slice: 1;
+  width: 30vw;
+  margin-left: 2vw;
+}
+
+.schedule-title-mobile img {
+  position: absolute;
+  width: 25vw;
+  left: 0;
+}
+.timeline-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+}
+.timeline-mobile::after {
+  content: " ";
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 5vw;
+  border-left: 2px solid slateblue;
+  height: 0vh;
+}
+
+.container-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 80%;
+  padding: 2vh 2vw;
+  border: 1px solid slateblue;
+  border-radius: 1vw;
+  box-shadow: 1vw 1vw 3vw 0vw black;
+  position: relative;
+  opacity: 0;
+}
+.container-mobile p {
+  position: relative;
+  padding-top: 2vh;
+  font-size: 3vw;
+  text-align: justify;
+}
+.date-mobile {
+  font-size: 5vw;
+  font-family: Audiowide;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(91, 14, 216, 0.767),
+    rgba(238, 12, 200, 0.747)
+  );
+}
+.container-title-mobile {
+  font-size: 3.5vw;
+  position: relative;
+  padding: 0.5vh 2vw;
+  font-family: Audiowide;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.container-title-mobile::after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-radius: 2vw;
+  background-image: linear-gradient(
+    to right,
+    rgba(91, 14, 216, 0.767),
+    rgba(238, 12, 200, 0.747)
+  );
+}
+
+.circle-mobile {
+  position: absolute;
+  background-color: rgb(220, 0, 240, 0.4);
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  left: -8vw;
+  top: 0;
+}
+
+.circle-mobile::after {
+  content: " ";
+  padding: 1.5vw;
+  background-color: rgb(106, 6, 236);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
