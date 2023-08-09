@@ -11,9 +11,23 @@
   opacity: 0.2;
   background-image: url("/images/topography.svg");
 }
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .section2::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity: 0.1;
+    background-image: url("/images/topography.svg");
+  }
+}
 .agenda {
   position: relative;
   padding: 3vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 0vh 1vw;
+    padding-top: 5vh;
+  }
 }
 .agenda::after {
   content: "";
@@ -43,6 +57,10 @@
   align-items: center;
   gap: 2vw;
   position: relative;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 10vw;
+    margin-left: 17vw;
+  }
 }
 
 .title-name::after {
@@ -72,6 +90,10 @@
   position: absolute;
   z-index: -1;
   width: 10vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 25vw;
+    left: 0;
+  }
 }
 
 .agenda-text {
@@ -79,9 +101,16 @@
   align-items: center;
   margin-top: 5vh;
   gap: 5vw;
-  /* margin-left: 3vw; */
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 1vh 2vw;
+    margin: 0;
+  }
 }
-
+.agenda-lottie-animation {
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: none;
+  }
+}
 .agenda-des {
   text-align: justify;
   padding: 3vh 3vw;
@@ -107,6 +136,10 @@
   font-weight: 600;
   position: relative;
   /* isolation: isolate; */
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 3.5vw;
+    padding: 2vh 3vw;
+  }
 }
 .agenda-des::after {
   content: "";
@@ -122,6 +155,9 @@
   padding: 0vh 3vw;
   padding-bottom: 10vh;
   position: 99;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 0;
+  }
 }
 .parent-vision::before {
   content: "";
@@ -139,13 +175,23 @@
   opacity: 0.1;
   background-image: url("/images/jigsaw.svg");
 } */
-
+.about-vision-image,
+.about-mission-image {
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: none;
+  }
+}
 .vision {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 5vh;
   margin-right: -3vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 0;
+    margin-top: 3vh;
+    margin-right: 0;
+  }
 }
 .about-vision-title {
   display: flex;
@@ -164,6 +210,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 6vw;
+    margin: 0;
+    padding: 0vh 2vw;
+  }
 }
 
 .about-vision-description {
@@ -197,6 +248,11 @@
   background: rgb(0, 0, 0, 0.9);
   color: white;
   opacity: 0;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 2.5vw;
+    width: 70%;
+    padding: 1vh 2vw;
+  }
 }
 
 .about-vision-description::after {
@@ -219,6 +275,11 @@
   margin-left: -3vw;
   position: relative;
   isolation: isolate;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 3vh;
+    margin-left: 0;
+    padding-bottom: 3vh;
+  }
 }
 .mission::after {
   content: "";
@@ -244,6 +305,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 6vw;
+    margin: 0;
+    padding: 0vh 2vw;
+  }
 }
 
 .about-mission-description {
@@ -277,6 +343,11 @@
   background: rgb(0, 0, 0, 0.9);
   color: white;
   opacity: 0;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 2.5vw;
+    width: 70%;
+    padding: 1vh 2vw;
+  }
 }
 
 .about-mission-description::after {

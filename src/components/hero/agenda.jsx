@@ -36,7 +36,7 @@ const section2 = () => {
             <h1 className="title-name">Agenda</h1>
           </div>
           <div className="agenda-text">
-            <div>
+            <div className="agenda-lottie-animation">
               <Lottie
                 animationData={animationData}
                 lottieRef={ref}
@@ -68,7 +68,12 @@ const section2 = () => {
         <div className="parent-vision">
           <div className="vision">
             <div className="about-vision-title " id="agenda-left">
-              <img src="/images/target1.webp" alt="" width="250vw" />
+              <img
+                src="/images/target1.webp"
+                alt=""
+                width="250vw"
+                className="about-vision-image"
+              />
               Vision
             </div>
             <div className="about-vision-description" id="agenda-right">
@@ -83,7 +88,12 @@ const section2 = () => {
           </div>
           <div className="mission">
             <div className="about-mission-title" id="agenda-right">
-              <img src="/images/target.webp" alt="" width={"230vw"} />
+              <img
+                src="/images/target.webp"
+                alt=""
+                width={"230vw"}
+                className="about-mission-image"
+              />
               Mission
             </div>
             <div className="about-mission-description" id="agenda-left">
