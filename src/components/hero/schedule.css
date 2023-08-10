@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
-  /* align-items: center; */
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     display: none;
   }
@@ -24,8 +23,6 @@
   inset: 0;
   z-index: -99;
   opacity: 0.1;
-  /* background-color: #6a5acd; */
-  /* background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12'%3E%3Cpath d='M9.8 12 0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z' fill='%239C92AC' fill-opacity='.26' fill-rule='evenodd'/%3E%3C/svg%3E"); */
 }
 .schedule-title {
   padding-top: 5vh;
@@ -151,6 +148,9 @@
   animation-delay: 5s;
 }
 
+.container:nth-child(even) {
+  left: 43.2vw;
+}
 .container .date {
   font-family: Audiowide;
   letter-spacing: 3px;
@@ -233,8 +233,9 @@
 .parent-schedule-mobile {
   position: relative;
   padding: 5vh 0vw;
-  @media all and (min-width: 768px) {
-    display: none;
+  display: none;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: block;
   }
 }
 .schedule-title-mobile {
