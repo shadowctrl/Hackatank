@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./guidelines.css";
 
 const guildelines = () => {
+  useEffect(() => {
+    document.title = "Guidelines";
+  });
   return (
     <React.Fragment>
       <div className="parent-guidelines">

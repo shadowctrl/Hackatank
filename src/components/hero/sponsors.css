@@ -28,6 +28,7 @@
   display: flex;
   align-items: center;
   gap: 2vw;
+  padding-left: 10vw;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     font-size: 10vw;
     padding-left: 15vw;

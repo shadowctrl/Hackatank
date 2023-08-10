@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./projects.css";
 
 const software = () => {
+  useEffect(() => {
+    document.title = "Software projects";
+  });
   const handleSoftwareView = (id) => {
     document.querySelector(`#${id}`).classList.toggle("view");
   };
+
   return (
     <React.Fragment>
       <div className="parent-software">

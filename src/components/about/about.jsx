@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./about.css";
 const about = () => {
   useEffect(() => {
+    document.title = "About Us";
     const observer = new IntersectionObserver(
       (entryies) => {
         entryies.forEach((entry) => {

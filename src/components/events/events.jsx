@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./events.css";
 import { ReactComponent as ArrowDown } from "../../assets/arrowDown.svg";
 
 const events = () => {
+  useEffect(() => {
+    document.title = "Stages";
+  });
   const handleStage = (stage) => {
     if (stage == "1") {
       document.querySelector("#line-progress").style.width = "0%";

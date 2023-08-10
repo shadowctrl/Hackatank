@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./projects.css";
 
 const hardware = () => {
+  useEffect(() => {
+    document.title = "Hardware projects";
+  });
   const handleSoftwareView = (id) => {
     document.querySelector(`#${id}`).classList.toggle("view");
   };
