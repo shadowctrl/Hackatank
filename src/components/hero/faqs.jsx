@@ -1,17 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import "./faqs.css";
 
 const faqs = () => {
-  const handleArrow = (element, faqArrow) => {
-    const arrow = document.querySelector(`#${faqArrow}`).style;
-    arrow.transform
-      ? (arrow.transform = "")
-      : (arrow.transform = "rotate(90deg)");
-
-    const faqSec = document.querySelector(`#${element}`);
-    faqSec.classList.toggle("faqs-view");
+  const handleArrow = (element) => {
+    const elementVisible = element.currentTarget.querySelector(
+      ".faqs-content-description"
+    ).style;
+    const arrow = element.target.children[0].style;
+    if (arrow.transform) {
+      arrow.transform = "";
+      elementVisible.display = "none";
+    } else {
+      arrow.transform = "rotate(90deg)";
+      elementVisible.display = "block";
+    }
   };
+
+  const styles = {
+    container: {
+      position: "relative",
+      zIndex: "-1",
+      fontSize: "2.5vw",
+      transition: "all 0.3s linear",
+      cursor: "pointer",
+    },
+  };
+
+  if (window.innerWidth <= 768) {
+    styles.container = {
+      ...styles.container,
+      fontSize: "5vw",
+    };
+  }
 
   return (
     <React.Fragment>
@@ -40,18 +61,10 @@ const faqs = () => {
             </p>
           </div> */}
 
-          <div id="f2" className="faqs-content">
+          <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
               What is a hackathon?
-              <ChevronRightIcon
-                id="a2"
-                onClick={() => handleArrow("f2", "a2")}
-                style={{
-                  fontSize: "2.5vw",
-                  transition: "all 0.3s linear",
-                  cursor: "pointer",
-                }}
-              />
+              <ChevronRightIcon style={styles.container} />
             </h1>
             <p className="faqs-content-description">
               A hackathon is a social coding event that brings computer
@@ -61,13 +74,13 @@ const faqs = () => {
             </p>
           </div>
 
-          <div id="f3" className="faqs-content">
+          <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
               What is “Hack-A-Tank”?
               <ChevronRightIcon
-                id="a3"
-                onClick={() => handleArrow("f3", "a3")}
                 style={{
+                  position: "relative",
+                  zIndex: "-1",
                   fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
@@ -83,13 +96,13 @@ const faqs = () => {
             </p>
           </div>
 
-          <div id="f4" className="faqs-content">
+          <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
               Who can participate?
               <ChevronRightIcon
-                id="a4"
-                onClick={() => handleArrow("f4", "a4")}
                 style={{
+                  position: "relative",
+                  zIndex: "-1",
                   fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
@@ -102,13 +115,13 @@ const faqs = () => {
             </p>
           </div>
 
-          <div id="f5" className="faqs-content">
+          <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
               How much is the registration fee?
               <ChevronRightIcon
-                id="a5"
-                onClick={() => handleArrow("f5", "a5")}
                 style={{
+                  position: "relative",
+                  zIndex: "-1",
                   fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
@@ -128,13 +141,13 @@ const faqs = () => {
             </p>
           </div>
 
-          <div id="f6" className="faqs-content">
+          <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
               What are the prerequisites considered for registering?
               <ChevronRightIcon
-                id="a6"
-                onClick={() => handleArrow("f6", "a6")}
                 style={{
+                  position: "relative",
+                  zIndex: "-1",
                   fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
@@ -150,13 +163,13 @@ const faqs = () => {
             </p>
           </div>
 
-          <div id="f7" className="faqs-content">
+          <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
               What is the team size to participate in the Hack-A-Tank?
               <ChevronRightIcon
-                id="a7"
-                onClick={() => handleArrow("f7", "a7")}
                 style={{
+                  position: "relative",
+                  zIndex: "-1",
                   fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
@@ -169,13 +182,13 @@ const faqs = () => {
             </p>
           </div>
 
-          <div id="f8" className="faqs-content">
+          <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
               Is the hackathon online or offline?
               <ChevronRightIcon
-                id="a8"
-                onClick={() => handleArrow("f8", "a8")}
                 style={{
+                  position: "relative",
+                  zIndex: "-1",
                   fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
@@ -190,13 +203,13 @@ const faqs = () => {
               final.
             </p>
           </div>
-          <div id="f9" className="faqs-content">
+          <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
               How to register for the hackathon?
               <ChevronRightIcon
-                id="a9"
-                onClick={() => handleArrow("f9", "a9")}
                 style={{
+                  position: "relative",
+                  zIndex: "-1",
                   fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",
@@ -210,13 +223,13 @@ const faqs = () => {
               possible.
             </p>
           </div>
-          <div id="f10" className="faqs-content">
+          <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
               What is the prize money of the winning team?
               <ChevronRightIcon
-                id="a10"
-                onClick={() => handleArrow("f10", "a10")}
                 style={{
+                  position: "relative",
+                  zIndex: "-1",
                   fontSize: "2.5vw",
                   transition: "all 0.3s linear",
                   cursor: "pointer",

@@ -71,7 +71,6 @@
   border: 2px dotted black;
   padding: 0.5vh 1vw;
   border-radius: 0.5vw;
-  height: 6vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -79,11 +78,10 @@
   overflow-y: hidden;
   position: relative;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    height: 5vh;
   }
 }
 .faqs-view {
-  height: 100%;
+  display: block;
 }
 .faqs-content-title {
   font-size: 1.6vw;
@@ -94,7 +92,7 @@
   display: flex;
   justify-content: space-between;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 }
 
@@ -102,6 +100,7 @@
   padding: 0vh 0vw;
   text-align: justify;
   animation: faqsFade 0.3s ease-in forwards;
+  display: none;
 }
 @keyframes faqsFade {
   0% {
