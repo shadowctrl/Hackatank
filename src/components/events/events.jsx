@@ -55,64 +55,66 @@ const events = () => {
           <div className="section-content stage1-content active">
             <div className="section-format">
               {" "}
-              <h1>Register</h1>
+              <h1>Registration</h1>
               <p>
-                🔗 Register via QR Code/Link/Website to be a part of our
-                exciting event and showcase your brilliant ideas to the world!
+                🔗 Scan the QR in the poster or search www.hackatank.tech and
+                register for the event.
                 <br /> <br />
-                🌐 How to Register: <br /> <br /> 1️⃣ Scan the QR Code: Simply
-                scan the provided QR code with your smartphone or tablet, and it
-                will direct you straight to the registration page. <br /> 2️⃣
-                Click the Link: Alternatively, click on the provided
-                registration link and fill in your team's details and contact
-                information.
-                <br /> 3️⃣ Visit Our Website: Head over to our event website and
-                navigate to the registration section. Follow the easy steps to
-                secure your team's spot!
+                1️⃣ It will redirect you to the respecƟve Google forms. Kindly
+                fill in the requested details.
+                <br /> <br />
+                2️⃣Our registration team will contact you further upon
+                registration.
+                <br /> <br />
+                3️⃣For any queries/issues, kindly check the contacts column for
+                Point of Contact (POC).
+                <br /> <br />
+                4️⃣Last date for registraƟon is on or before the 25th of August
+                2023.
+                <br /> <br />
+                5️⃣The first round is free for all the teams that register for
+                the event.
               </p>
             </div>
           </div>
           <div className="section-content stage2-content">
             <div className="section-format">
-              <h1>Team Shortlist</h1>
+              <h1>Abstract Submission</h1>
               <p>
-                📜 Announcement of Shortlisted Teams for the Final Round 📜
+                📋 The problem statements are available on the home page, and it
+                is provided at the bottom of this page as a PDF for downloading.
                 <br /> <br />
-                After careful scrutiny and evaluation of all the submitted
-                abstracts, we are thrilled to reveal the shortlisted teams that
-                have made it to the final round! 🏆 Congratulations to each team
-                on reaching this milestone and showcasing your exceptional
-                talent and innovation.
-                <br /> <br /> 🗓️ Important Dates: <br />
-                📅 Announcement Date: [Date]
-                <br />
-                📅 Final Round Date: [Date] <br />
-                📅 Venue/Online: [Location/Platform]
+                📥 We also accept your own/inspired problem statements for
+                review. Kindly submit it as an abstract and the registration
+                team will contact you.
+                <br /> <br />
+                📝 The abstract format is given at the bottom of this page as a
+                PDF for downloading. Kindly download and use it for reference.
+                <br /> <br />
+                📄 Abstract of the project must be submitted only in PDF file
+                format.
+                <br /> <br />⏰ The last date for abstract submission is on or
+                before the 28th of August 2023.
               </p>
             </div>
           </div>
           <div className="section-content stage3-content">
             <div className="section-format">
-              <h1>Payment Details</h1>
+              <h1>Scrutinization</h1>
               <p>
-                📜 Payment and Registration Details 📜
+                🔍 The teams will be shortlisted by the judging panel on various
+                criteria which includes the scope of the project, execution
+                ideology, etc.
                 <br /> <br />
-                We are thrilled to announce that your team has been shortlisted
-                for the final round of our prestigious event! Your outstanding
-                project and dedication have earned you a well-deserved spot
-                among the best innovators in the field. 🏆
+                📢 The scrutinized/shortlisted teams for the final round of
+                "HACK-A-TANK" will be announced on the 30th of August 2023.
                 <br /> <br />
-                1️⃣ Payment of Registration Fee: The registration fee for
-                shortlisted teams is [Fee Amount]. This fee contributes to event
-                logistics, resources, and supporting future innovative
-                endeavors.
-                <br />
-                2️⃣ Payment Method: [Payment Method Details]
-                <br />
-                3️⃣ Deadline: Please complete the payment by [Payment Deadline].
+                💰 The Shortlisted team should proceed with their registration
+                by completing the payment of Rs 999/- per team on or before 3rd
+                September 2023.
                 <br /> <br />
-                We kindly request that you make the payment within this
-                timeframe to confirm your participation.
+                🔄 After the completion of payment, the registration team will
+                assess you for the further procedures of the final round.
               </p>
             </div>
           </div>
@@ -120,24 +122,25 @@ const events = () => {
             <div className="section-format">
               <h1>The Grand Finale</h1>
               <p>
-                📢 Welcome to "Hack-a-Tank Commencement"! 🚀
+                🎉 The commencement of the inaugural function is scheduled at
+                10:00 am on the 8th of September 2023.
                 <br /> <br />
-                What to Expect:
-                <br />
-                ➡️ Unique Challenges: Get ready to dive into real-world problem
-                statements carefully crafted by industry experts and innovators.{" "}
-                <br /> ➡️ Collaborative Atmosphere: Network with like-minded
-                individuals, form new friendships, and collaborate with diverse
-                teams to come up with groundbreaking solutions.
-                <br /> ➡️ Expert Guidance: Mentors and subject matter experts
-                will be available throughout the event to guide and assist your
-                team.
+                ⏱️ The "HACK-A-TANK" event will begin at 1:00 pm on the 8th of
+                September 2023 and will wrap up at 1:00 pm on the 9th of
+                September 2023.
                 <br /> <br />
-                🏅 Prizes and Recognition:
-                <br />
-                🧧 Stand a chance to win exciting prizes, recognition from
-                leading industry players, and potential opportunities for
-                further development and implementation of your ideas.
+                🍔🍕 The lunch and dinner for the 8th of September will be
+                provided by the organizing committee to the participants.
+                <br /> <br />
+                🍳🍔 The breakfast and lunch for the 9th of September will be
+                provided by the organizing committee to the participants.
+                <br /> <br />
+                🍪 Refreshments will be provided to all the participating teams
+                at all feasible times by the organizing committee.
+                <br /> <br />
+                🏆 The event will be concluded with the announcement of the cash
+                prize winners of the "HACK-A-TANK" event on the 9th of September
+                2023 by 4:00 pm.
               </p>
             </div>{" "}
           </div>

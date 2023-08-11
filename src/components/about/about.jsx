@@ -19,16 +19,44 @@ const about = () => {
       }
     );
     const divs = document.querySelectorAll(
-      ".about-srmvec-title,.about-srmvec-description,.about-csi-title,.about-csi-description,.about-whitehatians-title,.about-whitehatians-description"
+      ".foundation-title,.foundation-description,.about-srmvec-title,.about-srmvec-description,.about-csi-title,.about-csi-description,.about-whitehatians-title,.about-whitehatians-description"
     );
     divs.forEach((div) => observer.observe(div));
   });
   return (
     <React.Fragment>
       <div id="about" className="parent-about">
+        <div className="foundation">
+          <div className="foundation-title " id="about-right">
+            <img src="/images/srm.webp" alt="" className="about-srm-logo" />
+            Foundation Day Celebration
+            <img
+              src="/images/srmvec.webp"
+              alt=""
+              className="about-srmvec-logo"
+            />
+          </div>
+          <div className="foundation-description" id="about-left">
+            SRM Valliammai Engineering college (An Autonomous Institution) was
+            established on 9th September, 1999. The SRM Valliammai Engineering
+            College is a part of the SRM Group of Educational Institutions,
+            sponsored by the Valliammai Society. The Valliammai Society was
+            founded by Dr.T.R.Paarivendhar , a well-known educationist, in the
+            name of his mother Tmt. R.Valliammai, under whose care and guidance
+            he attained greater heights in his personal development and whose
+            ideals continue to inspire him. On this auspicious moment we
+            celebrate the 25th Foundation Day of SRM Valliammai Engineering
+            college by organising Hackathon on 8th September, 2023.
+          </div>
+        </div>
+
         <div className="srmvec">
           <div className="about-srmvec-title " id="about-left">
-            <img src="/images/srmvec.webp" alt="" width={"130vw"} />
+            <img
+              className="about-srmvec-logo"
+              src="/images/srmvec.webp"
+              alt=""
+            />
             About Srmvec
           </div>
           <div className="about-srmvec-description" id="about-right">
@@ -42,7 +70,7 @@ const about = () => {
         </div>
         <div className="csi">
           <div className="about-csi-title" id="about-right">
-            <img src="/images/csi1.webp" alt="" width={"130vw"} />
+            <img className="about-csi-logo" src="/images/csi1.webp" alt="" />
             About csi
           </div>
           <div className="about-csi-description" id="about-left">
@@ -57,7 +85,11 @@ const about = () => {
         </div>
         <div className="whitehatians">
           <div className="about-whitehatians-title" id="about-left">
-            <img src="/images/whitehatians.webp" alt="" width={"130vw"} />
+            <img
+              className="about-whitehatians-logo"
+              src="/images/whitehatians.webp"
+              alt=""
+            />
             About whitehatians
           </div>
           <div className="about-whitehatians-description" id="about-right">

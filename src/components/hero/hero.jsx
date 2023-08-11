@@ -226,7 +226,7 @@ const hero = () => {
             {/* -------------------------- Column 3 * ---------------------------------- */}
             <div className="col3 animated-div">
               <div className="flex justify-items-start">
-                <h3 className="text7">Projects</h3>
+                <h3 className="text7">Problem Statements</h3>
               </div>
               <p
                 className="text8"

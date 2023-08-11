@@ -8,6 +8,10 @@
   padding-left: 3vw;
   padding: 3vw;
   position: 99;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 0;
+    padding-top: 1vh;
+  }
 }
 .parent-about::before {
   content: "";
@@ -26,18 +30,116 @@
   background-image: url("/images/jigsaw.svg");
 }
 
+.foundation {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding-top: 5vh;
+  margin-right: -3vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 0;
+    margin-top: 3vh;
+    margin-right: 0;
+    flex-direction: column;
+    gap: 1vh;
+  }
+}
+.foundation-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: russo one;
+  font-size: 3vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 6vw;
+    margin: 0;
+    padding: 0vh 2vw;
+    text-align: center;
+  }
+}
+
+.foundation-description {
+  width: 70%;
+  text-align: justify;
+  padding: 4vh 2vw;
+  border-top: 5px solid;
+  position: relative;
+  z-index: 99;
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+  margin-left: -3vw;
+  border-image: linear-gradient(
+    to right top,
+    #bf00ff,
+    #d500ed,
+    #e400db,
+    #f000cb,
+    #f800bc,
+    #fb00b0,
+    #fc00a4,
+    #fd0099,
+    #fb008d,
+    #f80082,
+    #f40077,
+    #f0006d
+  );
+  border-image-slice: 1;
+  font-family: raleway;
+  font-size: 1.3vw;
+  font-weight: 600;
+  position: relative;
+  isolation: isolate;
+  background: rgb(0, 0, 0, 0.9);
+  color: white;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 3vw;
+    width: 90%;
+    padding: 1vh 2vw;
+    border-left: 5px solid;
+  }
+}
+.foundation-description::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url("/images/flurry.svg");
+  /* background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12'%3E%3Cpath d='M9.8 12 0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z' fill='%239C92AC' fill-opacity='.26' fill-rule='evenodd'/%3E%3C/svg%3E"); */
+}
+
 .srmvec {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 5vh;
   margin-right: -3vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 0;
+    margin-top: 3vh;
+    margin-right: 0;
+    flex-direction: column;
+    gap: 1vh;
+  }
 }
 .about-srmvec-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2vw;
+  gap: 1vw;
   font-family: russo one;
   font-size: 3.5vw;
   font-weight: 900;
@@ -49,6 +151,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 7vw;
+    margin: 0;
+    padding: 0vh 2vw;
+    justify-content: start;
+    width: 100%;
+  }
 }
 
 .about-srmvec-description {
@@ -82,6 +191,12 @@
   background: rgb(0, 0, 0, 0.9);
   color: white;
   opacity: 0;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 3vw;
+    width: 90%;
+    padding: 1vh 2vw;
+    border-right: 5px solid;
+  }
 }
 
 .about-srmvec-description::after {
@@ -102,6 +217,13 @@
   margin-left: -3vw;
   position: relative;
   isolation: isolate;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 3vh;
+    margin-left: 0;
+    padding-bottom: 3vh;
+    flex-direction: column;
+    gap: 1vh;
+  }
 }
 .csi::after {
   content: "";
@@ -127,6 +249,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 7vw;
+    margin: 0;
+    padding: 0vh 2vw;
+    width: 100%;
+    justify-content: start;
+  }
 }
 
 .about-csi-description {
@@ -160,6 +289,12 @@
   background: rgb(0, 0, 0, 0.9);
   color: white;
   opacity: 0;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 3vw;
+    width: 90%;
+    padding: 1vh 2vw;
+    border-left: 5px solid;
+  }
 }
 
 .about-csi-description::after {
@@ -173,9 +308,18 @@
 .whitehatians {
   display: flex;
   align-items: center;
+  gap: 1vh;
   justify-content: space-between;
   margin-top: 15vh;
   margin-right: -3vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 3vh;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 3vh;
+    flex-direction: column;
+    gap: 1vh;
+  }
 }
 .about-whitehatians-title {
   font-family: russo one;
@@ -194,6 +338,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 7vw;
+    margin: 0;
+    padding: 0vh 2vw;
+
+    justify-content: center;
+  }
 }
 
 .about-whitehatians-description {
@@ -227,6 +378,12 @@
   background: rgb(0, 0, 0, 0.9);
   color: white;
   opacity: 0;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 3vw;
+    width: 90%;
+    padding: 1vh 2vw;
+    border-right: 5px solid;
+  }
 }
 
 .about-whitehatians-description::after {
@@ -263,5 +420,21 @@
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+.about-srmvec-logo,
+.about-csi-logo,
+.about-whitehatians-logo {
+  width: 10vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 15vw;
+  }
+}
+
+.about-srm-logo {
+  width: 7vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 10vw;
   }
 }

@@ -182,7 +182,7 @@ body {
 .events-bg {
   position: relative;
   isolation: isolate;
-  height: 100vh;
+  height: 100%;
   background: black;
 }
 .events-bg::after {

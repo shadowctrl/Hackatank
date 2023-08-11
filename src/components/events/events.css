@@ -7,6 +7,11 @@
   max-width: 100%;
   gap: 5vh;
   color: white;
+  height: 100%;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 5vh 3vw;
+    gap: 5vh;
+  }
 }
 
 .events-progress-bar {
@@ -52,6 +57,9 @@
   cursor: pointer;
   font-family: exo;
   font-weight: 600;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 4vw;
+  }
 }
 .events-container {
   display: flex;
@@ -61,6 +69,11 @@
   border-radius: 1vw;
   background-color: rgb(255, 255, 255, 0.1);
   backdrop-filter: blur(0.8vw);
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 3.5vw;
+    border-radius: 3vw;
+    padding: 2vh 3vw;
+  }
 }
 
 .section-content {
@@ -79,6 +92,13 @@
   font-family: audiowide;
   letter-spacing: 2px;
   color: yellow;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 7vw;
+  }
+}
+
+.section-format p {
+  width: 100%;
 }
 .active {
   display: block;
