@@ -194,6 +194,7 @@ body {
   opacity: 0.5;
   background-image: url("/images/bg4.webp");
   animation: hue 5s linear infinite;
+  top: -1vh;
 }
 
 @keyframes hue {
@@ -208,7 +209,7 @@ body {
 .guidelines-bg {
   position: relative;
   isolation: isolate;
-  height: 100vh;
+  height: 100%;
   background: black;
 }
 
@@ -221,6 +222,7 @@ body {
   background-position: center;
   opacity: 0.7;
   background-image: url("/images/bg6.webp");
+  top: -1vh;
 }
 .software-bg {
   position: relative;
