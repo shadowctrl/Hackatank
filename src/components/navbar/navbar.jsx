@@ -23,6 +23,9 @@ const Navbar = () => {
   const handleNavMenuClick = () => {
     const NavVisiblility = document.querySelector(".parent-navbar-mobile");
     NavVisiblility.classList.toggle("navbar-open-mobile");
+
+    const NavDropVisibility = document.querySelector(".navbar-open");
+    NavDropVisibility.classList.toggle("navbar-close-mobile");
   };
   return (
     <React.Fragment>
@@ -90,43 +93,47 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
-      <div className="parent-navbar-mobile">
-        <div className="components-mobile">
-          <div className="title-mobile">
-            <img src="/images/diamond.webp" width="30vw" />
-            Hackathon
+      <div className="main-navbar-mobile">
+        <div className="parent-navbar-mobile">
+          <div className="components-mobile">
+            <div
+              className="title-mobile"
+              onClick={() => window.open("/", "_self")}
+            >
+              <img src="/images/diamond.webp" width="30vw" />
+              Hackathon
+            </div>
+            <div className="last-mobile">
+              <h2 className="register-mobile">
+                <a href="https://forms.gle/mqHSf1kpoTUiMURH6" target="_blank">
+                  Register
+                </a>
+              </h2>
+            </div>
+            <Grid
+              className="navbar-menu-mobile "
+              onClick={handleNavMenuClick}
+            />
           </div>
-          <div className="last-mobile">
-            <h2 className="register-mobile">
-              <a href="https://forms.gle/mqHSf1kpoTUiMURH6" target="_blank">
-                Register
-              </a>
-            </h2>
+          <div className="navbar-open navbar-close-mobile">
+            <ul>
+              <li>
+                <p onClick={() => window.open("/", "_self")}>Home</p>
+              </li>
+              <li>
+                <p onClick={() => handleScroll("#agenda")}>Agenda</p>
+              </li>
+              <li>
+                <p onClick={() => handleScroll("#schedule")}>Schedule</p>
+              </li>
+              <li>
+                <p onClick={() => handleScroll("#faqs")}>FAQs</p>
+              </li>
+              <li>
+                <p onClick={() => handleScroll("#contact")}>Contact</p>
+              </li>
+            </ul>
           </div>
-          <Grid
-            className="navbar-menu-mobile "
-            onClick={() => handleNavMenuClick()}
-          />
-        </div>
-        <div className="navbar-open">
-          <ul>
-            <li>
-              <p onClick={() => window.open("/", "_self")}>Home</p>
-            </li>
-            <li>
-              <p onClick={() => handleScroll("#agenda")}>Agenda</p>
-            </li>
-            <li>
-              <p onClick={() => handleScroll("#schedule")}>Schedule</p>
-            </li>
-            <li>
-              <p onClick={() => handleScroll("#faqs")}>FAQs</p>
-            </li>
-            <li>
-              <p onClick={() => handleScroll("#contact")}>Contact</p>
-            </li>
-          </ul>
         </div>
       </div>
     </React.Fragment>

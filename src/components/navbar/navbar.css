@@ -157,7 +157,9 @@
   text-decoration: none;
   color: white;
 }
-
+.main-navbar-mobile {
+  margin: 0;
+}
 .parent-navbar-mobile {
   margin: 0.5vh 1vw;
   position: relative;
@@ -192,9 +194,14 @@
   font-family: mars;
   font-weight: bold;
   font-size: 4vw;
+  cursor: pointer;
+}
+.navbar-close-mobile {
+  display: none;
 }
 .navbar-open-mobile {
   height: 10vh;
+  display: block;
 }
 .navbar-open {
   transition: all 0.3s linear;
