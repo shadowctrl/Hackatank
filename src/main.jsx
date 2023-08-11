@@ -1,10 +1,8 @@
-import React, { Suspense } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Error from "./error.jsx";
-import Signin from "./pages/signin.jsx";
-import Dashboard from "./components/dashboard/dashboard.jsx";
 import {
   Navbar,
   Hero,
@@ -37,8 +35,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             </div>
           }
         />
-        <Route path="/signin" element={<Signin />} />
-        <Route path="/dashboard" element={<Dashboard />} />
         <Route
           path="/events"
           element={
