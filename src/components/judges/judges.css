@@ -1,0 +1,16 @@
+.parent-judges {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.judges-title {
+  font-size: 6vw;
+  font-family: tektur;
+  font-weight: 900;
+  color: white;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 7vw;
+  }
+}
