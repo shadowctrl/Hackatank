@@ -78,6 +78,7 @@
   overflow-y: hidden;
   position: relative;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    border-radius: 1vw;
   }
 }
 .faqs-view {
@@ -111,4 +112,12 @@
     opacity: 1;
     transform: translateY(0vh);
   }
+}
+
+.arrow-transform {
+  transform: rotate(90deg);
+}
+
+.faq-visible {
+  display: block;
 }

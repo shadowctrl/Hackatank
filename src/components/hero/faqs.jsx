@@ -6,15 +6,11 @@ const faqs = () => {
   const handleArrow = (element) => {
     const elementVisible = element.currentTarget.querySelector(
       ".faqs-content-description"
-    ).style;
-    const arrow = element.target.children[0].style;
-    if (arrow.transform) {
-      arrow.transform = "";
-      elementVisible.display = "none";
-    } else {
-      arrow.transform = "rotate(90deg)";
-      elementVisible.display = "block";
-    }
+    );
+    const arrow = element.currentTarget.querySelector(".faqs-arrow");
+
+    elementVisible.classList.toggle("faq-visible");
+    arrow.classList.toggle("arrow-transform");
   };
 
   const styles = {
@@ -43,28 +39,13 @@ const faqs = () => {
         </h1>
 
         <div className="faqs-section">
-          {/* <div id="f1" className="faqs-content">
-            <h1 className="faqs-content-title">
-              How to register for hackathon
-              <ChevronRightIcon
-                id="a1"
-                onClick={() => handleArrow("f1", "a1")}
-                style={{
-                  fontSize: "2.5vw",
-                  transition: "all 0.3s linear",
-                  cursor: "pointer",
-                }}
-              />
-            </h1>
-            <p className="faqs-content-description">
-              Click register on the Register now button on the website
-            </p>
-          </div> */}
-
           <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
               What is a hackathon?
-              <ChevronRightIcon style={styles.container} />
+              <ChevronRightIcon
+                style={styles.container}
+                className="faqs-arrow"
+              />
             </h1>
             <p className="faqs-content-description">
               A hackathon is a social coding event that brings computer
@@ -78,13 +59,8 @@ const faqs = () => {
             <h1 className="faqs-content-title">
               What is “Hack-A-Tank”?
               <ChevronRightIcon
-                style={{
-                  position: "relative",
-                  zIndex: "-1",
-                  fontSize: "2.5vw",
-                  transition: "all 0.3s linear",
-                  cursor: "pointer",
-                }}
+                style={styles.container}
+                className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
@@ -100,13 +76,8 @@ const faqs = () => {
             <h1 className="faqs-content-title">
               Who can participate?
               <ChevronRightIcon
-                style={{
-                  position: "relative",
-                  zIndex: "-1",
-                  fontSize: "2.5vw",
-                  transition: "all 0.3s linear",
-                  cursor: "pointer",
-                }}
+                style={styles.container}
+                className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
@@ -119,13 +90,8 @@ const faqs = () => {
             <h1 className="faqs-content-title">
               How much is the registration fee?
               <ChevronRightIcon
-                style={{
-                  position: "relative",
-                  zIndex: "-1",
-                  fontSize: "2.5vw",
-                  transition: "all 0.3s linear",
-                  cursor: "pointer",
-                }}
+                style={styles.container}
+                className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
@@ -143,56 +109,10 @@ const faqs = () => {
 
           <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
-              What are the prerequisites considered for registering?
-              <ChevronRightIcon
-                style={{
-                  position: "relative",
-                  zIndex: "-1",
-                  fontSize: "2.5vw",
-                  transition: "all 0.3s linear",
-                  cursor: "pointer",
-                }}
-              />
-            </h1>
-            <p className="faqs-content-description">
-              Participants may need to have knowledge and skills in areas such
-              as electronics, programming, data analytics, and IoT technologies,
-              depending on the theme of the hackathon. Participants must need to
-              bring their own laptops, sensors, microcontrollers, and other
-              necessary tools and equipment.
-            </p>
-          </div>
-
-          <div className="faqs-content" onClick={handleArrow}>
-            <h1 className="faqs-content-title">
-              What is the team size to participate in the Hack-A-Tank?
-              <ChevronRightIcon
-                style={{
-                  position: "relative",
-                  zIndex: "-1",
-                  fontSize: "2.5vw",
-                  transition: "all 0.3s linear",
-                  cursor: "pointer",
-                }}
-              />
-            </h1>
-            <p className="faqs-content-description">
-              The teams must have a minimum of 2 members and a maximum of 4
-              members.
-            </p>
-          </div>
-
-          <div className="faqs-content" onClick={handleArrow}>
-            <h1 className="faqs-content-title">
               Is the hackathon online or offline?
               <ChevronRightIcon
-                style={{
-                  position: "relative",
-                  zIndex: "-1",
-                  fontSize: "2.5vw",
-                  transition: "all 0.3s linear",
-                  cursor: "pointer",
-                }}
+                style={styles.container}
+                className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
@@ -207,13 +127,8 @@ const faqs = () => {
             <h1 className="faqs-content-title">
               How to register for the hackathon?
               <ChevronRightIcon
-                style={{
-                  position: "relative",
-                  zIndex: "-1",
-                  fontSize: "2.5vw",
-                  transition: "all 0.3s linear",
-                  cursor: "pointer",
-                }}
+                style={styles.container}
+                className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
@@ -227,31 +142,33 @@ const faqs = () => {
             <h1 className="faqs-content-title">
               What is the prize money of the winning team?
               <ChevronRightIcon
-                style={{
-                  position: "relative",
-                  zIndex: "-1",
-                  fontSize: "2.5vw",
-                  transition: "all 0.3s linear",
-                  cursor: "pointer",
-                }}
+                style={styles.container}
+                className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
               The event has a prize pool of Rs 25,000 for the winners.
             </p>
           </div>
-          {/* <div id="f11" className="faqs-content">
+          <div className="faqs-content" onClick={handleArrow}>
             <h1 className="faqs-content-title">
-              What are the prerequisites considered for registering for a
-              hackathon?
+              What is the team size to participate in the Hack-A-Tank?
               <ChevronRightIcon
-                id="a11"
-                onClick={() => handleArrow("f11", "a11")}
-                style={{
-                  fontSize: "2.5vw",
-                  transition: "all 0.3s linear",
-                  cursor: "pointer",
-                }}
+                style={styles.container}
+                className="faqs-arrow"
+              />
+            </h1>
+            <p className="faqs-content-description">
+              The teams must have a minimum of 2 members and a maximum of 4
+              members.
+            </p>
+          </div>
+          <div className="faqs-content" onClick={handleArrow}>
+            <h1 className="faqs-content-title">
+              What are the prerequisites considered for registering?
+              <ChevronRightIcon
+                style={styles.container}
+                className="faqs-arrow"
               />
             </h1>
             <p className="faqs-content-description">
@@ -261,7 +178,7 @@ const faqs = () => {
               bring their own laptops, sensors, microcontrollers, and other
               necessary tools and equipment.
             </p>
-          </div> */}
+          </div>
         </div>
       </div>
     </React.Fragment>

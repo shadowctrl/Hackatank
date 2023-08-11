@@ -76,14 +76,20 @@ const hero = () => {
     <React.Fragment>
       <div className="parent_hero">
         {/* <div className="progress_bar"></div> */}
-        <div className="flex items-end gap-2 relative z-[-1] pl-[0vw] tag-hero-mobile">
+        <div className=" tag-hero-mobile">
           <img
             src="/images/srm.webp"
             alt=""
             width="40vw"
             className="hero-srm-logo"
           />
-          <div className="tag">Celebrating 25 Years of SRMVEC</div>
+          <div className="tag">
+            <div>
+              <div>Celebrating 25</div>
+              <span>th</span>
+            </div>
+            Foundation Day of SRMVEC
+          </div>
           <img
             src="/images/srmvec.webp"
             alt=""

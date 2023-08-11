@@ -28,10 +28,17 @@
 }
 
 .tag-hero-mobile {
+  display: flex;
+  align-items: flex-end;
+  gap: 1vw;
+  position: relative;
+  z-index: -1;
+  padding: 0;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: center;
+    gap: 2vw;
   }
 }
 
@@ -51,19 +58,33 @@
   position: relative;
   font-family: poppins;
   font-weight: 500;
-  display: flex;
   color: black;
   border: 1px solid grey;
   font-size: 1.1vw;
   padding: 0vh 0.4vw;
-  width: fit-content;
   border-radius: 1vw;
   margin-bottom: 2vh;
   margin-top: 5vh;
+  font-weight: 600;
+  display: flex;
+  gap: 0.3vw;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    font-size: 3.5vw;
-    padding: 0vh 1vw;
+    font-size: 2.5vw;
+    padding: 0.2vh 1vw;
     margin-top: 3vh;
+    text-align: center;
+    font-weight: 600;
+    gap: 1vw;
+  }
+}
+.tag > div {
+  display: flex;
+  align-items: flex-start;
+}
+.tag > div > span {
+  font-size: 0.7vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 2vw;
   }
 }
 .parent_hero .column {
@@ -202,7 +223,10 @@
   }
 }
 .register_now:hover {
-  width: 47vw;
+  width: 24vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 62vw;
+  }
 }
 .register_now a {
   text-decoration: none;
