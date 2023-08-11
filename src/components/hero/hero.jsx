@@ -193,7 +193,7 @@ const hero = () => {
             {/* -------------------------- Column 2 * ---------------------------------- */}
             <div className="col2 animated-div">
               <h3 className="text4">
-                Infomation Details{" "}
+                Information Details{" "}
                 <InfoIcon
                   style={{
                     fontSize: "1.5vw",

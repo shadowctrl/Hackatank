@@ -56,7 +56,7 @@ const schedule = () => {
               <span className="circle"></span>
             </div>
             <div className="container ">
-              <h2 className="container-title">Finalists Annoncements</h2>
+              <h2 className="container-title">Finalists Announcements</h2>
               <h1 className="date"> Aug 23 - Aug 28</h1>
               <p className="container-description">
                 Step into the limelight – the moment we've all been waiting for
