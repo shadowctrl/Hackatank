@@ -257,3 +257,23 @@ body {
   opacity: 0.7;
   background-image: url("/images/bg2.webp");
 }
+
+.judges-bg {
+  position: relative;
+  isolation: isolate;
+  background: black;
+}
+
+.judges-bg::after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  top: -1vh;
+  background: rgb(200, 31, 106);
+  background: linear-gradient(
+    140deg,
+    rgba(200, 31, 106, 1) 0%,
+    rgba(29, 33, 38, 1) 100%
+  );
+}
