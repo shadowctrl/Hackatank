@@ -40,8 +40,8 @@
   position: absolute;
   z-index: 99;
   color: black;
-  top: 0vh;
-  left: -0.5vw;
+  top: 2vh;
+  left: 0.8vw;
   opacity: 0;
   animation: instagram 0.5s 0.3s linear forwards;
 }
@@ -49,9 +49,9 @@
   position: absolute;
   z-index: 99;
   color: black;
-  top: 1.5vh;
+  top: 2vh;
+  left: 0.8vw;
   transform: translateY(9.5vh);
-  left: -0.5vw;
   opacity: 0;
   animation: facebook 0.3s 0.8s linear forwards;
 }
@@ -59,8 +59,8 @@
   position: absolute;
   color: black;
   z-index: 99;
-  top: 3vh;
-  left: -0.5vw;
+  top: 2vh;
+  left: 0.8vw;
   transform: translateY(15.5vh);
   opacity: 0;
   animation: youtube 0.3s 1.3s linear forwards;
