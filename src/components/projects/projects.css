@@ -13,6 +13,10 @@
   letter-spacing: 3px;
   font-weight: bold;
   text-transform: uppercase;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5.5vw;
+    padding: 2vh 2vw;
+  }
 }
 
 .software-container {
@@ -23,35 +27,55 @@
   padding: 0vh 5vw;
   column-gap: 5vw;
   row-gap: 10vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    grid-template-columns: 1fr;
+    row-gap: 5vh;
+  }
 }
 
 .software-content {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   border: 1px dotted white;
   padding: 2vh 0vw;
   border-radius: 1vw;
   gap: 2vh;
-  height: 9vh;
   transition: all 0.3s linear;
   overflow-y: hidden;
   background-color: rgb(188, 219, 244, 0.1);
   backdrop-filter: blur(1vw);
   cursor: pointer;
+  text-align: center;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    border-radius: 2vw;
+    padding: 2vh 2vw;
+  }
 }
-.view {
-  height: 100%;
+.projects-view {
+  display: block;
+}
+.projects-close {
+  display: none;
 }
 .software-content-title {
   font-size: 1.5vw;
   font-family: exo;
+  font-weight: 700;
+  text-transform: uppercase;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+  }
 }
 .software-content-description {
   padding: 0vh 1vw;
   text-align: justify;
   animation: softwareFade 0.3s ease-in forwards;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 4vw;
+  }
 }
 @keyframes softwareFade {
   0% {
