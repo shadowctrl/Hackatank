@@ -82,16 +82,18 @@
 
 .sponsors-border {
   position: relative;
-  padding: 3vh 1vw;
+  padding: 2vh 1vw;
   border: 2px solid slateblue;
   display: flex;
+  gap: 1vw;
   align-items: center;
   border-radius: 1vw;
   isolation: isolate;
   overflow: hidden;
   /* background-color: #dfdbe5; */
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    padding: 0vh 0.5vw;
+    border-radius: 5vw;
+    padding: 0vh 1vw;
   }
 }
 .sponsors-border::before {
@@ -137,4 +139,12 @@
   font-size: 1.2vw;
   text-align: justify;
   max-width: 40vw;
+}
+
+.link-launch-icon {
+  width: 30px;
+  height: 100%;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 25px;
+  }
 }

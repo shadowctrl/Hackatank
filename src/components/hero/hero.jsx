@@ -1,15 +1,17 @@
 import "./hero.css";
 import React, { useEffect, useState, useMemo } from "react";
 import KeyboardDoubleArrowRightSharpIcon from "@mui/icons-material/KeyboardDoubleArrowRightSharp";
-import InfoIcon from "@mui/icons-material/Info";
-import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import VanillaTilt from "vanilla-tilt";
 import Agenda from "./agenda";
 import Schedule from "./schedule";
 import Sponsors from "./sponsors";
 import { Footer } from "../";
+import { ReactComponent as Calender } from "../../assets/calender.svg";
+import { ReactComponent as Info } from "../../assets/info.svg";
+import { ReactComponent as Location } from "../../assets/location.svg";
+import { ReactComponent as ArrowRightWhite } from "../../assets/arrow-right-white.svg";
+import { ReactComponent as ArrowRightBlack } from "../../assets/arrow-right-black.svg";
 
 const hero = () => {
   useEffect(() => {
@@ -160,67 +162,45 @@ const hero = () => {
 
             <div className="col1 animated-div">
               <h3 className="text">
-                September 8{" "}
-                <EventAvailableIcon
-                  style={{
-                    fontSize: "1.5vw",
-                  }}
-                />
+                <div>
+                  <div>
+                    <div> 8</div> <div> th</div>{" "}
+                  </div>{" "}
+                  September
+                </div>
+                <Calender className="calender-icon" />
               </h3>
               <p
                 className="text2"
                 onClick={() => window.open("/guidelines", "_self")}
               >
-                Guidelines{" "}
-                <KeyboardArrowRightIcon
-                  style={{
-                    fontSize: "2vw",
-                  }}
-                />
+                Guidelines <ArrowRightWhite className="arrow-right-icon" />
               </p>
               <p
                 className="text3"
                 onClick={() => window.open("/events", "_self")}
               >
-                Events{" "}
-                <KeyboardArrowRightIcon
-                  style={{
-                    fontSize: "2vw",
-                  }}
-                />
+                Events <ArrowRightWhite className="arrow-right-icon" />
               </p>
             </div>
             {/* -------------------------- Column 2 * ---------------------------------- */}
             <div className="col2 animated-div">
               <h3 className="text4">
-                Information Details{" "}
-                <InfoIcon
-                  style={{
-                    fontSize: "1.5vw",
-                  }}
-                />
+                Information Details <Info className="info-icon" />
               </h3>
               <p
                 className="text5"
                 onClick={() => window.open("/about", "_self")}
               >
                 About
-                <KeyboardArrowRightIcon
-                  style={{
-                    fontSize: "2vw",
-                  }}
-                />
+                <ArrowRightWhite className="arrow-right-icon" />
               </p>
               <p
                 className="text6"
                 onClick={() => window.open("/judges", "_self")}
               >
                 Judge Panel
-                <KeyboardArrowRightIcon
-                  style={{
-                    fontSize: "2vw",
-                  }}
-                />
+                <ArrowRightWhite className="arrow-right-icon" />
               </p>
             </div>
             {/* -------------------------- Column 3 * ---------------------------------- */}
@@ -232,23 +212,13 @@ const hero = () => {
                 className="text8"
                 onClick={() => window.open("/hardware", "_self")}
               >
-                Hardware{" "}
-                <KeyboardArrowRightIcon
-                  style={{
-                    fontSize: "2vw",
-                  }}
-                />
+                Hardware <ArrowRightBlack className="arrow-right-icon" />
               </p>
               <p
                 className="text9"
                 onClick={() => window.open("/software", "_self")}
               >
-                Software{" "}
-                <KeyboardArrowRightIcon
-                  style={{
-                    fontSize: "2vw",
-                  }}
-                />
+                Software <ArrowRightBlack className="arrow-right-icon" />
               </p>
             </div>
             {/* -------------------------- Column 4  ---------------------------------- */}
@@ -259,7 +229,7 @@ const hero = () => {
               }
             >
               <h3 className="text10">
-                Venue <LocationOnIcon />
+                Venue <Location className="location-icon" />
               </h3>
               <div className="flex flex-col ">
                 <p className="text-white pt-[2vh] text-[1vw] venue-text-mobile">

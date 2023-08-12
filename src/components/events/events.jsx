@@ -59,7 +59,7 @@ const events = () => {
                 🔗 Scan the QR in the poster or search www.hackatank.tech and
                 register for the event.
                 <br /> <br />
-                1️⃣ It will redirect you to the respecƟve Google forms. Kindly
+                1️⃣ It will redirect you to the respective Google forms. Kindly
                 fill in the requested details.
                 <br /> <br />
                 2️⃣Our registration team will contact you further upon
@@ -68,7 +68,7 @@ const events = () => {
                 3️⃣For any queries/issues, kindly check the contacts column for
                 Point of Contact (POC).
                 <br /> <br />
-                4️⃣Last date for registraƟon is on or before the 25th of August
+                4️⃣Last date for registration is on or before the 25th of August
                 2023.
                 <br /> <br />
                 5️⃣The first round is free for all the teams that register for

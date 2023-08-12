@@ -69,9 +69,9 @@ const section2 = () => {
           <div className="vision">
             <div className="about-vision-title " id="agenda-left">
               <img
-                src="/images/target1.webp"
+                src="/images/vision.webp"
                 alt=""
-                width="250vw"
+                width="300px"
                 className="about-vision-image"
               />
               Vision
@@ -91,7 +91,7 @@ const section2 = () => {
               <img
                 src="/images/target.webp"
                 alt=""
-                width={"230vw"}
+                width={"250px"}
                 className="about-mission-image"
               />
               Mission

@@ -1,5 +1,5 @@
 import React from "react";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import { ReactComponent as LaunchLink } from "../../assets/link-launch.svg";
 import "./sponsors.css";
 import Contact from "./contact";
 import Faqs from "./faqs";
@@ -22,15 +22,10 @@ const sponsors = () => {
                 <a href="https://hebesec.com/" target="_blank">
                   {" "}
                   Hebesec Technologies{" "}
-                  <OpenInNewIcon
-                    style={{
-                      fontSize: "1.5vw",
-                      color: " #000000",
-                    }}
-                  />
                 </a>
               </h1>
-            </div>
+            </div>{" "}
+            <LaunchLink className="link-launch-icon" />
           </div>
         </div>
         <Faqs />

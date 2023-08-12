@@ -17,7 +17,7 @@ const schedule = () => {
     };
 
     const options = {
-      threshold: 0,
+      threshold: 0.2,
     };
     const observer = new IntersectionObserver(callback, options);
     const divs = document.querySelectorAll("#timeline");
@@ -33,7 +33,14 @@ const schedule = () => {
           </div>
           <div className="timeline" id="timeline">
             <div className="container" id="timeline-container">
-              <h2 className="date">Aug 5</h2>
+              <h2 className="date">
+                <div>
+                  Aug
+                  <div>
+                    <div> 5</div> <div>th</div>
+                  </div>
+                </div>
+              </h2>
               <h2 className="container-title">Registration opens</h2>
               <p className="container-description">
                 Registration is open for tech enthusiasts, developers, and
@@ -46,7 +53,18 @@ const schedule = () => {
             </div>
             <div className="container ">
               <h2 className="container-title">Abstract Submission</h2>
-              <h1 className="date"> Aug 5 - Aug 23</h1>
+              <h1 className="date">
+                <div>
+                  Aug
+                  <div>
+                    <div>5</div> <div>th</div>
+                  </div>
+                  -Aug
+                  <div>
+                    <div>23</div> <div>rd</div>
+                  </div>
+                </div>
+              </h1>
               <p className="container-description">
                 Submit your abstracts and be a part of the forefront of
                 innovation! We invite you to share your groundbreaking ideas and
@@ -56,8 +74,35 @@ const schedule = () => {
               <span className="circle"></span>
             </div>
             <div className="container ">
+              <h1 className="date">
+                <div>
+                  Aug
+                  <div>
+                    <div>28</div> <div>th</div>
+                  </div>
+                </div>
+              </h1>
+              <h2 className="container-title">Registration Closes</h2>
+              <p className="container-description">
+                Last call for registration! Time is running out to be a part of
+                our extraordinary hackathon event. Don't miss this incredible
+                opportunity to join a community of tech enthusiasts, developers,
+                and innovators from around the world. Registration will close
+                soon, so act fast and secure your spot
+              </p>
+
+              <span className="circle"></span>
+            </div>
+            <div className="container ">
               <h2 className="container-title">Finalists Announcements</h2>
-              <h1 className="date"> Aug 23 - Aug 28</h1>
+              <h1 className="date">
+                <div>
+                  Aug
+                  <div>
+                    <div>1</div> <div>st</div>
+                  </div>
+                </div>
+              </h1>
               <p className="container-description">
                 Step into the limelight – the moment we've all been waiting for
                 is here! We're thrilled to announce the finalists of our highly
@@ -67,21 +112,21 @@ const schedule = () => {
               </p>
               <span className="circle"></span>
             </div>
-            <div className="container ">
-              <h2 className="container-title">Registration Closes</h2>
-              <h1 className="date">Aug 28 - Sep 3</h1>
-              <p className="container-description">
-                Last call for registration! Time is running out to be a part of
-                our extraordinary hackathon event. Don't miss this incredible
-                opportunity to join a community of tech enthusiasts, developers,
-                and innovators from around the world. Registration will close
-                soon, so act fast and secure your spot
-              </p>
-              <span className="circle"></span>
-            </div>
+
             <div className="container ">
               <h2 className="container-title">Hackathon Finale</h2> <br />
-              <h1 className="date">Sep 8 - Sep 9</h1>
+              <h1 className="date">
+                <div>
+                  sep
+                  <div>
+                    <div>8</div> <div>th</div>
+                  </div>
+                  - sep
+                  <div>
+                    <div>9</div> <div>th</div>
+                  </div>
+                </div>
+              </h1>
               <p className="container-description">
                 Get ready for the moment of triumph – the Hackathon Finale is
                 just around the corner! After an intense and exhilarating
@@ -92,7 +137,14 @@ const schedule = () => {
             </div>
             <div className="container ">
               <h2 className="container-title">Award Ceremony</h2>
-              <h1 className="date">Sep 9</h1>
+              <h1 className="date">
+                <div>
+                  sep
+                  <div>
+                    <div>9</div> <div>th</div>
+                  </div>
+                </div>
+              </h1>
               <p className="container-description">
                 The judges deliberate, and winners are announced in various
                 categories, celebrating outstanding projects, creativity, and

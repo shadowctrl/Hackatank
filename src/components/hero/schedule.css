@@ -168,6 +168,25 @@
   );
 }
 
+.container .date > div {
+  display: flex;
+  gap: 0.5vw;
+  font-family: inherit;
+}
+
+.container .date > div > div {
+  display: flex;
+  font-family: inherit;
+}
+
+.container .date > div > div > div:nth-child(2) {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1vw;
+  text-transform: lowercase;
+  font-family: inherit;
+}
+
 .container-title {
   text-align: center;
   position: relative;
@@ -175,7 +194,7 @@
   border: 1px solid slateblue;
   width: fit-content;
   border-radius: 1vw;
-  color: black;
+  color: rgb(200, 255, 242);
   font-weight: 700;
   text-transform: uppercase;
   font-family: Audiowide;

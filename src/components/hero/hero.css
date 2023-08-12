@@ -13,7 +13,7 @@
   position: absolute;
   z-index: -2;
   inset: 0;
-  opacity: 0.2;
+  opacity: 0.1;
   background-image: url("/images/topography.svg");
 }
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
@@ -185,8 +185,8 @@
 
 .parent_hero .title1 .description {
   margin-top: 8vh;
-  font-size: 1vw;
-  font-weight: 100;
+  font-size: 1.2vw;
+  font-weight: 500;
   font-family: "arial";
   line-height: normal;
   text-transform: none;
@@ -342,7 +342,7 @@
 }
 .right_side {
   display: grid;
-  flex-basis: 42%;
+  flex-basis: 43%;
   grid-template-columns: 1fr 1fr;
   gap: 0.5vh 1vw;
   margin-top: -2vh;
@@ -380,10 +380,18 @@
 .animated-div:nth-child(6) {
   animation-delay: 1.2s;
 }
+
+.arrow-right-icon {
+  width: 30px;
+  height: 100%;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 40px;
+  }
+}
 .right_side .col1 {
   position: relative;
   padding: 1vw;
-  margin-top: 15vh;
+  margin-top: 9vh;
   height: fit-content;
   background-repeat: no-repeat;
   background-size: cover;
@@ -459,6 +467,25 @@
     font-size: 8vw;
   }
 }
+.right_side .col1 .text > div {
+  display: flex;
+  gap: 0.3vw;
+}
+.right_side .col1 .text > div > div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.right_side .col1 .text > div > div > div:nth-child(2) {
+  font-size: 1vw;
+}
+.calender-icon {
+  width: 25px;
+  height: 100%;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 35px;
+  }
+}
 
 .right_side .col1 .text2 {
   color: white;
@@ -466,7 +493,7 @@
   font-size: 1.2vw;
   display: flex;
   align-items: center;
-  gap: 8vw;
+  justify-content: space-between;
   border-bottom: 2px dotted slategrey;
   cursor: pointer;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
@@ -480,8 +507,8 @@
   font-size: 1.2vw;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 2px dotted slategrey;
-  gap: 10.4vw;
   cursor: pointer;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     font-size: 5vw;
@@ -517,6 +544,13 @@
   background: black;
   opacity: 0.6;
 }
+.info-icon {
+  width: 25px;
+  height: 100%;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 40px;
+  }
+}
 .right_side .col2 .text4 {
   color: #d9e4f5;
   background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
@@ -541,7 +575,7 @@
   font-size: 1.2vw;
   display: flex;
   align-items: center;
-  gap: 10.6vw;
+  justify-content: space-between;
   border-bottom: 2px dotted slategrey;
   cursor: pointer;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
@@ -556,7 +590,7 @@
   align-items: center;
   border-bottom: 2px dotted slategrey;
   color: white;
-  gap: 6.8vw;
+  justify-content: space-between;
   cursor: pointer;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     font-size: 5vw;
@@ -564,7 +598,7 @@
 }
 
 .right_side .col3 {
-  margin-top: 1vh;
+  /* margin-top: 1vh; */
   position: relative;
   height: fit-content;
   padding: 1vw;
@@ -627,7 +661,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 8vw;
+  justify-content: space-between;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     font-size: 5vw;
   }
@@ -642,14 +676,14 @@
   font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 8.5vw;
+  justify-content: space-between;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     font-size: 5vw;
   }
 }
 
 .right_side .col4 {
-  margin-top: -15vh;
+  margin-top: -9vh;
   position: relative;
   height: fit-content;
   padding: 1vw;
@@ -691,6 +725,13 @@
   }
 }
 
+.location-icon {
+  width: 35px;
+  height: 100%;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 45px;
+  }
+}
 .right_side .col4 .text11,
 .text14 {
   font-family: zeniq;
@@ -719,7 +760,7 @@
 }
 
 .right_side .col6 {
-  margin-top: -26vh;
+  margin-top: -18vh;
   position: relative;
   height: fit-content;
   padding: 1vw;
