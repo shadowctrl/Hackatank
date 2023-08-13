@@ -316,6 +316,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 1vh;
   max-width: 80%;
   padding: 2vh 2vw;
   border: 1px solid slateblue;
@@ -346,6 +347,26 @@
     rgba(238, 12, 200, 0.747)
   );
 }
+
+.container-mobile .date-mobile > div {
+  display: flex;
+  gap: 2vw;
+  font-family: inherit;
+}
+
+.container-mobile .date-mobile > div > div {
+  display: flex;
+  font-family: inherit;
+}
+
+.container-mobile .date-mobile > div > div > div:nth-child(2) {
+  display: flex;
+  align-items: flex-start;
+  font-size: 3vw;
+  text-transform: lowercase;
+  font-family: inherit;
+}
+
 .container-title-mobile {
   font-size: 3.5vw;
   position: relative;

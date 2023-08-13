@@ -15,7 +15,7 @@ const about = () => {
         });
       },
       {
-        threshold: 0.5,
+        threshold: 1,
       }
     );
     const divs = document.querySelectorAll(
@@ -26,6 +26,7 @@ const about = () => {
   return (
     <React.Fragment>
       <div id="about" className="parent-about">
+        <h1 className="about-title">About Us</h1>
         <div className="foundation">
           <div className="foundation-title " id="about-right">
             <img src="/images/srm.webp" alt="" className="about-srm-logo" />

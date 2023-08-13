@@ -122,6 +122,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: poppins;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+p {
+  -webkit-tap-highlight-color: transparent;
 }
 .bg-error {
   width: 100%;
