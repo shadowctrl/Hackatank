@@ -221,7 +221,7 @@
   inset: 0;
   z-index: -1;
   backdrop-filter: blur(1vw);
-  background-color: rgb(0, 0, 0, 0.4);
+  background-color: rgb(0, 0, 0, 0.7);
 }
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   .contact-card-back1::after {
