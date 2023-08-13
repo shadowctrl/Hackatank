@@ -7,6 +7,7 @@ import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArro
 import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
 import "./contact.css";
 import { ReactComponent as DiscordContact } from "../../assets/discord.svg";
+import ReactGA from "react-ga";
 
 const contact = () => {
   const handlecontactOptions = (card) => {
@@ -93,7 +94,7 @@ const contact = () => {
                         onClick={() => {
                           handleLaunch("contact-card-launch2");
                           setTimeout(() => {
-                            window.open("mailto:sloppyd027@gmail.com");
+                            window.open("mailto:shree@hackatank.tech");
                           }, 2000);
                         }}
                       >
@@ -104,7 +105,7 @@ const contact = () => {
                             height: "35px",
                           }}
                         />
-                        sloppyd027@gmail.com
+                        shree@hackatank.tech
                         <span id="contact-card-launch2">
                           <RocketLaunchIcon
                             className="rocketLaunch"
@@ -192,11 +193,11 @@ const contact = () => {
             <div className="contact-container">
               <div className="contact-card1">
                 <div className="contact-card-front">
-                  <img src="/images/raghav.webp" alt="" />
+                  <img src="/images/kishore.webp" alt="" />
                   <div className="contact-card-details">
-                    <h1 className="contact-card-name">Raghav N</h1>
+                    <h1 className="contact-card-name">Kishore R</h1>
                     <h2 className="contact-card-description">
-                      Promotional Head - whitehatians
+                      President - whitehatians
                     </h2>
                     <h3
                       className="contact-card-options"
@@ -214,7 +215,7 @@ const contact = () => {
                 </div>
                 <div className="contact-card-back1">
                   <div className="contact-card-details">
-                    <h1 className="contact-card-name">Raghav N</h1>
+                    <h1 className="contact-card-name">Kishore R</h1>
                     <h2 className="contact-card-description">
                       <span
                         className="contact-card-phone"
@@ -222,7 +223,7 @@ const contact = () => {
                           handleLaunch("contact-card-launch11");
                           setTimeout(() => {
                             window.open(
-                              "https://api.whatsapp.com/send?phone=8220419490"
+                              "https://api.whatsapp.com/send?phone=8682840197"
                             );
                           }, 2000);
                         }}
@@ -234,7 +235,7 @@ const contact = () => {
                             height: "35px",
                           }}
                         />
-                        +91 8220419490
+                        +91 8682840197
                         <span id="contact-card-launch11">
                           <RocketLaunchIcon
                             className="rocketLaunch"
@@ -250,7 +251,7 @@ const contact = () => {
                         onClick={() => {
                           handleLaunch("contact-card-launch12");
                           setTimeout(() => {
-                            window.open("mailto:shadowctrl@shadowctrl.me");
+                            window.open("mailto:kishore@hackatank.tech");
                           }, 2000);
                         }}
                       >
@@ -261,7 +262,7 @@ const contact = () => {
                             height: "35px",
                           }}
                         />
-                        admin@shadowctrl.me
+                        kishore@hackatank.tech
                         <span id="contact-card-launch12">
                           <RocketLaunchIcon
                             className="rocketLaunch"
@@ -278,7 +279,7 @@ const contact = () => {
                           handleLaunch("contact-card-launch13");
                           setTimeout(() => {
                             window.open(
-                              "https://www.instagram.com/_.shadowctrl._"
+                              "https://www.instagram.com/an0nymou5.4dm1n"
                             );
                           }, 2000);
                         }}
@@ -290,7 +291,7 @@ const contact = () => {
                             height: "35px",
                           }}
                         />
-                        @_.shadowctrl._
+                        @anonymous4dm1n
                         <span id="contact-card-launch13">
                           <RocketLaunchIcon
                             className="rocketLaunch"
@@ -317,7 +318,7 @@ const contact = () => {
                             height: "35px",
                           }}
                         />
-                        shadowctrl
+                        anonymous4dm1n
                         <span id="contact-card-launch14">
                           <RocketLaunchIcon
                             className="rocketLaunch"

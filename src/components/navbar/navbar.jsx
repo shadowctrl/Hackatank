@@ -135,7 +135,7 @@ const Navbar = () => {
           </ul>
           <div className="last">
             <h2 className="register">
-              <h3 onClick={handleRegisterClick}> Register</h3>
+              <p onClick={handleRegisterClick}> Register</p>
             </h2>
           </div>
         </div>
