@@ -14,6 +14,11 @@ const contact = () => {
   };
 
   const handleLaunch = (target) => {
+    ReactGA.event({
+      category: "Button",
+      action: "click",
+      label: "Contact Option",
+    });
     const rocket = document.querySelector(`#${target}`);
     rocket.classList.toggle("contact-card-launch");
   };

@@ -65,8 +65,10 @@
   font-family: exo;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 0vh 1vw;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     font-size: 5vw;
+    padding: 0vh 1vw;
   }
 }
 .software-content-description {

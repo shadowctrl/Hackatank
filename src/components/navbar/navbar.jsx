@@ -7,9 +7,51 @@ import {
 } from "@ant-design/icons";
 import { SocialIcon } from "react-social-icons";
 import { ReactComponent as Grid } from "../../assets/navgrid.svg";
+import ReactGA from "react-ga";
 
 const Navbar = () => {
+  const handleInsta = () => {
+    ReactGA.event({
+      category: "Social Icon",
+      action: "click",
+      label: "Instagram",
+    });
+    window.open("https://www.instagram.com/srmveccsisb");
+    window.open("https://www.instagram.com/whitehatians");
+  };
+  const handleFb = () => {
+    ReactGA.event({
+      category: "Social Icon",
+      action: "click",
+      label: "Facebook",
+    });
+    window.open("https://www.facebook.com");
+    window.open("https://www.facebook.com/@whitehatians");
+  };
+  const handleYt = () => {
+    ReactGA.event({
+      category: "Social Icon",
+      action: "click",
+      label: "Youtube",
+    });
+    window.open("https://www.youtube.com/");
+    window.open("https://www.youtube.com/@whitehatians");
+  };
+
+  const handleRegisterClick = () => {
+    ReactGA.event({
+      category: "Button",
+      action: "click",
+      label: "register",
+    });
+    window.open("https://forms.gle/mqHSf1kpoTUiMURH6");
+  };
   const handleScroll = (id) => {
+    ReactGA.event({
+      category: "Button",
+      action: "click",
+      label: `${id} - Navbar`,
+    });
     if (window.location.pathname != "/") {
       window.open(`/${id}`, "_self");
     }
@@ -21,6 +63,11 @@ const Navbar = () => {
   if (window.location.hash) handleScroll(window.location.hash);
 
   const handleNavMenuClick = () => {
+    ReactGA.event({
+      category: "Menu",
+      action: "click",
+      label: `Mobile Menu Grid`,
+    });
     const NavVisiblility = document.querySelector(".parent-navbar-mobile");
     NavVisiblility.classList.toggle("navbar-open-mobile");
 
@@ -37,7 +84,8 @@ const Navbar = () => {
             <div className="socials">
               <div className="insta">
                 <SocialIcon
-                  url="https://www.instagram.com/srmveccsisb"
+                  onClick={handleInsta}
+                  network="instagram"
                   style={{
                     height: "3vw",
                     width: "3vw",
@@ -46,7 +94,8 @@ const Navbar = () => {
               </div>
               <div className="fb">
                 <SocialIcon
-                  url="https://www.facebook.com"
+                  onClick={handleFb}
+                  network="facebook"
                   style={{
                     height: "3vw",
                     width: "3vw",
@@ -56,7 +105,8 @@ const Navbar = () => {
 
               <div className="yt">
                 <SocialIcon
-                  url="https://www.youtube.com/"
+                  onClick={handleYt}
+                  network="youtube"
                   style={{
                     height: "3vw",
                     width: "3vw",
@@ -85,10 +135,7 @@ const Navbar = () => {
           </ul>
           <div className="last">
             <h2 className="register">
-              <a href="https://forms.gle/mqHSf1kpoTUiMURH6" target="_blank">
-                {" "}
-                Register
-              </a>
+              <h3 onClick={handleRegisterClick}> Register</h3>
             </h2>
           </div>
         </div>

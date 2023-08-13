@@ -1,7 +1,7 @@
 import "./hero.css";
 import React, { useEffect, useState, useMemo } from "react";
+import ReactGA from "react-ga";
 import KeyboardDoubleArrowRightSharpIcon from "@mui/icons-material/KeyboardDoubleArrowRightSharp";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import VanillaTilt from "vanilla-tilt";
 import Agenda from "./agenda";
 import Schedule from "./schedule";
@@ -14,16 +14,22 @@ import { ReactComponent as ArrowRightWhite } from "../../assets/arrow-right-whit
 import { ReactComponent as ArrowRightBlack } from "../../assets/arrow-right-black.svg";
 
 const hero = () => {
-  useEffect(() => {
-    const tilt = VanillaTilt.init(
-      document.querySelectorAll(".anim"),
-      {
-        max: 10,
-        speed: 400,
-      },
-      []
-    );
-  });
+  const handleRegisterClick = () => {
+    ReactGA.event({
+      category: "Button",
+      action: "click",
+      label: "register",
+    });
+    window.open("https://forms.gle/mqHSf1kpoTUiMURH6");
+  };
+  const handleCardClicks = (card) => {
+    ReactGA.event({
+      category: "Button",
+      action: "click",
+      label: `${card}`,
+    });
+    window.open(`${card}`, "_self");
+  };
   const [countdown, setCountdown] = useState({
     days: 0,
     hours: 0,
@@ -69,6 +75,14 @@ const hero = () => {
   };
 
   useEffect(() => {
+    const tilt = VanillaTilt.init(
+      document.querySelectorAll(".anim"),
+      {
+        max: 10,
+        speed: 400,
+      },
+      []
+    );
     const interval = setInterval(() => handleCountdown(), 1000);
     return () => {
       clearInterval(interval);
@@ -117,10 +131,7 @@ const hero = () => {
               </p>
             </div>
 
-            <div
-              className="register_now"
-              onClick={() => window.open("https://forms.gle/mqHSf1kpoTUiMURH6")}
-            >
+            <div className="register_now" onClick={handleRegisterClick}>
               <div>
                 <a>REGISTER NOW </a>
               </div>
@@ -172,14 +183,11 @@ const hero = () => {
               </h3>
               <p
                 className="text2"
-                onClick={() => window.open("/guidelines", "_self")}
+                onClick={() => handleCardClicks("/guidelines")}
               >
                 Guidelines <ArrowRightWhite className="arrow-right-icon" />
               </p>
-              <p
-                className="text3"
-                onClick={() => window.open("/events", "_self")}
-              >
+              <p className="text3" onClick={() => handleCardClicks("/events")}>
                 Events <ArrowRightWhite className="arrow-right-icon" />
               </p>
             </div>
@@ -188,17 +196,11 @@ const hero = () => {
               <h3 className="text4">
                 Information Details <Info className="info-icon" />
               </h3>
-              <p
-                className="text5"
-                onClick={() => window.open("/about", "_self")}
-              >
+              <p className="text5" onClick={() => handleCardClicks("/about")}>
                 About
                 <ArrowRightWhite className="arrow-right-icon" />
               </p>
-              <p
-                className="text6"
-                onClick={() => window.open("/judges", "_self")}
-              >
+              <p className="text6" onClick={() => handleCardClicks("/judges")}>
                 Judge Panel
                 <ArrowRightWhite className="arrow-right-icon" />
               </p>
@@ -210,13 +212,13 @@ const hero = () => {
               </div>
               <p
                 className="text8"
-                onClick={() => window.open("/hardware", "_self")}
+                onClick={() => handleCardClicks("/hardware")}
               >
                 Hardware <ArrowRightBlack className="arrow-right-icon" />
               </p>
               <p
                 className="text9"
-                onClick={() => window.open("/software", "_self")}
+                onClick={() => handleCardClicks("/software")}
               >
                 Software <ArrowRightBlack className="arrow-right-icon" />
               </p>

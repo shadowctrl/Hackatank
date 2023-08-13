@@ -1,11 +1,17 @@
 import React, { useEffect } from "react";
 import "./projects.css";
+import ReactGA from "react-ga";
 
 const hardware = () => {
   useEffect(() => {
     document.title = "Hardware projects";
   });
   const handleSoftwareView = (Element) => {
+    ReactGA.event({
+      category: "Button",
+      action: "click",
+      label: "Hardware Project",
+    });
     const ElementVisibility = Element.currentTarget.querySelector(
       ".software-content-description"
     );

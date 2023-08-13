@@ -153,9 +153,10 @@
   border-radius: 0.5vw;
 }
 
-.register a {
+.register > h3 {
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 .main-navbar-mobile {
   margin: 0;
@@ -251,4 +252,5 @@
   padding: 0vh 1vw;
   border: 2px solid slategray;
   border-radius: 1vw;
+  cursor: pointer;
 }

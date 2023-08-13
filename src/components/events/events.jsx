@@ -1,11 +1,17 @@
 import React, { useEffect } from "react";
 import "./events.css";
+import ReactGA from "react-ga";
 
 const events = () => {
   useEffect(() => {
     document.title = "Stages";
   });
   const handleStage = (stage) => {
+    ReactGA.event({
+      category: "Button",
+      action: "click",
+      label: `Events Stage-${stage}`,
+    });
     if (stage == "1") {
       document.querySelector("#line-progress").style.width = "0%";
       document

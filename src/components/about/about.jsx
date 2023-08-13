@@ -1,6 +1,16 @@
 import React, { useEffect } from "react";
+import ReactGA from "react-ga";
 import "./about.css";
+
 const about = () => {
+  const handleWebClicks = (webLink) => {
+    ReactGA.event({
+      category: "Button",
+      action: "click",
+      label: webLink,
+    });
+    window.open(webLink);
+  };
   useEffect(() => {
     document.title = "About Us";
     const observer = new IntersectionObserver(
@@ -23,6 +33,7 @@ const about = () => {
     );
     divs.forEach((div) => observer.observe(div));
   });
+
   return (
     <React.Fragment>
       <div id="about" className="parent-about">
@@ -52,7 +63,11 @@ const about = () => {
         </div>
 
         <div className="srmvec">
-          <div className="about-srmvec-title " id="about-left">
+          <div
+            className="about-srmvec-title "
+            id="about-left"
+            onClick={() => handleWebClicks("https://www.srmvalliammai.ac.in")}
+          >
             <img
               className="about-srmvec-logo"
               src="/images/srmvec.webp"
@@ -70,7 +85,11 @@ const about = () => {
           </div>
         </div>
         <div className="csi">
-          <div className="about-csi-title" id="about-right">
+          <div
+            className="about-csi-title"
+            id="about-right"
+            onClick={() => handleWebClicks("http://www.csi-kancheepuram.org/")}
+          >
             <img className="about-csi-logo" src="/images/csi1.webp" alt="" />
             About csi
           </div>
@@ -85,7 +104,11 @@ const about = () => {
           </div>
         </div>
         <div className="whitehatians">
-          <div className="about-whitehatians-title" id="about-left">
+          <div
+            className="about-whitehatians-title"
+            id="about-left"
+            onClick={() => handleWebClicks("https://www.whitehatians.tech")}
+          >
             <img
               className="about-whitehatians-logo"
               src="/images/whitehatians.webp"

@@ -1,9 +1,15 @@
 import React, { useEffect } from "react";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import "./faqs.css";
+import ReactGA from "react-ga";
 
 const faqs = () => {
   const handleArrow = (element) => {
+    ReactGA.event({
+      category: "Button",
+      action: "click",
+      label: "FAQs",
+    });
     const elementVisible = element.currentTarget.querySelector(
       ".faqs-content-description"
     );
