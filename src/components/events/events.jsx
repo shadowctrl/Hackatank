@@ -3,6 +3,14 @@ import "./events.css";
 import ReactGA from "react-ga";
 
 const events = () => {
+  const handleAbstract = () => {
+    ReactGA.event({
+      category: "Button",
+      action: "click",
+      label: `Abstract Reference Download`,
+    });
+    window.open("/docs/Abstract_Reference_Hackathon.pdf");
+  };
   useEffect(() => {
     document.title = "Stages";
   });
@@ -84,7 +92,13 @@ const events = () => {
           </div>
           <div className="section-content stage2-content">
             <div className="section-format">
-              <h1>Abstract Submission</h1>
+              <h1>
+                Abstract Submission
+                <span className="stage2-reference" onClick={handleAbstract}>
+                  <span>click here to downlaod -</span>
+                  ABSTRACT SUBMISSION REFERENCE
+                </span>
+              </h1>
               <p>
                 📋 The problem statements are available on the home page, and it
                 is provided at the bottom of this page as a PDF for downloading.
@@ -93,8 +107,8 @@ const events = () => {
                 review. Kindly submit it as an abstract and the registration
                 team will contact you.
                 <br /> <br />
-                📝 The abstract format is given at the bottom of this page as a
-                PDF for downloading. Kindly download and use it for reference.
+                📝 The abstract format is given at the top right of this page as
+                a PDF for downloading. Kindly download and use it for reference.
                 <br /> <br />
                 📄 Abstract of the project must be submitted only in PDF file
                 format.

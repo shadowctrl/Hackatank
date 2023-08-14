@@ -86,17 +86,38 @@
   align-items: center;
   gap: 2vh;
 }
-.section-format h1 {
+.section-format > h1 {
   font-size: 2vw;
   text-transform: uppercase;
   font-family: audiowide;
   letter-spacing: 2px;
   color: yellow;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     font-size: 7vw;
   }
 }
-
+.section-format > h1 > span {
+  font-family: fira sans condensed;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  font-size: 1.1vw;
+  font-weight: 700;
+  color: yellowgreen;
+  cursor: pointer;
+  padding: 0.2vh 1vw;
+  border: 1px solid white;
+  border-radius: 0.3vw;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.section-format > h1 > span > span {
+  font-size: 1vw;
+}
 .section-format p {
   width: 100%;
 }
