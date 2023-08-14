@@ -1,0 +1,95 @@
+.parent-convener {
+  width: 100%;
+  position: relative;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 3vh 2vw;
+  }
+}
+.convener-logo {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 10vw;
+  top: -5.5vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 25vw;
+    left: 0;
+  }
+}
+
+.convener-title {
+  position: relative;
+}
+.convener-title-name {
+  font-size: 3.5vw;
+  margin-left: 8vw;
+  font-family: "russo one";
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  position: relative;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 10vw;
+    margin-left: 17vw;
+  }
+}
+
+.convener-title-name::after {
+  content: "";
+  z-index: -1;
+  border-bottom: 4px solid #d500ed;
+  border-image: linear-gradient(
+    to right top,
+    #ffda00,
+    #ffaa17,
+    #ff7545,
+    #ff3c6f,
+    #ff0099,
+    #ed00ae,
+    #d100c4,
+    #aa0ada,
+    #9700e1,
+    #7f00e7,
+    #5e00ef,
+    #1b0cf6
+  );
+  border-image-slice: 1;
+  width: 35vw;
+}
+
+.convener-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5vh 0vw;
+}
+.convener-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Russo One";
+  line-height: normal;
+}
+.convener-card > img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+}
+.convener-name {
+  font-size: 40px;
+  font-family: inherit;
+}
+.convener-position {
+  font-size: 20px;
+  font-family: "exo";
+  font-weight: 700;
+}
+.convener-dep {
+  font-size: 20px;
+  font-family: "exo";
+  font-weight: 700;
+}
