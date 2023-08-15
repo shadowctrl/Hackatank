@@ -49,8 +49,8 @@
 }
 
 .agenda .title2 .title-name {
-  font-size: 4vw;
-  margin-left: 7vw;
+  font-size: 45px;
+  margin-left: 6vw;
   font-family: "russo one";
   font-weight: 800;
   display: flex;
@@ -58,7 +58,7 @@
   gap: 2vw;
   position: relative;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    font-size: 10vw;
+    font-size: 40px;
     margin-left: 17vw;
   }
 }
@@ -89,10 +89,10 @@
 .agenda .title2 img {
   position: absolute;
   z-index: -1;
-  width: 10vw;
+  width: 60px;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    width: 25vw;
-    left: 0;
+    width: 55px;
+    left: 3vw;
   }
 }
 

@@ -1,5 +1,16 @@
+.parent-faqs {
+  margin: 7vh 0vw;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin: 5vh 1vw;
+  }
+}
 .faqs-title {
-  font-size: 3.5vw;
+  font-size: 45px;
   font-family: "russo one";
   letter-spacing: 2px;
   font-weight: 900;
@@ -7,14 +18,10 @@
   align-items: center;
   gap: 2vw;
   position: relative;
-  padding-left: 10vw;
-  padding-top: 5.5vh;
-  padding-bottom: 5vh;
+  padding-left: 6vw;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    font-size: 10vw;
+    font-size: 40px;
     padding-left: 15vw;
-    padding-top: 3vh;
-    padding-bottom: 2vh;
   }
 }
 
@@ -42,14 +49,11 @@
 }
 .faqs-title img {
   position: absolute;
-  top: 0vh;
-  left: 1vw;
+  inset: 0;
   z-index: -1;
-  width: 10vw;
+  width: 60px;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    width: 25vw;
-    left: -5vw;
-    top: 0.5vh;
+    width: 55px;
   }
 }
 

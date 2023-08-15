@@ -18,8 +18,9 @@ const convener = () => {
             />
             <h1 className="convener-name"> Dr. M Senthil Kumar</h1>
 
-            <h1 className="convener-position">Head Of Department </h1>
-            <h1 className="convener-dep">Cyber Security</h1>
+            <h1 className="convener-position">
+              Head Of Department - Cyber Security{" "}
+            </h1>
           </div>
         </div>
       </div>

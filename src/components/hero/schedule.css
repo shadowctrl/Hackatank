@@ -1,5 +1,5 @@
 .parent-schedule {
-  padding: 5vh 10vw;
+  padding: 10vh 3vw;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -25,8 +25,7 @@
   opacity: 0.1;
 }
 .schedule-title {
-  padding-top: 5vh;
-  font-size: 4vw;
+  font-size: 45px;
   margin-left: 6vw;
   font-family: "russo one";
   letter-spacing: 2px;
@@ -60,13 +59,14 @@
 }
 .schedule-title img {
   position: absolute;
-  top: 3.5vh;
-  left: 7vw;
+  top: 10vh;
+  left: 3vw;
   z-index: -1;
-  width: 12vw;
+  width: 60px;
 }
 .timeline {
   position: relative;
+  padding: 0vh 7vw;
 }
 
 .timeline::after {
@@ -257,13 +257,22 @@
     display: block;
   }
 }
+.parent-schedule-mobile::before {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  z-index: -97;
+  background-size: contain;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12'%3E%3Cpath d='M9.8 12 0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z' fill='%239C92AC' fill-opacity='.26' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
 .schedule-title-mobile {
   display: flex;
   align-items: center;
-  font-size: 10vw;
+  font-size: 40px;
   font-family: "russo one";
   font-weight: 800;
-  margin-left: 17vw;
+  margin-left: 15vw;
 }
 
 .schedule-title-mobile::after {
@@ -292,8 +301,9 @@
 
 .schedule-title-mobile img {
   position: absolute;
-  width: 25vw;
-  left: 0;
+  width: 55px;
+  left: 1vw;
+  top: 5vh;
 }
 .timeline-mobile {
   display: flex;
