@@ -56,9 +56,7 @@ const Navbar = () => {
       window.open(`/${id}`, "_self");
     }
 
-    setTimeout(() => {
-      document.querySelector(id).scrollIntoView({ behaviour: "smooth" });
-    }, 200);
+    document.querySelector(id).scrollIntoView({ behaviour: "smooth" });
   };
   if (window.location.hash) handleScroll(window.location.hash);
 

@@ -50,11 +50,7 @@
   font-weight: lighter;
   font-style: normal;
 }
-@font-face {
-  font-family: "Lorem Ipsum";
-  src: local("Lorem Ipsum Regular"),
-    url("/fonts/LoremIpsum.woff") format("woff");
-}
+
 @font-face {
   font-family: blanka;
   src: url(/fonts/blanka.otf);
@@ -63,59 +59,19 @@
   font-family: technology;
   src: url(/fonts/technology/Technology.ttf);
 }
-@font-face {
-  font-family: ErbosDraco;
-  src: local("Erbos Draco"), url(/fonts/ErbosDraco.ttf);
-}
-@font-face {
-  font-family: technorace;
-  src: url(/fonts/technorace.otf);
-}
-@font-face {
-  font-family: zian;
-  src: url(/fonts/zian.ttf);
-}
+
 @font-face {
   font-family: zeniq;
   src: url(/fonts/zeniq.ttf);
 }
 @font-face {
-  font-family: rostave;
-  src: url(/fonts/rostave.otf);
-}
-@font-face {
-  font-family: miamagon;
-  src: url(/fonts/miamagon.otf);
-}
-@font-face {
-  font-family: spacecrusaders;
-  src: url(/fonts/spacecrusaders.otf);
-}
-@font-face {
-  font-family: neonenergy;
-  src: url(/fonts/neonenergy.otf);
-}
-@font-face {
-  font-family: falzon;
-  src: url(/fonts/falzon.ttf);
-}
-@font-face {
-  font-family: suggested;
-  src: url(/fonts/suggested.ttf);
-}
-@font-face {
   font-family: liger;
   src: url(/fonts/liger.ttf);
-}
-@font-face {
-  font-family: freedom45;
-  src: url(/fonts/freedom45.ttf);
 }
 html,
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  /* height: 100vh; */
 }
 
 * {

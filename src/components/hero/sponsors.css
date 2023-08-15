@@ -1,11 +1,11 @@
 .parent-sponsors {
-  padding-top: 10vh;
+  padding: 7vh 3vw;
   position: relative;
   isolation: isolate;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: fit-content;
+
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     padding: 5vh 2vw;
   }
@@ -21,16 +21,16 @@
 }
 .sponsors-title {
   position: relative;
-  font-size: 3.5vw;
+  font-size: 45px;
   font-family: "russo one";
   letter-spacing: 2px;
   font-weight: 900;
   display: flex;
   align-items: center;
   gap: 2vw;
-  padding-left: 10vw;
+  padding-left: 6vw;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    font-size: 10vw;
+    font-size: 40px;
     padding-left: 15vw;
   }
 }
@@ -59,14 +59,11 @@
 }
 .sponsors-title img {
   position: absolute;
-  top: -6.5vh;
-  left: 1vw;
+  inset: 0;
   z-index: -1;
-  width: 11vw;
+  width: 60px;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    width: 25vw;
-    left: -5vw;
-    top: -2.5vh;
+    width: 55px;
   }
 }
 .sponsors-container {
