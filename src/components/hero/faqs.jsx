@@ -40,7 +40,7 @@ const faqs = () => {
     <React.Fragment>
       <div id="faqs" className="parent-faqs">
         <h1 className="faqs-title">
-          <img src="/images/logo3.webp" alt="" />
+          <img src="/images/rrr.webp" alt="" />
           FAQs
         </h1>
 

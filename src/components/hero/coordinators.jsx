@@ -5,7 +5,7 @@ const coordinators = () => {
     <React.Fragment>
       <div className="parent-convener">
         <div className="convener-title">
-          <img src="/images/logo3.webp" alt="" className="convener-logo" />
+          <img src="/images/rrr.webp" alt="" className="convener-logo" />
           <h1 className="convener-title-name">Coordinators</h1>
         </div>
 
@@ -27,7 +27,7 @@ const coordinators = () => {
               src="/images/nandhashree.jpeg"
               alt="Nandhashree - Assistant professor"
             />
-            <h1 className="convener-name"> Mrs. K R Nandhashree</h1>
+            <h1 className="convener-name"> Ms. K.R.Nandhashree</h1>
             <h1 className="convener-position">
               Assistant Professor - Cyber Security
             </h1>

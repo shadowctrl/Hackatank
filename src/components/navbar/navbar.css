@@ -60,7 +60,7 @@
   color: black;
   z-index: 99;
   top: 2vh;
-  left: 0.9vw;
+  left: 0.8vw;
   transform: translateY(15.5vh);
   opacity: 0;
   animation: youtube 0.3s 1.3s linear forwards;

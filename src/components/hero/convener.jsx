@@ -5,7 +5,7 @@ const convener = () => {
     <React.Fragment>
       <div className="parent-convener">
         <div className="convener-title">
-          <img src="/images/logo3.webp" alt="" className="convener-logo" />
+          <img src="/images/rrr.webp" alt="" className="convener-logo" />
           <h1 className="convener-title-name">Conveners</h1>
         </div>
 

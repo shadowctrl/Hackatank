@@ -32,7 +32,7 @@ const section2 = () => {
       <div className="section2">
         <div className="agenda" id="agenda">
           <div className="title2">
-            <img src="/images/logo3.webp" alt="" />
+            <img src="/images/rrr.webp" alt="" />
             <h1 className="title-name">Agenda</h1>
           </div>
           <div className="agenda-text">

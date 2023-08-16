@@ -11,7 +11,7 @@ const sponsors = () => {
       <div className="parent-sponsors">
         <h1 className="sponsors-title">
           Sponsor
-          <img src="/images/logo3.webp" alt="" />
+          <img src="/images/rrr.webp" alt="" />
         </h1>
         <div className="sponsors-container">
           <div className="sponsors-border">
