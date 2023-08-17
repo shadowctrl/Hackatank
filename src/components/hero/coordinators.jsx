@@ -16,7 +16,7 @@ const coordinators = () => {
               src="/images/sivasankari.jpeg"
               alt="Sivasankari - Assistant professor"
             />
-            <h1 className="convener-name">Mrs. R Sivasankari</h1>
+            <h1 className="convener-name">Mrs. R. Sivasankari</h1>
             <h1 className="convener-position">
               Assistant Professor - Cyber Security
             </h1>
@@ -27,7 +27,7 @@ const coordinators = () => {
               src="/images/nandhashree.jpeg"
               alt="Nandhashree - Assistant professor"
             />
-            <h1 className="convener-name"> Ms. K.R.Nandhashree</h1>
+            <h1 className="convener-name"> Ms. K.R. Nandhashree</h1>
             <h1 className="convener-position">
               Assistant Professor - Cyber Security
             </h1>

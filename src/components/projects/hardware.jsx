@@ -24,19 +24,6 @@ const hardware = () => {
         <h1 className="parent-software-title">Hardware Projects</h1>
         <div className="software-container">
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title ">
-              Sustainable Solutions for Urban Mobility
-            </h1>
-            <p className="software-content-description projects-close">
-              Develop an application or system that addresses the challenges of
-              urban transportation, promoting sustainable alternatives such as
-              cycling, walking, or public transport. Consider factors like
-              traffic congestion, air pollution, and ease of access for all
-              citizens.
-            </p>
-          </div>
-
-          <div className="software-content" onClick={handleSoftwareView}>
             <h1 className="software-content-title">
               AI-powered Healthcare Triage
             </h1>
@@ -58,18 +45,6 @@ const hardware = () => {
               accessible to differently-abled individuals or those with learning
               difficulties. Consider inclusivity, interactivity, and adaptable
               content to cater to a diverse audience
-            </p>
-          </div>
-
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
-              Waste Management and Recycling Optimization
-            </h1>
-            <p className="software-content-description projects-close">
-              Develop an intelligent system that optimizes waste collection and
-              recycling processes in urban areas. The solution could include
-              real-time data analysis, route optimization, and incentivizing
-              citizens to participate actively in recycling initiatives
             </p>
           </div>
 
@@ -139,16 +114,7 @@ const hardware = () => {
               on occupancy and user preferences{" "}
             </p>
           </div>
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
-              Redefining Education through Technology
-            </h1>
-            <p className="software-content-description projects-close">
-              Create an innovative educational platform that offers personalized
-              learning experiences, interactive content, and tools for teachers
-              to engage students in virtual or hybrid classrooms{" "}
-            </p>
-          </div>
+
           <div className="software-content" onClick={handleSoftwareView}>
             <h1 className="software-content-title">
               Mental Health and Wellness Suppor
@@ -159,16 +125,7 @@ const hardware = () => {
               therapy sessions to promote overall well-being.
             </p>
           </div>
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
-              Cybersecurity and Data Privacy for IoT Devices
-            </h1>
-            <p className="software-content-description projects-close">
-              Build a security platform that safeguards Internet of Things (IoT)
-              devices from cyber threats, ensuring data privacy and secure
-              communication between devices and networks.
-            </p>
-          </div>
+
           <div className="software-content" onClick={handleSoftwareView}>
             <h1 className="software-content-title">Voice Prescription</h1>
             <p className="software-content-description projects-close">
@@ -210,6 +167,49 @@ const hardware = () => {
               Create an innovative educational platform that offers personalized
               learning experiences, interactive content, and tools for teachers
               to engage students in virtual or hybrid classrooms{" "}
+            </p>
+          </div>
+          <div className="software-content" onClick={handleSoftwareView}>
+            <h1 className="software-content-title ">
+              Sustainable Solutions for Urban Mobility
+            </h1>
+            <p className="software-content-description projects-close">
+              Develop an application or system that addresses the challenges of
+              urban transportation, promoting sustainable alternatives such as
+              cycling, walking, or public transport. Consider factors like
+              traffic congestion, air pollution, and ease of access for all
+              citizens.
+            </p>
+          </div>
+          <div className="software-content" onClick={handleSoftwareView}>
+            <h1 className="software-content-title">
+              Waste Management and Recycling Optimization
+            </h1>
+            <p className="software-content-description projects-close">
+              Develop an intelligent system that optimizes waste collection and
+              recycling processes in urban areas. The solution could include
+              real-time data analysis, route optimization, and incentivizing
+              citizens to participate actively in recycling initiatives
+            </p>
+          </div>
+          <div className="software-content" onClick={handleSoftwareView}>
+            <h1 className="software-content-title">
+              Redefining Education through Technology
+            </h1>
+            <p className="software-content-description projects-close">
+              Create an innovative educational platform that offers personalized
+              learning experiences, interactive content, and tools for teachers
+              to engage students in virtual or hybrid classrooms{" "}
+            </p>
+          </div>
+          <div className="software-content" onClick={handleSoftwareView}>
+            <h1 className="software-content-title">
+              Cybersecurity and Data Privacy for IoT Devices
+            </h1>
+            <p className="software-content-description projects-close">
+              Build a security platform that safeguards Internet of Things (IoT)
+              devices from cyber threats, ensuring data privacy and secure
+              communication between devices and networks.
             </p>
           </div>
         </div>

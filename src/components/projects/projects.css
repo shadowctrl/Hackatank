@@ -20,9 +20,10 @@
 }
 
 .software-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   justify-items: center;
+  align-items: flex-start;
   width: 100%;
   padding: 0vh 5vw;
   column-gap: 5vw;
@@ -30,14 +31,15 @@
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     grid-template-columns: 1fr;
     row-gap: 5vh;
+    flex-direction: column;
   }
 }
 
 .software-content {
+  flex-basis: 45%;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   border: 1px dotted white;
   padding: 2vh 0vw;
@@ -51,7 +53,8 @@
   text-align: center;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     border-radius: 2vw;
-    padding: 2vh 2vw;
+    padding: 1vh 1vw;
+    width: 100%;
   }
 }
 .projects-view {
@@ -67,7 +70,7 @@
   text-transform: uppercase;
   padding: 0vh 1vw;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    font-size: 5vw;
+    font-size: 4vw;
     padding: 0vh 1vw;
   }
 }
@@ -77,6 +80,7 @@
   animation: softwareFade 0.3s ease-in forwards;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     font-size: 4vw;
+    padding: 1vh 2vw;
   }
 }
 @keyframes softwareFade {

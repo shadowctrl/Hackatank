@@ -37,7 +37,7 @@ const schedule = () => {
                 <div>
                   Aug
                   <div>
-                    <div> 15</div> <div>th</div>
+                    <div> 17</div> <div>th</div>
                   </div>
                 </div>
               </h2>

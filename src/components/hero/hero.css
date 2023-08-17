@@ -213,7 +213,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 23vw;
+  width: 20vw;
   height: fit-content;
   transition: all 0.3s ease-in-out;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
@@ -223,15 +223,15 @@
   }
 }
 .register_now:hover {
-  width: 24vw;
+  width: 21vw;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     width: 62vw;
   }
 }
 .register_now a {
   text-decoration: none;
-  font-size: 1.5vw;
-  letter-spacing: -5px;
+  font-size: 1.4vw;
+  letter-spacing: -8px;
   color: white;
   font-family: mars;
   font-weight: bold;
