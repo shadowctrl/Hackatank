@@ -65,6 +65,16 @@
   opacity: 0;
   animation: youtube 0.3s 1.3s linear forwards;
 }
+.parent .title .socials .discord-icon {
+  position: absolute;
+  color: black;
+  z-index: 99;
+  top: 8vh;
+  left: 0.8vw;
+  opacity: 0;
+  transform: translateY(15.5vh);
+  animation: youtube 0.3s 1.8s linear forwards;
+}
 
 @keyframes instagram {
   100% {

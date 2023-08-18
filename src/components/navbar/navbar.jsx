@@ -25,7 +25,7 @@ const Navbar = () => {
       action: "click",
       label: "Facebook",
     });
-    window.open("https://www.facebook.com");
+    window.open("https://www.facebook.com/srmveccsisb");
     window.open("https://www.facebook.com/@whitehatians");
   };
   const handleYt = () => {
@@ -34,10 +34,19 @@ const Navbar = () => {
       action: "click",
       label: "Youtube",
     });
-    window.open("https://www.youtube.com/");
+    window.open("https://www.youtube.com/@SRMVECCSIAN");
     window.open("https://www.youtube.com/@whitehatians");
   };
 
+  const handleDiscord = () => {
+    ReactGA.event({
+      category: "Social Icon",
+      action: "click",
+      label: "Youtube",
+    });
+
+    window.open("https://discord.gg/w77zzjVkEB?event=1141717757382107197");
+  };
   const handleRegisterClick = () => {
     ReactGA.event({
       category: "Button",
@@ -105,6 +114,16 @@ const Navbar = () => {
                 <SocialIcon
                   onClick={handleYt}
                   network="youtube"
+                  style={{
+                    height: "3vw",
+                    width: "3vw",
+                  }}
+                />
+              </div>
+              <div className="discord-icon">
+                <SocialIcon
+                  onClick={handleDiscord}
+                  network="discord"
                   style={{
                     height: "3vw",
                     width: "3vw",

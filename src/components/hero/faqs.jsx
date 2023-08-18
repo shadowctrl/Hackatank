@@ -165,7 +165,7 @@ const faqs = () => {
               />
             </h1>
             <p className="faqs-content-description">
-              The teams must have a minimum of 2 members and a maximum of 4
+              The teams must have a minimum of 2 members and a maximum of 3
               members.
             </p>
           </div>
