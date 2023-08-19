@@ -182,7 +182,7 @@
 .container .date > div > div > div:nth-child(2) {
   display: flex;
   align-items: flex-start;
-  font-size: 1vw;
+  font-size: 0.7vw;
   text-transform: lowercase;
   font-family: inherit;
 }
@@ -372,7 +372,7 @@
 .container-mobile .date-mobile > div > div > div:nth-child(2) {
   display: flex;
   align-items: flex-start;
-  font-size: 3vw;
+  font-size: 2.5vw;
   text-transform: lowercase;
   font-family: inherit;
 }

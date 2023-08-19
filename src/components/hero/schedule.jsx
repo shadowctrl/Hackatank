@@ -57,11 +57,11 @@ const schedule = () => {
                 <div>
                   Aug
                   <div>
-                    <div>15</div> <div>th</div>
+                    <div>17</div> <div>th</div>
                   </div>
                   -Aug
                   <div>
-                    <div>28</div> <div>rd</div>
+                    <div>28</div> <div>th</div>
                   </div>
                 </div>
               </h1>
@@ -76,9 +76,9 @@ const schedule = () => {
             <div className="container ">
               <h1 className="date">
                 <div>
-                  Aug
+                  Sep
                   <div>
-                    <div>28</div> <div>th</div>
+                    <div>3</div> <div>rd</div>
                   </div>
                 </div>
               </h1>
@@ -170,7 +170,7 @@ const schedule = () => {
                 <div>
                   Aug
                   <div>
-                    <div>15</div> <div>th</div>
+                    <div>17</div> <div>th</div>
                   </div>
                 </div>
               </h2>
@@ -190,11 +190,11 @@ const schedule = () => {
                 <div>
                   Aug
                   <div>
-                    <div>15</div> <div>th</div>
+                    <div>17</div> <div>th</div>
                   </div>
                   -Aug
                   <div>
-                    <div>28</div> <div>rd</div>
+                    <div>28</div> <div>th</div>
                   </div>
                 </div>
               </h1>
@@ -210,9 +210,9 @@ const schedule = () => {
               <h2 className="container-title-mobile">Finalists Annoncements</h2>
               <h1 className="date-mobile">
                 <div>
-                  Aug
+                  Sep
                   <div>
-                    <div>28</div> <div>th</div>
+                    <div>1</div> <div>st</div>
                   </div>
                 </div>
               </h1>
@@ -231,7 +231,7 @@ const schedule = () => {
                 <div>
                   Sep
                   <div>
-                    <div>1</div> <div>st</div>
+                    <div>3</div> <div>rd</div>
                   </div>
                 </div>
               </h1>
