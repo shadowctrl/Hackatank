@@ -13,7 +13,15 @@ const staticOptions = {
 app.use(express.static(path.join(__dirname, "dist"), staticOptions));
 
 app.get(
-  ["/", "/about", "/hardware", "/software", "/events", "/guidelines", "judges"],
+  [
+    "/",
+    "/about",
+    "/hardware",
+    "/software",
+    "/events",
+    "/guidelines",
+    "/judges",
+  ],
   (req, res) => {
     res.status(200).sendFile(path.join(__dirname, "dist", "index.html"));
   }

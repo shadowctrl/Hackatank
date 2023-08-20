@@ -76,9 +76,9 @@ const schedule = () => {
             <div className="container ">
               <h1 className="date">
                 <div>
-                  Sep
+                  Aug
                   <div>
-                    <div>3</div> <div>rd</div>
+                    <div>28</div> <div>th</div>
                   </div>
                 </div>
               </h1>
@@ -229,9 +229,9 @@ const schedule = () => {
               <h2 className="container-title-mobile">Registration Closes</h2>
               <h1 className="date-mobile">
                 <div>
-                  Sep
+                  Aug
                   <div>
-                    <div>3</div> <div>rd</div>
+                    <div>28</div> <div>th</div>
                   </div>
                 </div>
               </h1>
