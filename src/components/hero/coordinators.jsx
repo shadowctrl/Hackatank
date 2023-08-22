@@ -13,10 +13,10 @@ const coordinators = () => {
           <div className="convener-card">
             <img
               className="convener-card-image"
-              src="/images/sivasankari.webp"
-              alt="Sivasankari - Assistant professor"
+              src="/images/giridharan.webp"
+              alt="Giridharan - Assistant professor"
             />
-            <h1 className="convener-name">Ms. R. Sivasankari</h1>
+            <h1 className="convener-name">Mr. S. Giridharan</h1>
             <h1 className="convener-position">
               Assistant Professor - Cyber Security
             </h1>
