@@ -185,46 +185,44 @@ p {
   background-image: url("/images/bg6.webp");
   top: -1vh;
 }
-.software-bg {
+.set2-bg {
   position: relative;
   isolation: isolate;
   background: black;
 }
 
-.software-bg::after {
+.set2-bg::after {
   content: " ";
   position: absolute;
   z-index: -1;
   inset: 0;
   background-size: 100%;
-  /* background-position: center; */
-  opacity: 0.7;
+  opacity: 0.5;
   background-image: url("/images/bg9.webp");
 }
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-  .software-bg::after {
+  .set2-bg::after {
     background-size: cover;
     top: -1vh;
   }
 }
-.hardware-bg {
+.set1-bg {
   position: relative;
   isolation: isolate;
   background: black;
 }
 
-.hardware-bg::after {
+.set1-bg::after {
   content: " ";
   position: absolute;
   z-index: -1;
   inset: 0;
   background-size: 100%;
-  /* background-position: center; */
-  opacity: 0.7;
+  opacity: 0.5;
   background-image: url("/images/bg2.webp");
 }
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-  .hardware-bg::after {
+  .set1-bg::after {
     background-size: cover;
     background-position: left;
     top: -1vh;

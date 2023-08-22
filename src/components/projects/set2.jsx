@@ -2,15 +2,15 @@ import React, { useEffect } from "react";
 import "./projects.css";
 import ReactGA from "react-ga";
 
-const software = () => {
+const set2 = () => {
   useEffect(() => {
-    document.title = "Software projects";
+    document.title = "Projects - Set 2";
   });
   const handleSoftwareView = (Element) => {
     ReactGA.event({
       category: "Button",
       action: "click",
-      label: "Software Project",
+      label: "Project - set 2",
     });
     const ElementVisibility = Element.currentTarget.querySelector(
       ".software-content-description"
@@ -22,7 +22,11 @@ const software = () => {
   return (
     <React.Fragment>
       <div className="parent-software">
-        <h1 className="parent-software-title">Software Projects</h1>
+        <h1 className="parent-software-title">Projects - Set 2</h1>
+        <p className="projects-disclaimer">
+          OWN/UNIQUE PROBLEM STATEMENTS ARE ALSO WELCOMED - Kindly intimate when
+          speaking with registration team
+        </p>
         <div className="software-container">
           <div className="software-content" onClick={handleSoftwareView}>
             <h1 className="software-content-title">
@@ -220,4 +224,4 @@ const software = () => {
   );
 };
 
-export default software;
+export default set2;

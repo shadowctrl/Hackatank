@@ -13,7 +13,7 @@ const convener = () => {
           <div className="convener-card">
             <img
               className="convener-card-image"
-              src="/images/senthilkumar.png"
+              src="/images/senthilkumar.webp"
               alt="Senthil Kumar - HOD Cyber Security"
             />
             <h1 className="convener-name"> Dr. M. Senthil Kumar</h1>

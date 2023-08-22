@@ -8,8 +8,8 @@ import {
   Hero,
   Events,
   Guildelines,
-  Software,
-  Hardware,
+  Set1,
+  Set2,
   Judges,
   About,
 } from "./components";
@@ -57,20 +57,20 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           }
         />
         <Route
-          path="/software"
+          path="/set2"
           element={
-            <div className="software-bg">
+            <div className="set2-bg">
               <Navbar />
-              <Software />
+              <Set2 />
             </div>
           }
         />
         <Route
-          path="/hardware"
+          path="/set1"
           element={
-            <div className="hardware-bg">
+            <div className="set1-bg">
               <Navbar />
-              <Hardware />
+              <Set1 />
             </div>
           }
         />

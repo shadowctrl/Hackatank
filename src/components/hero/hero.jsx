@@ -210,17 +210,11 @@ const hero = () => {
               <div className="flex justify-items-start">
                 <h3 className="text7">Problem Statements</h3>
               </div>
-              <p
-                className="text8"
-                onClick={() => handleCardClicks("/hardware")}
-              >
-                Hardware <ArrowRightBlack className="arrow-right-icon" />
+              <p className="text8" onClick={() => handleCardClicks("/set1")}>
+                Collection 1 <ArrowRightBlack className="arrow-right-icon" />
               </p>
-              <p
-                className="text9"
-                onClick={() => handleCardClicks("/software")}
-              >
-                Software <ArrowRightBlack className="arrow-right-icon" />
+              <p className="text9" onClick={() => handleCardClicks("/set2")}>
+                Collection 2 <ArrowRightBlack className="arrow-right-icon" />
               </p>
             </div>
             {/* -------------------------- Column 4  ---------------------------------- */}
