@@ -87,7 +87,7 @@ const Navbar = () => {
       <div className="parent">
         <div className="components">
           <div className="title" onClick={() => window.open("/", "_self")}>
-            <img src="/images/diamond.webp" className="logo" />
+            <img src="/images/diamond.webp" className="logo" alt="Logo" />
             Hackathon
             <div className="socials">
               <div className="insta">
@@ -165,7 +165,7 @@ const Navbar = () => {
               className="title-mobile"
               onClick={() => window.open("/", "_self")}
             >
-              <img src="/images/diamond.webp" width="30vw" />
+              <img src="/images/diamond.webp" width="30vw" alt="logo" />
               Hackathon
             </div>
             <div className="last-mobile">

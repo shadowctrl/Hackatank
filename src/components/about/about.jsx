@@ -40,11 +40,15 @@ const about = () => {
         <h1 className="about-title">About Us</h1>
         <div className="foundation">
           <div className="foundation-title " id="about-right">
-            <img src="/images/srm.webp" alt="" className="about-srm-logo" />
+            <img
+              src="/images/srm.webp"
+              alt="srm logo"
+              className="about-srm-logo"
+            />
             Foundation Day Celebration
             <img
               src="/images/srmvec.webp"
-              alt=""
+              alt="srmvec logo"
               className="about-srmvec-logo"
             />
           </div>
@@ -71,7 +75,7 @@ const about = () => {
             <img
               className="about-srmvec-logo"
               src="/images/srmvec.webp"
-              alt=""
+              alt="srmvec logo"
             />
             About Srmvec
           </div>
@@ -90,7 +94,11 @@ const about = () => {
             id="about-right"
             onClick={() => handleWebClicks("http://www.csi-kancheepuram.org/")}
           >
-            <img className="about-csi-logo" src="/images/csi1.webp" alt="" />
+            <img
+              className="about-csi-logo"
+              src="/images/csi1.webp"
+              alt="csi logo"
+            />
             About csi
           </div>
           <div className="about-csi-description" id="about-left">
@@ -112,7 +120,7 @@ const about = () => {
             <img
               className="about-whitehatians-logo"
               src="/images/whitehatians.webp"
-              alt=""
+              alt="whitehatians logo"
             />
             About whitehatians
           </div>

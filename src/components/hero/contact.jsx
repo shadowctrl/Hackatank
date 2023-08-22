@@ -27,7 +27,7 @@ const contact = () => {
     <React.Fragment>
       <div id="contact" className="parent-contact">
         <div className="contact-title">
-          <img src="/images/rrr.webp" alt="" />
+          <img src="/images/rrr.webp" alt="arrow-logo" />
           Contacts
         </div>
         <div className="parent-container">
@@ -36,7 +36,7 @@ const contact = () => {
             <div className="contact-container">
               <div className="contact-card">
                 <div className="contact-card-front">
-                  <img src="/images/shree.webp" alt="" />
+                  <img src="/images/shree.webp" alt="shree - president CSI" />
                   <div className="contact-card-details">
                     <h1 className="contact-card-name">Shree N</h1>
                     <h2 className="contact-card-description">
@@ -193,7 +193,10 @@ const contact = () => {
             <div className="contact-container">
               <div className="contact-card1">
                 <div className="contact-card-front">
-                  <img src="/images/kishore.webp" alt="" />
+                  <img
+                    src="/images/kishore.webp"
+                    alt="Kishore President - Whitehatians"
+                  />
                   <div className="contact-card-details">
                     <h1 className="contact-card-name">Kishore R</h1>
                     <h2 className="contact-card-description">

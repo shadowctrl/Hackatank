@@ -11,12 +11,12 @@ const sponsors = () => {
       <div className="parent-sponsors">
         <h1 className="sponsors-title">
           Sponsor
-          <img src="/images/rrr.webp" alt="" />
+          <img src="/images/rrr.webp" alt="arrow-logo" />
         </h1>
         <div className="sponsors-container">
           <div className="sponsors-border">
             <div>
-              <img src="/images/hebesec.webp" alt="" />
+              <img src="/images/hebesec.webp" alt="Hebesec Technologies" />
             </div>
             <div className="sponsors-container-sub">
               <h1 className="sponsor-title">

@@ -95,7 +95,7 @@ const hero = () => {
         <div className=" tag-hero-mobile">
           <img
             src="/images/srm.webp"
-            alt=""
+            alt="srm logo"
             width="40vw"
             className="hero-srm-logo"
           />
@@ -108,7 +108,7 @@ const hero = () => {
           </div>
           <img
             src="/images/srmvec.webp"
-            alt=""
+            alt="srmvec logo"
             width="60vw"
             className="hero-srmvec-logo"
           />
@@ -244,17 +244,7 @@ const hero = () => {
             <div className="col6 animated-div">
               <h3 className="text13">
                 Organized By
-                <div className="flex justify-center items-center gap-1">
-                  {/* <img
-                    src="/images/csi.webp"
-                    width="37.5vw"
-                    style={{
-                      borderRadius: "50%",
-                      marginBottom: "0.5vh",
-                    }}
-                  />
-                  <img src="/images/whitehatians.webp" alt="" width="44vw" /> */}
-                </div>
+                <div className="flex justify-center items-center gap-1"></div>
               </h3>
               <div className="flex items-start justify-between flex-col">
                 <p className="text14">SRMVEC CSI Student Branch </p>
