@@ -14,8 +14,8 @@ async function generateSitemap() {
     "about",
     "guidelines",
     "events",
-    "/hardware",
-    "/software",
+    "/set1",
+    "/set2",
     "/judges",
     "/#contact",
   ];
