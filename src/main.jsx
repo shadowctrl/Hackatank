@@ -12,7 +12,10 @@ import {
   Set2,
   Judges,
   About,
+  Verify,
+  Login,
 } from "./components";
+
 import ReactGA from "react-ga";
 ReactGA.initialize("K6F7N5MR4K");
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -92,6 +95,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             </div>
           }
         />
+        <Route path="/qr/verify/:id" element={<Verify />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

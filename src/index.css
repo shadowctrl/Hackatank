@@ -37,36 +37,63 @@
   src: url(/fonts/mars/Mars.ttf);
   font-weight: regular;
   font-style: normal;
+  display: swap;
 }
 @font-face {
   font-family: mars;
   src: url("/fonts/mars/Mars Bold.ttf");
   font-weight: bold;
   font-style: normal;
+  display: swap;
 }
 @font-face {
   font-family: mars;
   src: url("/fonts/mars/Mars Thin.ttf");
   font-weight: lighter;
   font-style: normal;
+  display: swap;
 }
 
 @font-face {
   font-family: blanka;
   src: url(/fonts/blanka.otf);
+  display: swap;
 }
 @font-face {
   font-family: technology;
   src: url(/fonts/technology/Technology.ttf);
+  display: swap;
 }
 
 @font-face {
   font-family: zeniq;
   src: url(/fonts/zeniq.ttf);
+  display: swap;
 }
 @font-face {
   font-family: liger;
   src: url(/fonts/liger.ttf);
+  display: swap;
+}
+@font-face {
+  font-family: acetone;
+  src: url(/fonts/acetone.ttf);
+  display: swap;
+}
+@font-face {
+  font-family: atomed;
+  src: url(/fonts/atomed.otf);
+  display: swap;
+}
+@font-face {
+  font-family: proxon;
+  src: url(/fonts/proxon.ttf);
+  display: swap;
+}
+@font-face {
+  font-family: corneta;
+  src: url(/fonts/corneta.ttf);
+  display: swap;
 }
 html,
 body {
@@ -246,4 +273,33 @@ p {
     rgba(200, 31, 106, 1) 0%,
     rgba(29, 33, 38, 1) 100%
   );
+}
+
+.verify-title {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+  background-image: url("/images/texture.svg");
+  text-align: center;
+}
+.verify-title h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.verify-title h3 span {
+  color: orangered;
+  font-family: inherit;
+}
+.verify-title h1 {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 900;
+  font-family: audiowide;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }

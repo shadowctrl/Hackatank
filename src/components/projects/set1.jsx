@@ -28,27 +28,41 @@ const set1 = () => {
         </p>
         <div className="software-container">
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
-              AI-powered Healthcare Triage
-            </h1>
+            <h1 className="software-content-title">Elderly Care</h1>
             <p className="software-content-description projects-close">
-              Create an AI-powered platform that can assess and prioritize
-              patient symptoms to help healthcare professionals manage the
-              patient load efficiently during emergencies or outbreaks. The
-              system should be able to recognize critical cases that need
-              immediate attention.
+              Develop a user-friendly device or system that helps elderly
+              individuals with medication reminders, fall detection, activity
+              tracking, and social interaction
+            </p>
+          </div>
+
+          <div className="software-content" onClick={handleSoftwareView}>
+            <h1 className="software-content-title">Energy Conservation</h1>
+            <p className="software-content-description projects-close">
+              Develop a smart energy monitoring and management system for homes
+              or businesses that optimizes power consumption, identifies
+              wastage, and encourages energy-saving behaviour
+            </p>
+          </div>
+
+          <div className="software-content" onClick={handleSoftwareView}>
+            <h1 className="software-content-title">Traffic Management</h1>
+            <p className="software-content-description projects-close">
+              Design a smart traffic management system that uses real-time data
+              from cameras, sensors, and vehicle-to-vehicle communication to
+              optimize traffic flow and reduce congestion
             </p>
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
             <h1 className="software-content-title">
-              Education Accessibility for All
+              Waste Management and Recycling Optimization
             </h1>
             <p className="software-content-description projects-close">
-              Design an educational tool or application that makes learning more
-              accessible to differently-abled individuals or those with learning
-              difficulties. Consider inclusivity, interactivity, and adaptable
-              content to cater to a diverse audience
+              Develop an intelligent system that optimizes waste collection and
+              recycling processes in urban areas. The solution could include
+              real-time data analysis, route optimization, and incentivizing
+              citizens to participate actively in recycling initiatives.
             </p>
           </div>
 
@@ -57,120 +71,89 @@ const set1 = () => {
               Cybersecurity for IoT Devices
             </h1>
             <p className="software-content-description projects-close">
-              CBuild a security solution to protect Internet of Things (IoT)
+              Build a security solution to protect Internet of Things (IoT)
               devices from potential threats and vulnerabilities. The solution
               should ensure data privacy, integrity, and device authentication
               to prevent unauthorized access
             </p>
           </div>
-
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
-              Disaster Preparedness and Response
-            </h1>
+            <h1 className="software-content-title">Smart Home Innovation</h1>
             <p className="software-content-description projects-close">
-              Create a platform that enhances disaster preparedness and response
-              efforts. The system could provide real-time updates, offer
-              resources and support to affected communities, and enable
-              efficient coordination between emergency responders.
+              Develop a cost-effective and energy-efficient smart home system
+              that integrates various devices (lights, thermostat, security,
+              etc.) and can be controlled through a single platform or using
+              voice commands
+            </p>
+          </div>
+          <div className="software-content" onClick={handleSoftwareView}>
+            <h1 className="software-content-title">Healthcare Tech</h1>
+            <p className="software-content-description projects-close">
+              Design a wearable device that monitors vital signs (heart rate,
+              blood pressure, oxygen levels) accurately and in real-time,
+              transmitting data to healthcare professionals or loved ones{" "}
+            </p>
+          </div>
+          <div className="software-content" onClick={handleSoftwareView}>
+            <h1 className="software-content-title">Agricultural Automation</h1>
+            <p className="software-content-description projects-close">
+              Build an automated system that optimizes irrigation,
+              fertilization, and pest control in a greenhouse or field,
+              utilizing sensors and actuators for better crop yield and resource
+              efficiency
             </p>
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
-              Personalized Mental Health Support
-            </h1>
+            <h1 className="software-content-title">Assistive Technology</h1>
             <p className="software-content-description projects-close">
-              Design an app or service that offers personalized mental health
-              support based on an individual's needs and preferences. The
-              solution should provide resources, coping strategies, and access
-              to professional help when necessary
-            </p>
-          </div>
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
-              AI-driven Fake News Detection
-            </h1>
-            <p className="software-content-description projects-close">
-              Develop an AI system capable of detecting and classifying fake
-              news articles or misinformation spread across various social media
-              platforms. The system should provide users with reliable sources
-              and factchecking information.{" "}
-            </p>
-          </div>
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Food Waste Reduction</h1>
-            <p className="software-content-description projects-close">
-              Create a solution that helps reduce food waste in households,
-              restaurants, or supermarkets. This could include a smart inventory
-              management system, recipes for using leftover ingredients, or a
-              platform to connect surplus food with those in need.
-            </p>
-          </div>
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
-              Eco-friendly Smart Home Automation
-            </h1>
-            <p className="software-content-description projects-close">
-              Design a smart home automation system that minimizes energy
-              consumption and promotes sustainable practices. The system should
-              intelligently control appliances, lighting, and temperature based
-              on occupancy and user preferences{" "}
+              Develop a device or solution that aids individuals with
+              disabilities, such as a wearable for visually impaired people that
+              provides realtime navigation assistance or a device that enhances
+              communication for those with speech impairments{" "}
             </p>
           </div>
 
           <div className="software-content" onClick={handleSoftwareView}>
             <h1 className="software-content-title">
-              Mental Health and Wellness Suppor
+              Transportation & Logistics
             </h1>
             <p className="software-content-description projects-close">
-              Develop a mental health app that provides users with resources for
-              stress management, mindfulness exercises, and access to virtual
-              therapy sessions to promote overall well-being.
-            </p>
-          </div>
-
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">Voice Prescription</h1>
-            <p className="software-content-description projects-close">
-              Design an app to write formatted prescriptions based on dictation
-              from doctor. Refer attachment for more detail. The app should
-              provide facility to sign the prescription and also send to the
-              patient directly on his phone and email id. The method of storing
-              the medical records (EHR) should follow relevant compliance laws
-              like HIPAA
+              Prototype of a Solar Powered IOT Device with the ability to
+              connect to a smart network to be used in Geo Tagging of Physical
+              Assets Created under CSR
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
             <h1 className="software-content-title">
-              AI based crop identification mobile app
+              Mental Health and Wellness Support
             </h1>
             <p className="software-content-description projects-close">
-              Develop a mobile application that can identify crop using only
-              field photo of a crop. The team must target at-least 10 different
-              crops for demonstration. The application will allow the user to
-              take photos and automatically identify the crop. The photo and
-              crop information along with geolocation information should be
-              stored in an internal database which can be exported/emailed.
+              Develop a mental health device that provides users with resources
+              for stress management, mindfulness exercises, and access to
+              virtual therapy sessions to promote overall well-being.
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
-              Portable RCS Measuring Device
-            </h1>
+            <h1 className="software-content-title">Disaster Management:</h1>
             <p className="software-content-description projects-close">
-              Which is capable of independent operation and deployable from
-              multiple platforms (Ship, boat, UAV, etc)
+              Suggest and develop an innovative approach for redeveloping the
+              centralized sewage treatment plants and help the city managers to
+              better adopt decentralized approaches and ensure water resources
+              through reuse.{" "}
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
-              Redefining Education through Technology
-            </h1>
+            <h1 className="software-content-title">Fire suppressant</h1>
             <p className="software-content-description projects-close">
-              Create an innovative educational platform that offers personalized
-              learning experiences, interactive content, and tools for teachers
-              to engage students in virtual or hybrid classrooms{" "}
+              A material which can be installed in the confined spaces of a
+              submarine there by suppressing a fire in the initial stages only.
+              The material should be available in multiple options such as pads
+              for flooring, wire or cable’s covering, covers and tapes which can
+              be applied on small places which are deemed hazardous from the
+              fire-safety perspective. The fire suppressant should release the
+              extinguishing agent stored in the form of micro-capsules at a
+              specific temperature{" "}
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
@@ -187,33 +170,34 @@ const set1 = () => {
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
             <h1 className="software-content-title">
-              Waste Management and Recycling Optimization
+              Smart firefighting breathing apparatus
             </h1>
             <p className="software-content-description projects-close">
-              Develop an intelligent system that optimizes waste collection and
-              recycling processes in urban areas. The solution could include
-              real-time data analysis, route optimization, and incentivizing
-              citizens to participate actively in recycling initiatives
+              It is intend to design add-on smart features to the existing
+              Breathing Apparatus (BA) sets. To increase the efficiency and
+              safety of crew in Fire Fighting Organization, smart fire-fighting
+              BA has been proposed as an addon to the existing breathing
+              apparatus which can monitor parameters such as pressure, breathing
+              rate and time remaining and convey the same to fire-fighting
+              attendant using wireless means{" "}
+            </p>
+          </div>
+          <div className="software-content" onClick={handleSoftwareView}>
+            <h1 className="software-content-title">Wildlife Conservation</h1>
+            <p className="software-content-description projects-close">
+              Build a wildlife tracking and monitoring system using GPS,
+              sensors, and cameras to gather data on animal behaviour and
+              habitat, aiding in conservation efforts.{" "}
             </p>
           </div>
           <div className="software-content" onClick={handleSoftwareView}>
             <h1 className="software-content-title">
-              Redefining Education through Technology
+              Sustainable Transportation
             </h1>
             <p className="software-content-description projects-close">
-              Create an innovative educational platform that offers personalized
-              learning experiences, interactive content, and tools for teachers
-              to engage students in virtual or hybrid classrooms{" "}
-            </p>
-          </div>
-          <div className="software-content" onClick={handleSoftwareView}>
-            <h1 className="software-content-title">
-              Cybersecurity and Data Privacy for IoT Devices
-            </h1>
-            <p className="software-content-description projects-close">
-              Build a security platform that safeguards Internet of Things (IoT)
-              devices from cyber threats, ensuring data privacy and secure
-              communication between devices and networks.
+              Make a prototype for an efficient and eco-friendly transportation
+              system, like a solar-powered electric vehicle charging station or
+              an electric bike charge sharing technique
             </p>
           </div>
         </div>
