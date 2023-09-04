@@ -89,7 +89,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
           path="/judges"
           element={
-            <div className="judges-bg">
+            <div>
               <Navbar />
               <Judges />
             </div>
