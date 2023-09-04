@@ -8,7 +8,7 @@ import path from "path";
 
 const __dirname = path.resolve();
 const app = express();
-const port = 5555;
+const port = 4444;
 const mongo_uri = process.env.mongodb_uri;
 const client = new MongoClient(mongo_uri);
 client.connect();
@@ -18,10 +18,10 @@ client.on("error", (err) => console.log("Error Occurred - MongoDB", err));
 client.on("close", () => console.log("Disconnected from mongodb"));
 
 const corsOptions = {
-  origin: ["https://hackatank.tech", "http://localhost:4444"],
+  origin: ["https://hackatank.tech"],
 };
 app.use(express.json());
-app.post("/api/verify", async (req, res) => {
+app.post("/api/verify", cors(corsOptions), async (req, res) => {
   const requestData = req.body;
 
   const id = parseInt(requestData.id);
@@ -32,7 +32,6 @@ app.post("/api/verify", async (req, res) => {
   const response = await db.collection("qr-details").findOne({
     id,
   });
-  console.log(response);
   if (response) {
     const timestamp = new Date().toString();
     const name = response.name;
@@ -44,4 +43,15 @@ app.post("/api/verify", async (req, res) => {
   }
 });
 
+app.use(express.static(path.join(__dirname, "dist")));
+app.get(
+  ["/", "/about", "/set1", "/set2", "/events", "/guidelines", "/judges"],
+  (req, res) => {
+    res.status(200).sendFile(path.join(__dirname, "dist", "index.html"));
+  }
+);
+
+app.use((req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "dist", "index.html"));
+});
 app.listen(port, () => console.log("Server Started on port: ", port));

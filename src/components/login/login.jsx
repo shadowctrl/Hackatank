@@ -16,6 +16,7 @@ const Login = () => {
     "random0120003@gmail.com",
     "thelinuxsec@gmail.com",
     "yenshree@gmail.com",
+    "prorahul555@gmail.com",
   ];
   const [notVerified, setNotVerified] = useState(false);
 

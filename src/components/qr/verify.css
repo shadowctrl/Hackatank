@@ -82,12 +82,12 @@
 }
 .qr-options h1 {
   text-transform: capitalize;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 900;
   font-family: zeniq;
-  border: 2px solid black;
+  border: 2px solid orangered;
   border-radius: 2vw;
-  width: 150px;
+  width: 250px;
   text-align: center;
   cursor: pointer;
 }

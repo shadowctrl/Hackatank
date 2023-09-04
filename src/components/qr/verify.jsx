@@ -30,7 +30,6 @@ const Verify = () => {
       headers: {
         "Content-Type": "application/json",
       },
-
       body: JSON.stringify(requestData),
     });
 
@@ -74,11 +73,18 @@ const Verify = () => {
                           </h1>
                           <div className="qr-options">
                             <h1 onClick={(self) => handleOptions(self, id)}>
-                              Food
-                            </h1>
-                            <h1 onClick={(self) => handleOptions(self, id)}>
                               IN
                             </h1>
+                            <h1 onClick={(self) => handleOptions(self, id)}>
+                              Breakfast
+                            </h1>
+                            <h1 onClick={(self) => handleOptions(self, id)}>
+                              Lunch
+                            </h1>
+                            <h1 onClick={(self) => handleOptions(self, id)}>
+                              Dinner
+                            </h1>
+
                             <h1 onClick={(self) => handleOptions(self, id)}>
                               OUT
                             </h1>
