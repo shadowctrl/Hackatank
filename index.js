@@ -10,19 +10,6 @@ const staticOptions = {
   maxAge: "1d",
 };
 
-app.use(express.static(path.join(__dirname, "dist"), staticOptions));
-
-app.get(
-  ["/", "/about", "/set1", "/set2", "/events", "/guidelines", "/judges"],
-  (req, res) => {
-    res.status(200).sendFile(path.join(__dirname, "dist", "index.html"));
-  }
-);
-
-app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "dist", "index.html"));
-});
-
 app.listen(port, () => {
   console.log(`Server Running on port ${port}`);
 });
