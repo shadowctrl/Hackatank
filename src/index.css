@@ -95,6 +95,10 @@
   src: url(/fonts/corneta.ttf);
   display: swap;
 }
+@font-face {
+  font-family: disamber;
+  src: url(/fonts/Disamber.ttf);
+}
 html,
 body {
   overflow-x: hidden;
