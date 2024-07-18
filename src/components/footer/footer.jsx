@@ -10,6 +10,12 @@ const footer = () => {
           <Copyright className="copyright-icon" />
           2023 - {"All Rights Reserved."}
         </p>
+        <p className="copyright">
+          Developed by{" "}
+          <a href="https://upwork.com/freelancers/shadowctrl" target="_blank">
+            shadowctrl
+          </a>
+        </p>
       </div>
     </React.Fragment>
   );

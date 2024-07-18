@@ -1,6 +1,13 @@
 .parent-footer {
   background-color: rgb(0, 0, 0);
-  border-radius: 1vw 1vw 0 0;
+  border-radius: 0.5vw 1vw 0 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.5vh 3vw;
+}
+.copyright a {
+  text-decoration: underline;
 }
 .copyright {
   padding-top: 1vh;
@@ -14,7 +21,7 @@
   font-weight: 400;
   font-family: press start 2p;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    font-size: 3vw;
+    font-size: 2vw;
     gap: 0.5vw;
   }
 }
