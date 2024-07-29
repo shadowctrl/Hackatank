@@ -1,4 +1,6 @@
 # Hackathon Management Web Platform
+![](https://github.com/user-attachments/assets/9d36a3f4-a49c-4837-803f-60b0fbad7c65)
+
 
 Welcome to the Hackathon Management Web Platform repository! This comprehensive, full-stack web platform is designed to facilitate seamless participation and management for hackathon events. Developed with cutting-edge technologies, it offers a dynamic and engaging experience for both participants and organizers.
 <br />
