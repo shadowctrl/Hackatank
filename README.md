@@ -66,9 +66,13 @@ To get started, ensure you have the following installed:
 - **Admin Dashboard:** Accessible via Google login by authorized organizers.
 - **Participant Registration:** Tracks real-time data and updates Google Sheets for easy management.
 
-## Licensing & Usage
+## License and Usage
 
-This repository and the associated platform are distributed under a [Creative Commons License](LICENSE). If you use any part of this platform, proper attribution is required. Unauthorized cloning and usage for production without proper licensing are against the terms of use.
+This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License. 
+
+![Creative Commons License](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)
+
+To view a copy of this license, visit [http://creativecommons.org/licenses/by-nc/4.0/](http://creativecommons.org/licenses/by-nc/4.0/).
 
 ## Reporting Issues
 
