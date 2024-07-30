@@ -13,9 +13,9 @@ Welcome to the Hackathon Management Web Platform repository! This comprehensive,
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-- [Licensing & Usage](#licensing--usage)
+- [Licensing & Usage](#license-and-usage)
 - [Reporting Issues](#reporting-issues)
-- [Contributors](#contributors)
+- [Legal Usage](#legal-usage)
 - [Contact Information](#contact-information)
 - [Work With Me](#work-with-me)
 - [💰 You Can Help Me by Donating](#-you-can-help-me-by-donating)
@@ -79,6 +79,9 @@ To view a copy of this license, visit [http://creativecommons.org/licenses/by-nc
 ## Reporting Issues
 
 If you encounter any issues or have suggestions for improvements, please submit an issue in the [Issues section](https://github.com/yourusername/hackathon-management-platform/issues).
+
+## Legal Usage
+To Legally use this site for your event, [click here](https://www.upwork.com/services/product/development-it-react-website-for-your-hackathon-event-1817556808465455243?ref=project_share) or contact query@shadowctrl.me 
 
 ## Contact Information
 
