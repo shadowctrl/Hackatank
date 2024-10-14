@@ -17,17 +17,16 @@ async function generateSitemap() {
     "/set1",
     "/set2",
     "/judges",
-    "/#contact",
   ];
 
   const smStream = new SitemapStream({
-    hostname: "https://www.hackatank.tech",
+    hostname: "https://hackatank.shadowctrl.me",
   });
 
   staticRoutes.forEach((route) => {
     smStream.write({
       url: route,
-      changefreq: "daily",
+      changefreq: "yearly",
       priority: 1,
     });
   });
