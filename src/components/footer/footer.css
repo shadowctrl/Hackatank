@@ -6,8 +6,10 @@
   justify-content: space-between;
   padding: 0.5vh 3vw;
 }
-.copyright a {
+.copyright p {
+  cursor: pointer;
   text-decoration: underline;
+  color: #d500ed;
 }
 .copyright {
   padding-top: 1vh;
