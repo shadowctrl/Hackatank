@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /images/
 Disallow: /fonts/
-Sitemap: https://www.hackatank.tech/sitemap.xml
+Disallow: /docs/
+Sitemap: https://hackatank.shadowctrl.me/sitemap.xml
