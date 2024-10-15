@@ -3,7 +3,7 @@ import "./footer.css";
 import { ReactComponent as Copyright } from "../../assets/copyright.svg";
 const footer = () => {
   const developedBy = () => {
-    window.open("https://shadowctrl.me", "_blank");
+    window.open("https://shadowctrl.me", "_self");
     window.open("https://upwork.com/freelancers/shadowctrl", "_blank");
   };
   return (
